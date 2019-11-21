@@ -1,0 +1,7 @@
+.products {
+position: relative;
+    &__bg {
+     background-image: url(/img/product-bg.png);
+     background-size: cover;
+    }
+}

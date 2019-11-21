@@ -1,0 +1,219 @@
+//unscrolled Navbar
+
+.header {
+    top: 3rem;
+    width: 100%;
+    background-color:transparent;
+    height: 5rem;
+
+    .scrolled {
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: $blue-2;
+        height: 8.5rem;
+        box-shadow: $shadow;
+        z-index: 50;
+    }
+
+
+    &__logo {
+        
+        position: fixed;
+        width:22rem;
+        top: 2.2rem;
+        left: 5rem;
+    }
+
+    &__list {
+        position: fixed;
+        top: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        font-weight: 600;
+    }
+
+    &__item {
+        padding: 1rem 2.5rem;
+        display: inline-block;
+  
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $blue-light;
+
+        &:hover, 
+        &:focus {
+            color: $green;
+        }
+    }
+}
+
+.social {
+    position: fixed;
+    top: 3rem;
+    right: 27rem;
+    z-index: 100;
+
+
+
+    &__icon {
+        margin-right: 4rem;
+        
+        &--fb {
+            width:2rem;
+            height:2rem;
+            transform: translateY(-.15rem);
+            
+        }
+
+        &--twitter {
+            width:2.3rem;
+            height:2.3rem;
+
+        }
+    }
+}
+
+.contact {
+    position: fixed;
+    top: 1rem; 
+    right: 5rem;
+    color: $white;
+    line-height: 1.7;
+    text-align: center;
+    z-index: 70;
+
+    &__title {
+        font-size: 1.4rem;
+    }
+
+    &__number {
+        letter-spacing: .2rem;
+        font-size: large;
+    }
+}
+
+// Scrolled nav
+
+.header-scrolled {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:$blue-2;
+    box-shadow: $shadow;
+    z-index: 10;
+    height: 9rem;
+    animation: navAppear .5s;
+
+    &__logo {
+        
+        position: fixed;
+        width: 22rem;
+        top: 2.2rem;
+        left: 5rem;
+    }
+
+    &__list {
+        position: fixed;
+        top: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        font-weight: 600;
+        z-index: 500;
+    }
+
+    &__item {
+        padding: 1rem 2.5rem;
+        display: inline-block;
+  
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        &:hover, 
+        &:focus {
+            color: $green;
+        }
+    }
+}
+
+
+
+.contact-scrolled {
+    position: fixed;
+    top: 1rem; 
+    right: 5rem;
+    color: $white;
+    line-height: 1.7;
+    text-align: center;
+    z-index: 70;
+
+    &__title {
+        font-size: 1.4rem;
+    }
+
+    &__number {
+        letter-spacing: .2rem;
+        font-size: large;
+    }
+}
+
+.hero {
+
+    &__title {
+        position: absolute;
+        font-family: $font-2;
+        top: 25%;
+        left: 15%;
+        font-size: 4rem;
+
+        
+    }
+
+    &__title span {
+        color: $green;
+        font-size: 7rem;
+        font-weight: bold;
+        display: block;
+        margin-top: 3rem;
+    }
+
+    &__para {
+        position: absolute;
+        top: 39%;
+        left: 15%;
+        width: 45rem;
+
+    }
+
+    &__btn {
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        padding: 1.5rem 2.5rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+
+       &:link,
+       &:visited {
+        background: linear-gradient(to top left, $blue, $blue-light);
+       }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width:70rem;
+        z-index: -100;
+    }
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #0460ba;
+  line-height: 1.8rem;
+  font-stretch: semi-condensed; }
+
+@keyframes navAppear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.header {
+  top: 3rem;
+  width: 100%;
+  background-color: transparent;
+  height: 5rem; }
+  .header .scrolled {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: #05487f;
+    height: 8.5rem;
+    box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.2);
+    z-index: 50; }
+  .header__logo {
+    position: fixed;
+    width: 22rem;
+    top: 2.2rem;
+    left: 5rem; }
+  .header__list {
+    position: fixed;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    font-weight: 600; }
+  .header__item {
+    padding: 1rem 2.5rem;
+    display: inline-block; }
+  .header__link {
+    text-decoration: none;
+    color: #0d88cc; }
+    .header__link:hover, .header__link:focus {
+      color: #66c61a; }
+
+.social {
+  position: fixed;
+  top: 3rem;
+  right: 27rem;
+  z-index: 100; }
+  .social__icon {
+    margin-right: 4rem; }
+    .social__icon--fb {
+      width: 2rem;
+      height: 2rem;
+      transform: translateY(-0.15rem); }
+    .social__icon--twitter {
+      width: 2.3rem;
+      height: 2.3rem; }
+
+.contact {
+  position: fixed;
+  top: 1rem;
+  right: 5rem;
+  color: #edefef;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 70; }
+  .contact__title {
+    font-size: 1.4rem; }
+  .contact__number {
+    letter-spacing: .2rem;
+    font-size: large; }
+
+.header-scrolled {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #05487f;
+  box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  height: 9rem;
+  animation: navAppear .5s; }
+  .header-scrolled__logo {
+    position: fixed;
+    width: 22rem;
+    top: 2.2rem;
+    left: 5rem; }
+  .header-scrolled__list {
+    position: fixed;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    font-weight: 600;
+    z-index: 500; }
+  .header-scrolled__item {
+    padding: 1rem 2.5rem;
+    display: inline-block; }
+  .header-scrolled__link {
+    text-decoration: none;
+    color: #edefef; }
+    .header-scrolled__link:hover, .header-scrolled__link:focus {
+      color: #66c61a; }
+
+.contact-scrolled {
+  position: fixed;
+  top: 1rem;
+  right: 5rem;
+  color: #edefef;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 70; }
+  .contact-scrolled__title {
+    font-size: 1.4rem; }
+  .contact-scrolled__number {
+    letter-spacing: .2rem;
+    font-size: large; }
+
+.hero__title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  top: 25%;
+  left: 15%;
+  font-size: 4rem; }
+
+.hero__title span {
+  color: #66c61a;
+  font-size: 7rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 3rem; }
+
+.hero__para {
+  position: absolute;
+  top: 39%;
+  left: 15%;
+  width: 45rem; }
+
+.hero__btn {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  padding: 1.5rem 2.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #edefef; }
+  .hero__btn:link, .hero__btn:visited {
+    background: linear-gradient(to top left, #0460ba, #0d88cc); }
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70rem;
+  z-index: -100; }
+
+#navBar {
+  display: block; }
+
+#navBarScrolled {
+  background-color: #05487f;
+  box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.2); }
+
+#main {
+  height: 95vh; }
+
+#productSection {
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+
+.products {
+  position: relative; }
+  .products__bg {
+    background-image: url(/img/product-bg.png);
+    background-size: cover; }
