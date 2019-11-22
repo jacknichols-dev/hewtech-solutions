@@ -2,7 +2,7 @@
 
 
     &__header {
-        width: 80%;
+        width: 90%;
         height: 30rem;
         margin: 0 auto;
         background: $gradient;
@@ -13,6 +13,7 @@
         &--title {
             position: absolute;
             top: 8rem;
+            font-size: 5rem;
             margin-left: 10rem;
             color: $white;
         }
@@ -20,7 +21,7 @@
         &--desc {
             position: absolute;
             width: 20%;
-            bottom: 8rem;
+            top: 12rem;
             margin-left: 10rem;
             color: $white;
         }

@@ -30,6 +30,26 @@ body {
   100% {
     opacity: 1; } }
 
+.card {
+  position: relative;
+  margin-top: 6rem;
+  perspective: 190rem; }
+  .card__side {
+    width: 100%;
+    box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    height: 55rem; }
+    .card__side--front {
+      background-color: #edefef; }
+  .card__pic {
+    height: 40%;
+    border-radius: 2rem 2rem 0 0;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
+    .card__pic--1 {
+      background-image: linear-gradient(to left, rgba(5, 72, 127, 0.5), rgba(102, 198, 26, 0.1)), url(/img/personal-alarm2.jpg); }
+
 .header {
   top: 3rem;
   width: 100%;
@@ -214,7 +234,7 @@ body {
     width: calc(3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
 
 .products__header {
-  width: 80%;
+  width: 90%;
   height: 30rem;
   margin: 0 auto;
   background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%);
@@ -223,12 +243,13 @@ body {
   .products__header--title {
     position: absolute;
     top: 8rem;
+    font-size: 5rem;
     margin-left: 10rem;
     color: #edefef; }
   .products__header--desc {
     position: absolute;
     width: 20%;
-    bottom: 8rem;
+    top: 12rem;
     margin-left: 10rem;
     color: #edefef; }
   .products__header--img {

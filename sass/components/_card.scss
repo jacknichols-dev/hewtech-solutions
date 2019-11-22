@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+    margin-top: 6rem;
+    perspective: 190rem;
+
+    &__side {
+        width: 100%;
+        box-shadow: $shadow;
+        border-radius: 2rem;
+        height: 55rem;
+
+
+        &--front {
+            background-color: $white;
+        }
+
+        &--back {
+
+        }
+
+    }
+
+    &__pic {
+        height: 40%;
+        border-radius: 2rem 2rem 0 0 ;
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+
+
+
+        &--1 {
+            background-image: linear-gradient(to left, rgba($blue-2,.5), rgba($green, .1)), url(/img/personal-alarm2.jpg);
+        }
+    }
+}
