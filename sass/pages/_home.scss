@@ -17,3 +17,8 @@
     background: $gradient-1;
     margin-top: 15rem;
 }
+
+#btnTop {
+    position: relative;
+    z-index: 1000;
+}

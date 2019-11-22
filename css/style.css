@@ -42,10 +42,10 @@ body {
     .card__side--front {
       background-color: #edefef; }
   .card__pic {
-    height: 40%;
+    height: 29%;
     border-radius: 2rem 2rem 0 0;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
     .card__pic--1 {
       background-image: linear-gradient(to left, rgba(5, 72, 127, 0.5), rgba(102, 198, 26, 0.1)), url(/img/personal-alarm2.jpg); }
@@ -106,6 +106,16 @@ body {
   .contact__number {
     letter-spacing: .2rem;
     font-size: large; }
+
+.btn-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 7rem;
+  color: #0460ba;
+  font-size: 4rem; }
+
+.fas {
+  display: none; }
 
 .header-scrolled {
   display: none;
@@ -278,6 +288,10 @@ body {
   width: 100%;
   background: linear-gradient(to bottom, transparent, rgba(4, 139, 186, 0.3));
   margin-top: 15rem; }
+
+#btnTop {
+  position: relative;
+  z-index: 1000; }
 
 .products {
   position: relative; }

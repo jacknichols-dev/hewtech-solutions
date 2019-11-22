@@ -1,26 +1,36 @@
 // NAV BAR SCROLL
 var nav = document.getElementById('navBar');
+var logo = document.querySelector('.header__logo');
+var logoScrolled = document.querySelector('.header-scrolled__logo');
+var list = document.querySelector('.header__list');
+var listScrolled = document.querySelector('.header-scrolled__list');
+var social = document.querySelector('.social');
+var topBtn = document.querySelector('.btn-top');
+
 
 window.addEventListener('scroll', function (e) {
-    var nav = document.getElementById('navBar');
     if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
             nav.classList.add('header-scrolled');
             nav.classList.remove('header');
-            document.querySelector('.header__logo').style.display = 'none';
-            document.querySelector('.header-scrolled__logo').style.display = 'block';
-            document.querySelector('.header__list').style.display = 'none';
-            document.querySelector('.header-scrolled__list').style.display = 'block';
-            document.querySelector('.social').style.top = '22px';
+            logo.style.display = 'none';
+            logoScrolled.style.display = 'block';
+            list.style.display = 'none';
+            listScrolled.style.display = 'block';
+            social.style.top = '22px';
+            topBtn.style.display = 'block';
+
 
 
         } else {
             nav.classList.add('header');
             nav.classList.remove('header-scrolled');
-            document.querySelector('.header__logo').style.display = 'block';
-            document.querySelector('.header-scrolled__logo').style.display = 'none';
-            document.querySelector('.header__list').style.display = 'block';
-            document.querySelector('.header-scrolled__list').style.display = 'none';
-            document.querySelector('.social').style.top = '30px';
-
+            logo.style.display = 'block';
+            logoScrolled.style.display = 'none';
+            list.style.display = 'block';
+            listScrolled.style.display = 'none';
+            social.style.top = '30px';
+            topBtn.style.display = 'none';
         }
 });
+
+
