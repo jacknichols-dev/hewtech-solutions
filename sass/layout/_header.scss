@@ -4,21 +4,11 @@
     top: 3rem;
     width: 100%;
     background-color:transparent;
-    height: 5rem;
-
-    .scrolled {
-        display: block;
-        position: fixed;
-        top: 0;
-        background-color: $blue-2;
-        height: 8.5rem;
-        box-shadow: $shadow;
-        z-index: 50;
-    }
-
+    height: 7rem;
+ 
 
     &__logo {
-        
+        display: block;
         position: fixed;
         width:22rem;
         top: 2.2rem;
@@ -26,6 +16,7 @@
     }
 
     &__list {
+        display: block;
         position: fixed;
         top: 2.5rem;
         left: 50%;
@@ -103,28 +94,29 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:$blue-2;
+    background-color:rgba($blue-2, .95);
     box-shadow: $shadow;
     z-index: 10;
-    height: 9rem;
+    height: 7rem;
     animation: navAppear .5s;
 
     &__logo {
-        
+        display: none;
         position: fixed;
-        width: 22rem;
-        top: 2.2rem;
-        left: 5rem;
+        width:22rem;
+        top: 1.6rem;
+        left: 7rem;
     }
 
     &__list {
+        display: none;
         position: fixed;
-        top: 2.5rem;
+        top: 1.6rem;
         left: 50%;
+        font-size: 1.4rem;
         transform: translateX(-50%);
         list-style: none;
         font-weight: 600;
-        z-index: 500;
     }
 
     &__item {
@@ -142,28 +134,63 @@
             color: $green;
         }
     }
-}
 
+    // SOCIAL MEDIA LINKS
 
-
-.contact-scrolled {
-    position: fixed;
-    top: 1rem; 
-    right: 5rem;
-    color: $white;
-    line-height: 1.7;
-    text-align: center;
-    z-index: 70;
-
-    &__title {
-        font-size: 1.4rem;
+    .social {
+        position: fixed;
+        top: 3rem;
+        right: 27rem;
+        z-index: 100;
+    
+        &__icon {
+            margin-right: 4rem;
+            
+            &--fb {
+                width:2rem;
+                height:2rem;
+                transform: translateY(-.15rem);
+                
+            }
+    
+            &--twitter {
+                width:2.3rem;
+                height:2.3rem;
+    
+            }
+        }
+    
     }
 
-    &__number {
-        letter-spacing: .2rem;
-        font-size: large;
+    .social-scrolled {
+        display: none;
+        position: fixed;
+        top: 2.5rem;
+        right: 27rem;
+        z-index: -100;
+
+    
+        &__icon {
+            margin-right: 4rem;
+            
+            &--fb {
+                width:1.8rem;
+                height:1.8rem;
+                transform: translateY(-.15rem);
+                
+            }
+    
+            &--twitter {
+                width: 2.1rem;
+                height: 2.1rem;
+            }
+        }
+    
     }
+
+
 }
+
 
 .hero {
 
@@ -205,7 +232,7 @@
 
        &:link,
        &:visited {
-        background: linear-gradient(to top left, $blue, $blue-light);
+        background: $gradient;
        }
     }
 

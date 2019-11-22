@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hewtech Solutions</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
 </head>
@@ -16,13 +17,21 @@
     <section id="navBar">
         <div class="header">
             <a href="#"><img src="img/logo.png" alt="logo" class="header__logo"></a>
-      
+            <a href="#"><img src="img/hewtech-logo-scrolled.png" alt="logo" class="header-scrolled__logo"></a>
+
         <ul class="header__list">
             <li class="header__item"><a href="#" class="header__link">Home</a></li>
             <li class="header__item"><a href="#" class="header__link">Products</a></li>
             <li class="header__item"><a href="#" class="header__link">Services</a></li>
-            <li class="header__item"><a href="#" class="header__link">About</a></li>
-          </ul>
+            <li class="header__item"><a href="#" class="header__link ">About</a></li>
+        </ul>
+            <!--SCROLLED-->
+        <ul class="header-scrolled__list">
+            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Home</a></li>
+            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Products</a></li>
+            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Services</a></li>
+            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link ">About</a></li>
+        </ul>
         </div>
         <div class="social">
             <a href="#" class="social__link"><img src="img/fb-white..svg" alt="facebook" class="social__icon social__icon--fb"></a>
@@ -34,29 +43,11 @@
             <h4 class="contact__number">07771 119910</h4>
         </div>
 
-        <!--Scrolled nav-->
 
-        <div class="header-scrolled">
-            <a href="#"><img src="img/hewtech-logo-scrolled.png" alt="logo" class="header-scrolled__logo"></a>
-        
-        <!-- <ul class="header-scrolled__list">
-            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Home</a></li>
-            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Products</a></li>
-            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">Services</a></li>
-            <li class="header-scrolled__item"><a href="#" class="header-scrolled__link">About</a></li>
-          </ul> -->
-        </div>
-
-        <div class="contact-scrolled">
-            <p class="contact-scrolled__title">Contact</p>
-            <h4 class="contact-scrolled__number">07771 119910</h4>
-        </div>
     </section>
 
-
- 
-
     <!-- HERO -->
+
     <section id="main">
         <div class="hero">
             <h3 class="hero__title">We serve to <span>Protect</span></h3>
@@ -70,14 +61,70 @@
         </div>
     </section>
 
-    <!--Product section-->
+    <!-- PRODUCTS -->
 
     <section id="productSection">
         <div class="products">
-            <div class="products__bg">&nbsp;</div>
+            <div class="products__header header-sub">
+                <h4 class="products__header--title">Products</h4>
+                <p class="products__header--desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime tempora fugit officia aut, dicta, veniam totam
+                    id cupiditate mollitia hic sint qui sunt aliquid.
+                </p>
+                <div class="products__header--img">&nbsp;</div>
+            </div>
+
+            <!-- PRODUCT CARDS -->
+
+            <div class="row">
+                    <div class="col-1-of-3">
+                      <div class="card">
+                          <div class="card-side card-side--front">
+                              <div class="card__pic">
+                                  &nbsp;
+                              </div>
+                              <h4 class="card__heading">Personal Alarms</h4>
+                              <div class="card__details">
+                                  <ul>
+                                      <li>Lorem ipsum dolor sit.</li>
+                                      <li>Lorem ipsum dolor sit.</li>
+                                      <li>Lorem ipsum dolor sit.</li>
+                                      <li>Lorem ipsum dolor sit.</li>
+                                      <li>Lorem ipsum dolor sit.</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-1-of-3">
+                      col 1 of 3
+                    </div>
+                    <div class="col-1-of-3">
+                      col 1 of 3
+                    </div>
+                </div>
+            
+
+
         </div>
     </section>
 
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+    <!--
+    <div class="row">
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+    </div>
+    -->

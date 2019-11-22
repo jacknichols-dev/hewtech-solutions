@@ -1,0 +1,39 @@
+.products {
+
+
+    &__header {
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+        background: $gradient;
+        border-radius: 2rem;
+        box-shadow: $shadow-1;
+
+
+        &--title {
+            position: absolute;
+            top: 8rem;
+            margin-left: 10rem;
+            color: $white;
+        }
+
+        &--desc {
+            position: absolute;
+            width: 20%;
+            bottom: 8rem;
+            margin-left: 10rem;
+            color: $white;
+        }
+
+        &--img {
+        background-image: url(/img/home-alarm.jpg);
+         background-size: cover;
+         background-position: center;
+         border-radius: 0 2rem 2rem 0;
+         width: 50%;
+         height: 100%;
+         float: right;
+         top: 0;
+        }
+    }
+}
