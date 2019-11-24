@@ -14,6 +14,8 @@
         width:22rem;
         top: 2.2rem;
         left: 5rem;
+        -webkit-animation: logo 1.1s both;
+	    animation: logo .8s both;
     }
 
     &__list {
@@ -62,12 +64,14 @@
         }
 
         &--twitter {
-            width:2.3rem;
-            height:2.3rem;
+            width:2.1rem;
+            height:2.1rem;
 
         }
     }
 }
+
+//Contact
 
 .contact {
     position: fixed;
@@ -100,7 +104,7 @@
     display: none;
 }
 
-// Scrolled nav
+/*************** SCROLLED ****************/
 
 .header-scrolled {
     display: none;
@@ -119,6 +123,8 @@
         width:22rem;
         top: 1.6rem;
         left: 7rem;
+        -webkit-animation: logo 1.1s both;
+	    animation: logo .8s both;
     }
 
     &__list {
@@ -148,32 +154,8 @@
         }
     }
 
-    // SOCIAL MEDIA LINKS
+    // SCROLLED SOCIAL
 
-    .social {
-        position: fixed;
-        top: 3rem;
-        right: 27rem;
-        z-index: 100;
-    
-        &__icon {
-            margin-right: 4rem;
-            
-            &--fb {
-                width:2rem;
-                height:2rem;
-                transform: translateY(-.15rem);
-                
-            }
-    
-            &--twitter {
-                width:2.3rem;
-                height:2.3rem;
-    
-            }
-        }
-    
-    }
 
     .social-scrolled {
         display: none;
@@ -190,6 +172,8 @@
                 width:1.8rem;
                 height:1.8rem;
                 transform: translateY(-.15rem);
+
+             
                 
             }
     
@@ -242,10 +226,23 @@
         cursor: pointer;
         text-decoration: none;
         color: $white;
+        transition: all .15s;
 
        &:link,
        &:visited {
         background: $gradient;
+       }
+
+       &:hover {
+        background: $gradient-2;
+        transform: translateY(-.5rem) scale(1.01);
+        box-shadow: 0 .3rem 1rem rgba($black, .3);
+       }
+
+       &:active {
+        box-shadow:inset 0 .3rem 1rem rgba($black, .9);
+        box-shadow: 0 .1rem .3rem rgba($black, .7);
+        transform: translateY(0) scale(1);
        }
     }
 
