@@ -70,8 +70,13 @@ body {
   position: relative;
   margin-top: 10rem;
   overflow: hidden;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
-  border-radius: 2rem; }
+  width: 100%;
+  box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  transition: all .2s ease; }
+  .card:hover {
+    transform: translateY(-2rem) scale(1.02);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
   .card:hover .card__details-hidden {
     opacity: 1;
     transform: translateY(0); }
@@ -88,6 +93,10 @@ body {
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
     .card__pic--1 {
       background-image: linear-gradient(to left, rgba(5, 72, 127, 0.5), rgba(102, 198, 26, 0.1)), url(/img/personal-alarm2.jpg); }
+    .card__pic--2 {
+      background-image: linear-gradient(to left, rgba(148, 214, 97, 0.5), rgba(4, 96, 186, 0.1)), url(/img/home-alarm2.jpg); }
+    .card__pic--3 {
+      background-image: linear-gradient(to left, rgba(4, 96, 186, 0.5), rgba(148, 214, 97, 0.5)), url(/img/workplace-alarm.jpg); }
   .card__heading {
     margin-top: 2rem;
     font-size: 2.2rem;
@@ -105,19 +114,26 @@ body {
   .card__details-hidden {
     opacity: 1;
     position: absolute;
-    background-color: #0460ba;
     width: 100%;
     height: 50%;
     bottom: 0;
-    color: #edefef;
     border-radius: 0 0 2rem 2rem;
     transform: translateY(100%);
     transition: all .3s ease; }
+    .card__details-hidden--1 {
+      background-color: #0460ba;
+      color: #edefef; }
+    .card__details-hidden--2 {
+      background-color: #66c61a;
+      color: #edefef; }
+    .card__details-hidden--3 {
+      background-color: #05487f;
+      color: #edefef; }
     .card__details-hidden--heading {
       font-size: 1.8rem;
       margin-top: 3rem;
       text-align: center;
-      color: #66c61a; }
+      color: #edefef; }
     .card__details-hidden--desc {
       position: absolute;
       top: 50%;
@@ -311,10 +327,10 @@ body {
   z-index: -100; }
 
 .row {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 6rem; }
   .row::after {
     content: '';
     display: table;
@@ -322,17 +338,17 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 3rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 3rem) / 2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 3rem) / 3); }
+    width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 3rem) / 4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .products__header {
   width: 90%;
