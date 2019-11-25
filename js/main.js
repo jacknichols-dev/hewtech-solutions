@@ -19,8 +19,6 @@ window.addEventListener('scroll', function (e) {
             social.style.top = '22px';
             topBtn.style.display = 'block';
 
-
-
         } else {
             nav.classList.add('header');
             nav.classList.remove('header-scrolled');
@@ -34,18 +32,29 @@ window.addEventListener('scroll', function (e) {
 });
 
 
-$(".header").on("click", function(e) {
-    if (this.hash !== "") {
-      e.preventDefault();
-  
-      const hash = this.hash;
-  
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        650
-      );
-    }
-  });
-  
+$(".header a").on("click", function(e) {
+  if (this.hash !== "") {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      750
+    );
+  }
+});
+
+/*** 
+********** click to scroll to top button ***********
+***/
+
+
+$("#btnTop").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#main").offset().top
+  }, 600);
+});
+

@@ -68,23 +68,80 @@ body {
 
 .card {
   position: relative;
-  margin-top: 6rem;
-  perspective: 190rem; }
+  margin-top: 10rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem; }
+  .card:hover .card__details-hidden {
+    opacity: 1;
+    transform: translateY(0); }
   .card__side {
     width: 100%;
-    box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3);
-    border-radius: 2rem;
     height: 55rem; }
     .card__side--front {
       background-color: #edefef; }
   .card__pic {
-    height: 29%;
+    height: 39%;
     border-radius: 2rem 2rem 0 0;
     background-size: cover;
     background-position: top;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
     .card__pic--1 {
       background-image: linear-gradient(to left, rgba(5, 72, 127, 0.5), rgba(102, 198, 26, 0.1)), url(/img/personal-alarm2.jpg); }
+  .card__heading {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center; }
+  .card__details ul {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style-type: none; }
+  .card__details li {
+    color: #05487f; }
+    .card__details li:not(:last-child) {
+      margin-bottom: 2rem; }
+  .card__details-hidden {
+    opacity: 1;
+    position: absolute;
+    background-color: #0460ba;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    color: #edefef;
+    border-radius: 0 0 2rem 2rem;
+    transform: translateY(100%);
+    transition: all .3s ease; }
+    .card__details-hidden--heading {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      text-align: center;
+      color: #66c61a; }
+    .card__details-hidden--desc {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      color: #edefef;
+      font-size: 1.4rem;
+      text-align: center;
+      padding-bottom: 3rem; }
+    .card__details-hidden--btn, .card__details-hidden:link {
+      position: absolute;
+      left: 50%;
+      bottom: 11%;
+      transform: translate(-50%, 0);
+      color: #0460ba;
+      text-decoration: none;
+      background-color: #edefef;
+      padding: 1rem 2.5rem;
+      box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3);
+      border-radius: .5rem;
+      font-weight: bold; }
+      .card__details-hidden--btn:hover, .card__details-hidden--btn:focus, .card__details-hidden:link:hover, .card__details-hidden:link:focus {
+        color: #66c61a; }
 
 .header {
   top: 3rem;
@@ -98,7 +155,7 @@ body {
     top: 2.2rem;
     left: 5rem;
     -webkit-animation: logo 1.1s both;
-    animation: logo .8s both; }
+    animation: logo .4s both; }
   .header__list {
     display: block;
     position: fixed;
@@ -161,7 +218,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(5, 72, 127, 0.95);
+  background-color: rgba(5, 72, 127, 0.89);
   box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   height: 7rem;
@@ -171,9 +228,7 @@ body {
     position: fixed;
     width: 22rem;
     top: 1.6rem;
-    left: 7rem;
-    -webkit-animation: logo 1.1s both;
-    animation: logo .8s both; }
+    left: 7rem; }
   .header-scrolled__list {
     display: none;
     position: fixed;
@@ -236,12 +291,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #edefef;
-  transition: all .15s; }
+  transition: all .2s; }
   .hero__btn:link, .hero__btn:visited {
     background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%); }
   .hero__btn:hover {
     background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
-    transform: translateY(-0.5rem) scale(1.01);
+    transform: translateY(-0.2rem) scale(1.005);
     box-shadow: 0 0.3rem 1rem rgba(33, 33, 33, 0.3); }
   .hero__btn:active {
     box-shadow: inset 0 0.3rem 1rem rgba(33, 33, 33, 0.9);
@@ -285,7 +340,7 @@ body {
   margin: 0 auto;
   background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%);
   border-radius: 2rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.3); }
   .products__header--title {
     position: absolute;
     top: 8rem;
@@ -320,14 +375,18 @@ body {
 
 #productSection {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: linear-gradient(to bottom, transparent, rgba(4, 139, 186, 0.3));
-  margin-top: 15rem; }
+  padding: 16rem; }
 
 #btnTop {
   position: relative;
   z-index: 1000; }
+
+#services {
+  height: 100vh;
+  background-color: linear-gradient(to bottom, transparent, rgba(4, 139, 186, 0.3)); }
 
 .products {
   position: relative; }

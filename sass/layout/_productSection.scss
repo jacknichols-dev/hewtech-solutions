@@ -1,13 +1,12 @@
 .products {
 
-
     &__header {
         width: 90%;
         height: 30rem;
         margin: 0 auto;
         background: $gradient;
         border-radius: 2rem;
-        box-shadow: $shadow-1;
+        box-shadow: $shadow;
 
 
         &--title {

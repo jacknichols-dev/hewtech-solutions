@@ -15,7 +15,7 @@
         top: 2.2rem;
         left: 5rem;
         -webkit-animation: logo 1.1s both;
-	    animation: logo .8s both;
+	    animation: logo .4s both;
     }
 
     &__list {
@@ -111,7 +111,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:rgba($blue-2, .95);
+    background-color:rgba($blue-2, .89);
     box-shadow: $shadow;
     z-index: 10;
     height: 7rem;
@@ -123,8 +123,6 @@
         width:22rem;
         top: 1.6rem;
         left: 7rem;
-        -webkit-animation: logo 1.1s both;
-	    animation: logo .8s both;
     }
 
     &__list {
@@ -226,7 +224,7 @@
         cursor: pointer;
         text-decoration: none;
         color: $white;
-        transition: all .15s;
+        transition: all .2s;
 
        &:link,
        &:visited {
@@ -235,7 +233,7 @@
 
        &:hover {
         background: $gradient-2;
-        transform: translateY(-.5rem) scale(1.01);
+        transform: translateY(-.2rem) scale(1.005);
         box-shadow: 0 .3rem 1rem rgba($black, .3);
        }
 

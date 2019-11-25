@@ -1,12 +1,18 @@
 .card {
     position: relative;
-    margin-top: 6rem;
-    perspective: 190rem;
+    margin-top: 10rem;
+    overflow: hidden;
+    box-shadow: $shadow-1;
+    border-radius: 2rem;
+
+    &:hover .card__details-hidden {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     &__side {
         width: 100%;
-        box-shadow: $shadow;
-        border-radius: 2rem;
+
         height: 55rem;
 
 
@@ -14,14 +20,10 @@
             background-color: $white;
         }
 
-        &--back {
-
-        }
-
     }
 
     &__pic {
-        height: 29%;
+        height: 39%;
         border-radius: 2rem 2rem 0 0 ;
         background-size: cover;
         background-position: top;
@@ -32,5 +34,80 @@
         &--1 {
             background-image: linear-gradient(to left, rgba($blue-2,.5), rgba($green, .1)), url(/img/personal-alarm2.jpg);
         }
+    }
+
+    &__heading {
+        margin-top: 2rem;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    &__details ul{
+        margin-top: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+        list-style-type: none;
+     }
+     &__details li {
+
+        color: $blue-2;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__details-hidden {
+        opacity: 1;
+        position: absolute;
+        background-color: $blue;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        color: $white;
+        border-radius: 0 0 2rem 2rem;
+        transform: translateY(100%);
+        transition: all .3s ease;
+
+
+        &--heading {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            text-align: center;
+            color: $green;
+        }
+
+
+        &--desc {
+            @include center;
+            width: 80%;
+            color: $white;
+            font-size: 1.4rem;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        &--btn,
+        &:link {
+            position: absolute;
+            left: 50%;
+            bottom: 11%;
+            transform: translate(-50%, 0);
+            color: $blue;
+            text-decoration: none;
+            background-color: $white;
+            padding: 1rem 2.5rem;
+            box-shadow: $shadow;
+            border-radius: .5rem;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                color: $green;
+            }
+        }
+
+      
     }
 }
