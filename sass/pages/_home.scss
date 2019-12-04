@@ -14,7 +14,6 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background: $gradient-1;
     padding: 16rem;
 }
 
@@ -23,7 +22,7 @@
     z-index: 1000;
 }
 
-#services {
-    height: 100vh;
-    background-color: $gradient-1;
+#servicesSection {
+    height: 200vh;
+    z-index: -1000;
 }

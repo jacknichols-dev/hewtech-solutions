@@ -22,14 +22,14 @@
         <ul class="header__list">
             <li class="header__item"><a href="#main" class="header__link"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li class="header__item"><a href="#productSection" class="header__link"><i class="fab fa-product-hunt"></i>&nbsp;&nbsp;Products</a></li>
-            <li class="header__item"><a href="#services" class="header__link"><i class="fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
+            <li class="header__item"><a href="#servicesSection" class="header__link"><i class="fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
             <li class="header__item"><a href="#" class="header__link "><i class="fas fa-info"></i>&nbsp;&nbsp;About</a></li>
         </ul>
             <!--SCROLLED-->
         <ul class="header-scrolled__list">
             <li class="header-scrolled__item"><a href="#main" class="header-scrolled__link"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li class="header-scrolled__item"><a href="#productSection" class="header-scrolled__link"><i class="fab fa-product-hunt"></i>&nbsp;&nbsp;Products</a></li>
-            <li class="header-scrolled__item"><a href="#services" class="header-scrolled__link"><i class="fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
+            <li class="header-scrolled__item"><a href="#servicesSection" class="header-scrolled__link"><i class="fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
             <li class="header-scrolled__item"><a href="#" class="header-scrolled__link "><i class="fas fa-info"></i>&nbsp;&nbsp;About</a></li>
         </ul>
         </div>
@@ -54,9 +54,22 @@
 
     <section id="main">
         <div class="hero">
-            <h3 class="hero__title">We serve to <span>Protect</span></h3>
+            <div class="rotating-text">
+                <h3 class="rotating-text--title">We serve to</h3>
+                <p> 
+                    <span class="word protect">protect.</span>
+                    <span class="word secure">secure.</span>
+                    <span class="word cover">cover.</span>
+                    <span class="word safeguard">safeguard.</span>
+                    <span class="word keep">keep&nbsp;you&nbsp;safe.</span>
+                </p>
+            </div>
             <div class="hero__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti sint dicta fugiat molestias quia, laudantium explicabo nisi hic officiis delectus tenetur ad eum deleniti rem qui, quis molestiae impedit voluptatem voluptas? Temporibus voluptatum iste blanditiis placeat quasi recusandae aliquam magni omnis, sequi corrupti dicta, quisquam, esse eveniet doloremque aperiam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus 
+                repudiandae voluptatibus laudantium fugit consectetur vel saepe aliquam corporis 
+                illo nemo officia itaque, provident est eum molestias delectus. Repellendus 
+                quia harum dignissimos in nisi saepe nostrum adipisci dicta magnam? Illum, fugit 
+                quos tenetur quaerat inventore nemo cumque soluta eum laboriosam.            
             </div>
             <a href="#" class="hero__btn">Our services</a>
         </div>
@@ -72,9 +85,7 @@
             <div class="products__header header-sub">
                 <h4 class="products__header--title">Products</h4>
                 <p class="products__header--desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime tempora fugit officia aut, dicta, veniam totam
-                    id cupiditate mollitia hic sint qui sunt aliquid.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates exercitationem aspernatur dolorem impedit ad, consequatur laboriosam cupiditate dolorum totam unde magni consequuntur rerum minima assumenda ea. Iure possimus non illum maiores, modi magnam, facilis sed ex obcaecati quo nobis rerum! Incidunt nisi accusantium illum obcaecati nam eligendi eos animi exercitationem temporibus aliquam deleniti omnis, iure, ad perferendis eius modi beatae culpa. Ducimus, corrupti minima ex laudantium atque ratione rerum?
                 </p>
                 <div class="products__header--img">&nbsp;</div>
             </div>
@@ -181,20 +192,72 @@
                               </div>
                           </div>
                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+       <!-- SERVICES SECTION -->
+
+    <section id="servicesSection">
+        <div class="services">
+                <div class="services__header">
+                    <div class="services__header--bg"></div>
+                        <div class="services__header--title">Our services <i class="far fa-check-square"></i></div>
+                        <div class="services__header--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                             voluptatum harum maiores voluptates quibusdam exercitationem, magni iusto similique amet officiis,
+                              quia eius consequuntur.
+                        </div>
+                        <a href="#" class="services__header--btn">Contact us</a>
+                    
+                    <div class="services__header--box">
+                        <h4>Want the extra security?</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, fugiat.</p>
+                        <div class="row">
+                            <div class="col-1-of-3">
+                              <div class="service-cards">
+                                <div class="service-cards__side service-cards__side--front">
+                                    <div class="service-cards__pic service-cards__pic--1">
+                                        <i class="service-cards__pic--icon fas fa-exclamation-triangle"></i>  <!--********** Icon 1  ************-->
+                                    </div>
+                                    <h4 class="service-cards__heading">
+                                        <span class="service-cards__heading-span service-cards__heading-span--1">How we can help</span>
+                                    </h4>
+                                    <div class="service-cards__details">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Suscipit voluptate culpa, iste nostrum omnis ipsum vitae corrupti. 
+                                            Magni suscipit est odit ipsa nostrum veniam nobis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-card__side service-card__side--back service-card__side--back-1">
+                                    <div class="service-card__cta">
+                                        <div class="service-card__price-box">
+                                            <p class="service-card__price-from">From</p>
+                                            <p class="service-card__price-value">£59</p>
+                                        </div>
+                                        <a href="#popup" class="btn btn--white">View ranges</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-1-of-3">
+                              col 1 of 3
+                            </div>
+                            <div class="col-1-of-3">
+                              col 1 of 3
+                            </div>
+                        </div>
+                    
                     </div>
                 </div>
         </div>
     </section>
 
-    <section id="services">
-        
-    </section>
-
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
     </script>
 
     <script src="js/main.js"></script>

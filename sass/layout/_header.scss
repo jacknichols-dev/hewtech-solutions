@@ -21,22 +21,23 @@
     &__list {
         display: block;
         position: fixed;
-        top: 2.5rem;
+        top: 4rem;
         left: 50%;
         transform: translateX(-50%);
         list-style: none;
         font-weight: 600;
+
     }
 
     &__item {
-        padding: 1rem 2.5rem;
+        margin-right: 2rem;
         display: inline-block;
-  
     }
 
     &__link {
         text-decoration: none;
         color: $blue-light;
+        padding: 1rem 2.5rem;
 
         &:hover, 
         &:focus {
@@ -188,31 +189,15 @@
 
 
 .hero {
-
-    &__title {
-        position: absolute;
-        font-family: $font-2;
-        top: 25%;
-        left: 15%;
-        font-size: 4rem;
-
-        
-    }
-
-    &__title span {
-        color: $green;
-        font-size: 7rem;
-        font-weight: bold;
-        display: block;
-        margin-top: 3rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__para {
         position: absolute;
-        top: 39%;
+        top: 40%;
         left: 15%;
-        width: 45rem;
-
+        width: 50rem;
     } 
 
     &__btn {
@@ -252,3 +237,68 @@
         z-index: -100;
     }
 }
+
+// Rotating text
+
+.rotating-text {
+    position: absolute;
+    top: 12.5%;
+    left: 15%;
+    line-height: 5;
+    font-family: $font-2;
+    font-weight: 600;
+    font-size: 6rem;
+    color: white;
+    transform: translateX(-80px);
+    width: 50rem;
+    margin-left: 8rem;
+
+    &--title {
+        color: $blue;
+        font-size: 6rem;
+    }
+  }
+  .rotating-text p {
+    position: absolute;
+    margin: 0;
+    top:20%;
+  }
+  .rotating-text p .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+  }
+  .rotating-text p .word .letter {
+    transform-origin: center center 2.5rem;
+  }
+  .rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+  .rotating-text p .word .letter.in {
+    transition: 0.38s ease;
+  }
+  .rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .protect {
+    color: $blue-light;
+  }
+  
+  .secure {
+    color: $green-light;
+  }
+  
+  .cover {
+    color:  $blue;
+  }
+  
+  .safeguard {
+    color:  $blue-2;
+  }
+  
+  .keep{
+    color: $green;
+  }
+

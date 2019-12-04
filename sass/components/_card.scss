@@ -5,7 +5,7 @@
     width: 100%;
     box-shadow: $shadow;
     border-radius: 2rem;
-    transition: all .2s ease;
+    transition: all .3s ease;
 
     &:hover {
         transform: translateY(-2rem) scale(1.02);
@@ -20,11 +20,11 @@
     &__side {
         width: 100%;
 
-        height: 55rem;
+        height: 60rem;
 
 
         &--front {
-            background-color: $white;
+            background: $gradient-1;
         }
 
     }
@@ -58,16 +58,21 @@
     }
 
     &__details ul{
-        margin-top: 4rem;
-        text-align: center;
+        margin: 4rem 0;
         font-size: 1.5rem;
         list-style-type: none;
+        
+
      }
      &__details li {
-
+        margin: 0 auto;
+        text-align: center;
         color: $blue-2;
+        padding: 1.5rem 2.5rem;
+
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            border-bottom: solid .1rem rgba($blue, .4);
+            width: 70%;
         }
     }
 
@@ -116,7 +121,7 @@
             position: absolute;
             left: 50%;
             bottom: 11%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 0) scale(1);
             color: $blue;
             text-decoration: none;
             background-color: $white;
@@ -124,10 +129,12 @@
             box-shadow: $shadow;
             border-radius: .5rem;
             font-weight: bold;
+            transition: all .1s ease;
 
             &:hover,
             &:focus {
                 color: $green;
+                transform:translate(-50%, 0) scale(1.05);
             }
         }
 
