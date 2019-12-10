@@ -10,3 +10,8 @@ body {
   line-height: 1.8rem;
   font-stretch: semi-condensed;
 }
+
+::selection {
+  color: $green;
+  background-color: $blue;
+}
