@@ -1,91 +1,182 @@
 .services {
-
-
-    &__header {
-
-        
-      
-        &--bg {
-            position: absolute;
-            width: 100%;
-            height: 85%;
-            background-image: linear-gradient(to left, rgba($blue-2, 1), rgba(17, 2, 100, 0.6), rgba($green, .3)), url(/img/hewtechservicephoto.jpg);
-            background-size: cover;
-        }
-
-        &--title {
-            position: absolute;
-            right: 15%;
-            padding-top: 17rem;
-            text-transform: capitalize;
-            width: 45rem;
-            color: white;
-            font-size: 6rem;
-            font-weight: 600;
-            font-family: $font-2;
-            color: $blue-light;
-        }
-
-        &--desc {
-            position: absolute;
-            right: 15%;
-            padding-top: 25rem;
-            width: 45rem;
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 100;
-            letter-spacing: .1rem;
-            line-height: 1.2;
-        }
-
-        &--btn {
-            position: absolute;
-            right: 26%;
-            margin-top: 39rem;
-            background-color: $blue-light; 
-            width: 18rem;
-            padding: 1.5rem 2rem;
-            box-shadow: $shadow;
-            text-align: center;
-            font-weight: 600;
-            color: $white;
-            text-decoration: none;
-            border-radius: .3rem;
-            cursor: pointer;
-            transition: all .2s ease;
-
-            &:hover,
-            &:active {
-                color: $green;
-                box-shadow: $shadow-1;
-                transform: scale(1.05);
-            }
-        }
-
-        &--box {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 50rem;
-            width: 128rem;
-            background-color: white;
-            height: 75rem;
-            box-shadow: $shadow-2;
-            border-radius: .7rem;
-
-            & h4 {
-                font-size: 2.6rem;
-                text-align: center;
-                margin-top: 4rem;
-            }
-
-            & p {
-                text-align: center;
-                margin-top: 2rem;
-                color: $blue-light;
-
-            }
-        }
-
+  &__header {
+    &--bg {
+      position: absolute;
+      width: 100%;
+      height: 85%;
+      background-image: linear-gradient(
+          to left,
+          rgba($blue-2, 1),
+          rgba(17, 2, 100, 0.6),
+          rgba($green, 0.3)
+        ),
+        url(/img/hewtechservicephoto.jpg);
+      background-size: cover;
     }
+
+    &--title {
+      position: absolute;
+      right: 15%;
+      padding-top: 17rem;
+      text-transform: capitalize;
+      width: 45rem;
+      color: white;
+      font-size: 6rem;
+      font-weight: 600;
+      font-family: $font-2;
+      color: $blue-light;
+    }
+
+    &--desc {
+      position: absolute;
+      right: 15%;
+      padding-top: 25rem;
+      width: 45rem;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 100;
+      letter-spacing: 0.1rem;
+      line-height: 1.2;
+    }
+
+    &--btn {
+      position: absolute;
+      right: 26%;
+      margin-top: 39rem;
+      background-color: $blue-light;
+      width: 18rem;
+      padding: 1.5rem 2rem;
+      box-shadow: $shadow;
+      text-align: center;
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:active {
+        color: $green;
+        box-shadow: $shadow-1;
+        transform: scale(1.05);
+      }
+    }
+
+    &--box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 50rem;
+      width: 128rem;
+      background-color: white;
+      height: 75rem;
+      box-shadow: $shadow-2;
+      border-radius: 0.7rem;
+
+      & h4 {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      & p {
+        text-align: center;
+        margin-top: 2rem;
+        color: $blue-light;
+      }
+    }
+  }
+
+  //********* REVIEWS *********
+
+  &__reviews-box {
+    margin: 15rem auto 0 auto;
+    width: 100%;
+    height: 60rem;
+    background-color: $blue;
+    box-shadow: $shadow-1;
+  }
+
+  &__reviews-green {
+    margin: 0 auto;
+    transform: translateY(50%);
+    height: 32rem;
+    width: 17rem;
+    background-color: $green;
+    border-radius: 1rem;
+  }
+
+  &__reviews-pic {
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    width: 23rem;
+    height: 27rem;
+    background-color: $white;
+    padding: 2rem;
+
+    &--photo {
+      width: 100%;
+      height: 80%;
+      background-image: url(/img/user1.jpg);
+      background-size: cover;
+    }
+
+    &--name {
+      font-size: 1.5rem !important;
+      transform: translateY(-3rem);
+      color: $green-dark;
+    }
+
+    &--address {
+      font-size: 1.3rem !important;
+      transform: translateY(-5rem);
+      color: $green-dark !important;
+    }
+  }
+
+  &__reviews-title {
+    position: relative;
+    height: 20rem;
+    color: $white;
+    text-align: left;
+    transform: translateY(100%);
+  }
+
+  &__reviews-prg {
+    height: 20rem;
+    color: $white !important;
+    transform: translateY(50%);
+    width: 60rem;
+    text-align: center;
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: 2rem;
+      left: -10rem;
+      font-family: sans-serif;
+      font-size: 20rem;
+      color: rgba($black, 0.2);
+    }
+    &::after {
+      content: "\201E";
+      position: absolute;
+      top: 2rem;
+      right: -10rem;
+      font-family: sans-serif;
+      font-size: 20rem;
+      color: rgba($black, 0.2);
+    }
+  }
+
+  &__reviews-toggle-container {
+      position: absolute;
+      left: 51%;
+  }
+
+  &__reviews-toggle {
+    margin: 2rem 3rem;
+  }
 }

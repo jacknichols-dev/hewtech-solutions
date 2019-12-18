@@ -202,9 +202,9 @@ body {
       .service-cards__side--back-1 {
         background: linear-gradient(to right bottom, rgba(13, 136, 204, 0.85), rgba(5, 72, 127, 0.85)); }
       .service-cards__side--back-2 {
-        background: linear-gradient(to right bottom, rgba(148, 214, 97, 0.85), rgba(5, 72, 127, 0.85)); }
+        background: linear-gradient(to right bottom, rgba(5, 72, 127, 0.85), rgba(4, 96, 186, 0.85)); }
       .service-cards__side--back-3 {
-        background: linear-gradient(to right bottom, rgba(102, 198, 26, 0.85), rgba(148, 214, 97, 0.85)); }
+        background: linear-gradient(to right bottom, rgba(102, 198, 26, 0.85), rgba(40, 122, 91, 0.85)); }
   .service-cards:hover .service-cards__side--front {
     transform: rotateY(180deg); }
   .service-cards:hover .service-cards__side--back {
@@ -260,9 +260,9 @@ body {
     .service-cards__back-heading--1 {
       color: #05487f !important; }
     .service-cards__back-heading--2 {
-      color: #212121 !important; }
+      color: #94d661 !important; }
     .service-cards__back-heading--3 {
-      color: #edefef !important; }
+      color: #287a5b !important; }
   .service-cards__prg {
     color: white !important; }
   .service-cards__price-from {
@@ -598,7 +598,7 @@ body {
   color: white;
   font-size: 1.8rem;
   font-weight: 100;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 1.2; }
 
 .services__header--btn {
@@ -613,9 +613,9 @@ body {
   font-weight: 600;
   color: #edefef;
   text-decoration: none;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
-  transition: all .2s ease; }
+  transition: all 0.2s ease; }
   .services__header--btn:hover, .services__header--btn:active {
     color: #66c61a;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
@@ -630,7 +630,7 @@ body {
   background-color: white;
   height: 75rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
-  border-radius: .7rem; }
+  border-radius: 0.7rem; }
   .services__header--box h4 {
     font-size: 2.6rem;
     text-align: center;
@@ -639,6 +639,80 @@ body {
     text-align: center;
     margin-top: 2rem;
     color: #0d88cc; }
+
+.services__reviews-box {
+  margin: 15rem auto 0 auto;
+  width: 100%;
+  height: 60rem;
+  background-color: #0460ba;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+
+.services__reviews-green {
+  margin: 0 auto;
+  transform: translateY(50%);
+  height: 32rem;
+  width: 17rem;
+  background-color: #66c61a;
+  border-radius: 1rem; }
+
+.services__reviews-pic {
+  position: relative;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  width: 23rem;
+  height: 27rem;
+  background-color: #edefef;
+  padding: 2rem; }
+  .services__reviews-pic--photo {
+    width: 100%;
+    height: 80%;
+    background-image: url(/img/user1.jpg);
+    background-size: cover; }
+  .services__reviews-pic--name {
+    font-size: 1.5rem !important;
+    transform: translateY(-3rem);
+    color: #287a5b; }
+  .services__reviews-pic--address {
+    font-size: 1.3rem !important;
+    transform: translateY(-5rem);
+    color: #287a5b !important; }
+
+.services__reviews-title {
+  position: relative;
+  height: 20rem;
+  color: #edefef;
+  text-align: left;
+  transform: translateY(100%); }
+
+.services__reviews-prg {
+  height: 20rem;
+  color: #edefef !important;
+  transform: translateY(50%);
+  width: 60rem;
+  text-align: center; }
+  .services__reviews-prg::before {
+    content: "\201C";
+    position: absolute;
+    top: 2rem;
+    left: -10rem;
+    font-family: sans-serif;
+    font-size: 20rem;
+    color: rgba(33, 33, 33, 0.2); }
+  .services__reviews-prg::after {
+    content: "\201E";
+    position: absolute;
+    top: 2rem;
+    right: -10rem;
+    font-family: sans-serif;
+    font-size: 20rem;
+    color: rgba(33, 33, 33, 0.2); }
+
+.services__reviews-toggle-container {
+  position: absolute;
+  left: 51%; }
+
+.services__reviews-toggle {
+  margin: 2rem 3rem; }
 
 #navBar {
   display: block; }
@@ -661,8 +735,9 @@ body {
   z-index: 1000; }
 
 #servicesSection {
-  height: 200vh;
-  z-index: -1000; }
+  height: 250vh;
+  z-index: -1000;
+  background: linear-gradient(#0460ba 10%, #0d88cc); }
 
 .products {
   position: relative; }

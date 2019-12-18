@@ -36,15 +36,15 @@
       &-2 {
         background: linear-gradient(
             to right bottom,
-            rgba($green-light, 0.85),
-            rgba($blue-2, 0.85)
+            rgba($blue-2, 0.85),
+            rgba($blue, 0.85)
           );
       }
       &-3 {
         background: linear-gradient(
             to right bottom,
             rgba($green, 0.85),
-            rgba($green-light, 0.85)
+            rgba($green-dark, 0.85)
           );
       }
     }
@@ -163,10 +163,10 @@
       color: $blue-2 !important;
     }
     &--2 {
-      color: $black !important;
-    }
+      color: $green-light !important;
+    } 
     &--3 {
-      color: $white !important;
+      color: $green-dark !important;
     }
   }
 
