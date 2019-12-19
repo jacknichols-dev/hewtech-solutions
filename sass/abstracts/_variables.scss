@@ -8,7 +8,6 @@ $blue-2: #05487f;
 
 $gradient: linear-gradient(to left bottom, rgba($blue, 1)0%, rgba(#048BBA, 1) 80%);
 $gradient-2: linear-gradient(to right top, rgba($green, 1)0%, rgba(#116096, 1) 100%);
-$gradient-1: linear-gradient(to bottom, rgba(#048BBA, .1), transparent);
 
 
 //main colours on dark bg's
@@ -32,9 +31,9 @@ $font-2:  'Raleway', sans-serif;
 
 // Shadows
 
-$shadow:  0 1rem 1.5rem rgba(0, 0, 0, .15);
+$shadow:  .5 .5rem 1.5rem rgba(0, 0, 0, .4);
 $shadow-1: 0 1rem 3rem rgba(0, 0, 0, .15);
-$shadow-2: 0 .2rem 1rem rgba(0, 0, 0, .15);
+$shadow-2: .7rem .7rem 2.5rem rgba(0, 0, 0, .3);
 
 // Grid
 

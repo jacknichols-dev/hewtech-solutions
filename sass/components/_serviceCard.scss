@@ -99,6 +99,7 @@
       font-size: 3rem;
 
       &-1 {
+        color: inherit;
       }
 
       &-2 {
@@ -147,6 +148,7 @@
 
   &__details {
     margin-top: 3rem;
+    color: $blue;
   }
 
   // Back of card

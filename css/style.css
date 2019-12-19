@@ -11,7 +11,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #edefef; }
 
 body {
   font-size: 1.6rem;
@@ -89,7 +90,7 @@ body {
   margin-top: 10rem;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
   transition: all .3s ease; }
   .card:hover {
@@ -102,7 +103,7 @@ body {
     width: 100%;
     height: 60rem; }
     .card__side--front {
-      background: linear-gradient(to bottom, rgba(4, 139, 186, 0.1), transparent); }
+      background: white; }
   .card__pic {
     height: 39%;
     border-radius: 2rem 2rem 0 0;
@@ -174,7 +175,7 @@ body {
       text-decoration: none;
       background-color: #edefef;
       padding: 1rem 2.5rem;
-      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+      box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
       border-radius: .5rem;
       font-weight: bold;
       transition: all .1s ease; }
@@ -193,7 +194,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 0.8rem;
-    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
     height: 54rem;
     padding: 1rem;
     backface-visibility: hidden;
@@ -234,6 +235,8 @@ body {
       left: 10%;
       transform: translate(-5%, -5%);
       font-size: 3rem; }
+      .service-cards__pic--icon-1 {
+        color: inherit; }
       .service-cards__pic--icon-2 {
         color: #66c61a; }
       .service-cards__pic--icon-3 {
@@ -253,7 +256,8 @@ body {
     .service-cards__heading-span--3 {
       background: linear-gradient(to left bottom, rgba(4, 96, 186, 0.8) 10%, #66c61a); }
   .service-cards__details {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    color: #0460ba; }
   .service-cards__cta {
     position: absolute;
     top: 50%;
@@ -295,11 +299,10 @@ body {
 .btn:hover {
   background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
   transform: scale(1.009);
-  box-shadow: 0 0.3rem 1rem rgba(33, 33, 33, 0.3); }
+  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
 
 .btn:active {
-  box-shadow: inset 0 0.3rem 1rem rgba(33, 33, 33, 0.9);
-  box-shadow: 0 0.1rem 0.3rem rgba(33, 33, 33, 0.7);
+  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   transform: scale(0.99); }
 
 .btn--hero {
@@ -361,14 +364,14 @@ body {
     transition: all 0.2s ease; }
     .social__fb:hover, .social:link:hover {
       animation: pulse 1s infinite;
-      text-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+      text-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
       color: white; }
   .social__twitter, .social:link {
     color: #edefef;
     transition: all 0.2s ease; }
     .social__twitter:hover, .social:link:hover {
       animation: pulse 1s infinite;
-      text-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+      text-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
       color: white; }
 
 .contact {
@@ -400,7 +403,7 @@ body {
   top: 0;
   width: 100%;
   background-color: rgba(5, 72, 127, 0.89);
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   z-index: 10;
   height: 7rem;
   animation: navAppear 0.5s; }
@@ -546,12 +549,12 @@ body {
 .products__header {
   height: 50rem;
   margin: 0 auto;
-  background: transparent;
+  background: white;
   border-radius: 1rem;
   border-color: white;
   border-style: solid;
   border-width: thick;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
   .products__header--title {
     position: absolute;
     top: 8rem;
@@ -615,7 +618,7 @@ body {
   background-color: #0d88cc;
   width: 18rem;
   padding: 1.5rem 2rem;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   text-align: center;
   font-weight: 600;
   color: #edefef;
@@ -634,26 +637,25 @@ body {
   transform: translateX(-50%);
   margin-top: 50rem;
   width: 128rem;
-  background-color: #0d88cc;
+  background-color: white;
   height: 75rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
   border-radius: 0.7rem; }
   .services__header--box h4 {
     font-size: 2.6rem;
     text-align: center;
-    margin-top: 4rem;
-    color: #edefef; }
+    margin-top: 4rem; }
   .services__header--box p {
     text-align: center;
-    margin-top: 2rem;
-    color: #edefef; }
+    margin-top: 6rem; }
 
 .services__reviews-box {
   margin: 15rem auto 0 auto;
   width: 100%;
   height: 60rem;
   background-color: #0d88cc;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.7rem; }
 
 .services__reviews-green {
   margin: 0 auto;
@@ -670,7 +672,8 @@ body {
   width: 23rem;
   height: 27rem;
   background-color: #edefef;
-  padding: 2rem; }
+  padding: 2rem;
+  border-radius: .2rem; }
   .services__reviews-pic--photo {
     width: 100%;
     height: 80%;
@@ -679,10 +682,10 @@ body {
   .services__reviews-pic--name {
     font-size: 1.5rem !important;
     transform: translateY(-3rem);
-    color: #287a5b; }
+    color: #287a5b !important; }
   .services__reviews-pic--address {
     font-size: 1.3rem !important;
-    transform: translateY(-5rem);
+    transform: translateY(-8.5rem);
     color: #287a5b !important; }
 
 .services__reviews-title {
@@ -727,7 +730,7 @@ body {
 
 #navBarScrolled {
   background-color: #05487f;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4); }
 
 #main {
   height: 95vh; }

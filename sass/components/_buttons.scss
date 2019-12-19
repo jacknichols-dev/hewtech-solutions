@@ -20,12 +20,10 @@
    &:hover {
     background: $gradient-2;
     transform: scale(1.009);
-    box-shadow: 0 .3rem 1rem rgba($black, .3);
-   }
+    box-shadow: $shadow-2;
 
    &:active {
-    box-shadow:inset 0 .3rem 1rem rgba($black, .9);
-    box-shadow: 0 .1rem .3rem rgba($black, .7);
+    box-shadow: $shadow;
     transform: scale(0.99);
    }
 
