@@ -78,6 +78,12 @@ body {
   to {
     transform: scale(1); } }
 
+@keyframes reviewFade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
 .card {
   position: relative;
   margin-top: 10rem;
@@ -384,6 +390,7 @@ body {
   bottom: 5rem;
   right: 7rem;
   color: #66c61a;
+  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
   font-size: 4rem; }
 
 /*************** SCROLLED ****************/
@@ -627,24 +634,25 @@ body {
   transform: translateX(-50%);
   margin-top: 50rem;
   width: 128rem;
-  background-color: white;
+  background-color: #0d88cc;
   height: 75rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0.7rem; }
   .services__header--box h4 {
     font-size: 2.6rem;
     text-align: center;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    color: #edefef; }
   .services__header--box p {
     text-align: center;
     margin-top: 2rem;
-    color: #0d88cc; }
+    color: #edefef; }
 
 .services__reviews-box {
   margin: 15rem auto 0 auto;
   width: 100%;
   height: 60rem;
-  background-color: #0460ba;
+  background-color: #0d88cc;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
 
 .services__reviews-green {
@@ -737,7 +745,7 @@ body {
 #servicesSection {
   height: 250vh;
   z-index: -1000;
-  background: linear-gradient(#0460ba 10%, #0d88cc); }
+  background-color: white; }
 
 .products {
   position: relative; }
