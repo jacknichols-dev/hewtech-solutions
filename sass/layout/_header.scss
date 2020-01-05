@@ -10,7 +10,7 @@
     display: block;
     position: fixed;
     width: 22rem;
-    top: 2.2rem;
+    top: 1.5rem;
     left: 5rem;
     -webkit-animation: logo 1.1s both;
     animation: logo 0.4s both;
@@ -19,7 +19,7 @@
   &__list {
     display: block;
     position: fixed;
-    top: 4rem;
+    top: 3.3rem;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -49,7 +49,7 @@
 
 .social {
   position: fixed;
-  top: 3rem;
+  top: 2.6rem;
   right: 27rem;
   z-index: 100;
   font-size: 2.5rem;
@@ -106,7 +106,7 @@
   bottom: 5rem;
   right: 7rem;
   color: $green;
-  text-shadow: 0 0 2rem rgba(0, 0, 0, .3);
+  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
   font-size: 4rem;
 }
 
@@ -127,14 +127,14 @@
     display: none;
     position: fixed;
     width: 22rem;
-    top: 1.6rem;
+    top: 1.5rem;
     left: 7rem;
   }
 
   &__list {
     display: none;
     position: fixed;
-    top: 1.6rem;
+    top: 1.5rem;
     left: 50%;
     font-size: 1.4rem;
     transform: translateX(-50%);
@@ -162,7 +162,7 @@
   .social-scrolled {
     display: none;
     position: fixed;
-    top: 2.5rem;
+    top: 1.5rem;
     right: 27rem;
     z-index: -100;
 

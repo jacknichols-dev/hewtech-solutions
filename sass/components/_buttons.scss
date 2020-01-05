@@ -1,47 +1,59 @@
 .btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    background: $gradient;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    transition: all 0.2s;
+    letter-spacing: 0.07rem;
+  }
 
-    &,
-    &:link,
-    &:visited  {
-        padding: 1.5rem 2.5rem;
-        border-radius: 1rem;
-        background: $gradient;
-        display: inline-block;
-        cursor: pointer;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $white;
-        transition: all .2s;
-        letter-spacing: .07rem;
-    }
- 
-
-   &:hover {
+  &:hover {
     background: $gradient-2;
     transform: scale(1.009);
     box-shadow: $shadow-2;
 
-   &:active {
-    box-shadow: $shadow;
-    transform: scale(0.99);
-   }
-
-   &--hero {
-      position: absolute;
-      top: 55%;
-      left: 15%;
-   }
-
-   &--services {
-    position: relative;
-    float: right;
-    margin-right: 29%;
-    margin-top: 39rem;
+    &:active {
+      box-shadow: $shadow;
+      transform: scale(0.99);
     }
 
     &--card {
-        margin-top: 10rem;
+      margin-top: 10rem;
     }
+  }
+}
+.btn--hero {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+  background: $gradient;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  transition: all 0.2s;
+  letter-spacing: 0.07rem;
 
+  &:hover {
+    background: $gradient-2;
+    transform: scale(1.009);
+    box-shadow: $shadow-2;
+
+    &:active {
+      box-shadow: $shadow;
+      transform: scale(0.99);
+    }
+  }
 }
