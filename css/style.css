@@ -334,6 +334,10 @@ body {
   width: 100%;
   background-color: transparent;
   height: 7rem; }
+  .header__contact {
+    background-color: white;
+    position: fixed;
+    top: 0; }
   .header__logo {
     display: block;
     position: fixed;
@@ -376,6 +380,10 @@ body {
       animation: pulse 1s infinite;
       text-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
       color: white; }
+  .social__fb--contact, .social:link {
+    color: #0d88cc; }
+    .social__fb--contact:hover, .social:link:hover {
+      color: #0d88cc; }
   .social__twitter, .social:link {
     color: #edefef;
     transition: all 0.2s ease; }
@@ -383,6 +391,10 @@ body {
       animation: pulse 1s infinite;
       text-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
       color: white; }
+  .social__twitter--contact, .social:link {
+    color: #0d88cc; }
+    .social__twitter--contact:hover, .social:link:hover {
+      color: #0d88cc; }
 
 .contact {
   position: fixed;
@@ -392,6 +404,11 @@ body {
   line-height: 1.7;
   text-align: center;
   z-index: 70; }
+  .contact--contact {
+    color: #0d88cc; }
+  .contact__link {
+    color: white;
+    text-decoration: none; }
   .contact__title {
     font-size: 1.4rem; }
   .contact__number {
@@ -443,7 +460,7 @@ body {
   .header-scrolled .social-scrolled {
     display: none;
     position: fixed;
-    top: 1.5rem;
+    top: 1rem;
     right: 27rem;
     z-index: -100; }
     .header-scrolled .social-scrolled__icon {
@@ -735,12 +752,18 @@ body {
 .services__reviews-toggle {
   margin: 2rem 3rem; }
 
+.cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
 #navBar {
   display: block; }
 
 #navBarScrolled {
-  background-color: #05487f;
-  box-shadow: 0.5 0.5rem 1.5rem rgba(0, 0, 0, 0.4); }
+  background-color: #05487f; }
 
 #main {
   height: 95vh; }
@@ -765,3 +788,7 @@ body {
   .products__bg {
     background-image: url(/img/product-bg.png);
     background-size: cover; }
+
+#contactSection {
+  height: 100vh;
+  background-color: #edefef; }

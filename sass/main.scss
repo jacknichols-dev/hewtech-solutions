@@ -1,18 +1,20 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import 'base/base';
-@import 'base/typography';
-@import 'base/animations';
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
 
-@import 'components/card';
-@import 'components/serviceCard';
-@import 'components/buttons';
+@import "components/card";
+@import "components/serviceCard";
+@import "components/buttons";
 
-@import 'layout/header';
-@import 'layout/grid';
-@import 'layout/productSection';
-@import 'layout/servicesSection';
+@import "layout/header";
+@import "layout/grid";
+@import "layout/productSection";
+@import "layout/servicesSection";
+@import "layout/contactSection";
 
-@import 'pages/home';
-@import 'pages/products';
+@import "pages/home";
+@import "pages/products";
+@import "pages/contact";

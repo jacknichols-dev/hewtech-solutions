@@ -6,6 +6,12 @@
   background-color: transparent;
   height: 7rem;
 
+  &__contact {
+    background-color: white;
+    position: fixed;
+    top: 0;
+  }
+
   &__logo {
     display: block;
     position: fixed;
@@ -67,6 +73,15 @@
     }
   }
 
+  &__fb--contact,
+  &:link {
+    color: $blue-light;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
+
   &__twitter,
   &:link {
     color: $white;
@@ -78,6 +93,16 @@
       color: white;
     }
   }
+
+  &__twitter--contact,
+  &:link {
+    color: $blue-light;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
+
 }
 
 //Contact
@@ -90,6 +115,15 @@
   line-height: 1.7;
   text-align: center;
   z-index: 70;
+
+  &--contact {
+    color: $blue-light;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
 
   &__title {
     font-size: 1.4rem;
@@ -162,7 +196,7 @@
   .social-scrolled {
     display: none;
     position: fixed;
-    top: 1.5rem;
+    top: 1rem;
     right: 27rem;
     z-index: -100;
 
