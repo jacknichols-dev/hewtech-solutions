@@ -78,7 +78,7 @@
     </section>
 
     <section id="contactSection">
-      <container class="cont">
+      <container class="cont"> 
         <div class="row">
           <div class="col-1-of-3">
             <h1 class="cont__heading">Contact Us</h1>
@@ -91,6 +91,36 @@
                 <p class="cont__form--heading">
                     Send us a message
                 </p>
+                <form action="#" class="form">
+                  <div class="form__group form__group--service">
+                      <select name="Services" class="form__input form__input--service" autofocus required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Personal Alarms">Personal alarms</option>
+                        <option value="Alarms for the home">Home alarms</option>
+                        <option value="Alarms for the workplace">Workplace alarms</option>
+                      </select>
+                  </div>
+
+                  <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Your name" id="name" required>
+                    <label for="name" class="form__label">Full name</label>
+                  </div>
+
+                  <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Your email address" id="email" required>
+                    <label for="email" class="form__label">Email address</label>
+                  </div>
+
+                  <div class="form__group">
+                    <textarea id="message" type="text" class="form__input" name="subject" placeholder="Write something.."></textarea>
+                    <label for="message" class="form__label">Message</label>
+                  </div>
+
+                  <div class="form__group">
+                    <button type="submit" class="form__submit">Submit</button>
+                  </div>
+
+                </form>
             </div>
           </div>
         </div>

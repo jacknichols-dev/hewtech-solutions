@@ -1,4 +1,4 @@
-//unscrolled Navbar
+/******* NAV *******/
 
 .header {
   top: 3rem;
@@ -25,7 +25,7 @@
   &__list {
     display: block;
     position: fixed;
-    top: 3.3rem;
+    top: 3rem;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -53,12 +53,14 @@
   }
 }
 
+/******** SOCIAL LINKS *********/
+
 .social {
   position: fixed;
-  top: 2.6rem;
+  top: 2.5rem !important;
   right: 27rem;
   z-index: 100;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
   &__fb,
   &:link {
@@ -102,10 +104,9 @@
       color: $blue-light;
     }
   }
-
 }
 
-//Contact
+/********* CONTACT **********/
 
 .contact {
   position: fixed;
@@ -127,13 +128,18 @@
 
   &__title {
     font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
   }
 
   &__number {
     letter-spacing: 0.2rem;
     font-size: large;
+    font-weight: 300;
   }
 }
+
+/******* BACK TO TOP BTN ********/
 
 .btn-top {
   position: fixed;
@@ -160,15 +166,17 @@
   &__logo {
     display: none;
     position: fixed;
-    width: 22rem;
-    top: 1.5rem;
-    left: 7rem;
+    width: 19rem;
+    top: 1.7rem;
+    left: 5.5rem;
   }
+
+  /****** Scrolled Nav *******/
 
   &__list {
     display: none;
     position: fixed;
-    top: 1.5rem;
+    top: 1.6rem;
     left: 50%;
     font-size: 1.4rem;
     transform: translateX(-50%);
@@ -179,6 +187,7 @@
   &__item {
     padding: 1rem 2.5rem;
     display: inline-block;
+    margin-right: 3.5rem;
   }
 
   &__link {
@@ -190,32 +199,9 @@
       color: $green;
     }
   }
-
-  // SCROLLED SOCIAL
-
-  .social-scrolled {
-    display: none;
-    position: fixed;
-    top: 1rem;
-    right: 27rem;
-    z-index: -100;
-
-    &__icon {
-      margin-right: 4rem;
-
-      &--fb {
-        width: 1.8rem;
-        height: 1.8rem;
-        transform: translateY(-0.15rem);
-      }
-
-      &--twitter {
-        width: 2.1rem;
-        height: 2.1rem;
-      }
-    }
-  }
 }
+
+/********* HERO SECTION ***********/
 
 .hero {
   display: flex;
@@ -225,12 +211,12 @@
   &__para {
     position: absolute;
     color: $blue-light;
-    top: 40%;
+    top: 37%;
     left: 15%;
     width: 50rem;
   }
 
-  //ILLUSTRATION
+  /******** ILLUSTRATION **********/
 
   &__bg {
     position: absolute;
@@ -243,7 +229,7 @@
   &__illustration {
     position: absolute;
     top: 15rem;
-    right: 5rem;
+    right: 14rem;
     width: 60rem;
   }
 }
@@ -252,12 +238,12 @@
 
 .rotating-text {
   position: absolute;
-  top: 12.5%;
+  top: 12%;
   left: 15%;
   line-height: 5;
   font-family: $font-2;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
   transform: translateX(-80px);
   width: 50rem;
@@ -265,7 +251,7 @@
 
   &--title {
     color: $blue-light;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .rotating-text p {
