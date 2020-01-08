@@ -1,7 +1,11 @@
 console.log("it works");
 $(document).ready(function() {
   $(".form__submit").click(function(event) {
-    event.preventDefault();
     console.log("clicked");
+
+    let service = $('.service').val()
+    let name = $('.name').val()
+    let email = $('.email').val()
+    let message = $('.message').val()
   });
 });

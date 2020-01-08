@@ -80,6 +80,8 @@
       </div>
     </section>
 
+    <!-- CONTACT FORM -->
+
     <section id="contactSection">
       <container class="cont"> 
         <div class="row">
@@ -95,28 +97,29 @@
                 <p class="cont__form--heading">
                     Send us a message
                 </p>
-                <form action="#" class="form">
+                <form class="form" action="https://formspree.io/jacknichols_88@yahoo.co.uk"
+                method="POST" target="_blank">
                   <div class="form__group form__group--service">
-                      <select name="Services" class="form__input form__input--service" autofocus required>
+                      <select name="Services" class="form__input form__input--service service" autofocus required>
                         <option value="" disabled selected>Select a service</option>
                         <option value="Personal Alarms">Personal alarms</option>
-                        <option value="Alarms for the home">Home alarms</option>
-                        <option value="Alarms for the workplace">Workplace alarms</option>
+                        <option value="Home Alarm">Home alarms</option>
+                        <option value="Workplace Alarm">Workplace alarms</option>
                       </select>
                   </div>
 
                   <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Your name" id="name" required>
+                    <input type="text" class="form__input name" placeholder="Your name" id="name" required>
                     <label for="name" class="form__label">Full name</label>
                   </div>
 
                   <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Your email address" id="email" required>
+                    <input type="email" class="form__input email" placeholder="Your email address" id="email" required>
                     <label for="email" class="form__label">Email address</label>
                   </div>
 
                   <div class="form__group">
-                    <textarea id="message" type="text" class="form__input" name="subject" placeholder="Write something.." required></textarea>
+                    <textarea id="message" type="text" class="form__input message" name="subject" placeholder="Write something.." required></textarea>
                     <label for="message" class="form__label">Message</label>
                   </div>
 
