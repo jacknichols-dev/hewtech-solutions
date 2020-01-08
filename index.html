@@ -9,6 +9,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/glider.min.css" type="text/css">
 </head>
 <body>
  
@@ -23,7 +24,7 @@
             <li class="header__item"><a href="#main" class="header__link"><i class="header__icon fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
             <li class="header__item"><a href="#productSection" class="header__link"><i class="header__icon fab fa-product-hunt"></i>&nbsp;&nbsp;Products</a></li>
             <li class="header__item"><a href="#servicesSection" class="header__link"><i class="header__icon fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
-            <li class="header__item"><a href="#" class="header__link "><i class="header__icon fas fa-info"></i>&nbsp;&nbsp;About</a></li>
+            <li class="header__item"><a href="#aboutSection" class="header__link "><i class="header__icon fas fa-info"></i>&nbsp;&nbsp;About</a></li>
         </ul>
             <!--SCROLLED-->
         <ul class="header-scrolled__list">
@@ -332,46 +333,134 @@
                     
                 <!--*******  REVIEWS  ********-->
             <div class="services__reviews-box">
-            <div class="services__reviews-content">
+            <h2 class="services__reviews-title">Customer Reviews</h2>
+            <div class="services__reviews-content glider-contain multiple">
+
+                <!--* NEXT SLIDE ARROW *-->
+
+                <button class="glider-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+
+                <div class="glider">
+
+                <!--******** REVIEW ONE *********-->
+
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="services__reviews-green">
                         </div>
-                        <div class="services__reviews-pic">
-                            <div class="services__reviews-pic--photo"></div>
-                            <h4 class="services__reviews-pic--name">Mabal Payne</h4>
-                            <p class="services__reviews-pic--address">Plymoth</p>
+                        <div class="services__user">
+                            <div class=" services__photo services__photo--1"></div>
+                            <h4 class="services__name services__name--1">Bob Dylan</h4>
+                            <p class="services__address services__address--1">Plymoth</p>
                         </div>
                     </div>
 
                     <div class="col-2-of-3">
-                        <h2 class="services__reviews-title">Customer Reviews</h2>
                         <blockquote class="services__reviews-prg">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, rerum? A consequuntur cumque ut nesciunt rem provident et 
                             ratione doloremque libero deserunt ullam soluta rerum culpa corrupti numquam suscipit maxime optio distinctio, exercitationem 
                             excepturi. Nostrum, ipsa fugit! Consectetur voluptas maiores cumque dolorem.
-                        </blockquote>
+                        </blockquote> 
+                    </div>
+            </div>
 
-                        <!--*****TOGGLE******-->
-                        <div class="services__reviews-toggle-container">
-                            <input type="radio" onclick="currentSlide(1)" name="nav" id="first" class="services__reviews-toggle services__reviews-toggle--1">
-                            <input type="radio" onclick="currentSlide(2)" name="nav" id="second " class="services__reviews-toggle services__reviews-toggle--2">
-                            <input type="radio" onclick="currentSlide(3)" name="nav" id="third" class="services__reviews-toggle services__reviews-toggle--3">
+                <!--******** REVIEW TWO *********-->
+                
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="services__reviews-green">
+                        </div>
+                        <div class="services__user">
+                            <div class="services__photo services__photo--2"></div>
+                            <h4 class="services__name services__name--2">Sharon Dawes</h4>
+                            <p class="services__address services__address--2">Kent</p>
                         </div>
                     </div>
+
+                    <div class="col-2-of-3">
+                        <blockquote class="services__reviews-prg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas voluptate sed nobis quod, 
+                            laudantium facilis perferendis magnam doloremque eos, maiores doloribus molestias eveniet 
+                            debitis tempora aut voluptas numquam quaerat?
+                        </blockquote> 
+                    </div>    
+                    </div>
+
+                <!--******** REVIEW THREE *********-->
+                
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="services__reviews-green">
+                        </div>
+                        <div class="services__user">
+                            <div class="services__photo services__photo--3"></div>
+                            <h4 class="services__name services__name--3">Mark Hewson</h4>
+                            <p class="services__address services__address--3">Manchester</p>
+                        </div>
+                    </div>
+
+                    <div class="col-2-of-3">
+                        <blockquote class="services__reviews-prg">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint modi doloribus quidem nobis 
+                           obcaecati iste porro impedit aliquam nemo, repellendus, facere nam unde, molestiae aspernatur! Natus, in.
+                        </blockquote> 
+                    </div>    
+                    </div>
+
+                <!--******** REVIEW FOUR *********-->
+                
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="services__reviews-green">
+                        </div>
+                        <div class="services__user">
+                            <div class="services__photo services__photo--4"></div>
+                            <h4 class="services__name services__name--4">Sarah Marshall</h4>
+                            <p class="services__address services__address--4">Cambridgeshire</p>
+                        </div>
+                    </div>
+
+                    <div class="col-2-of-3">
+                        <blockquote class="services__reviews-prg">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sed alias sapiente perspiciatis autem aliquid 
+                            rerum eum saepe in? Quas qui quos dolores sed? Veritatis ducimus id dolor ipsa veniam odit? Officia, facilis? 
+                            Excepturi, minima molestiae!
+                        </blockquote> 
+                    </div>    
+                    </div>
                 </div>
+
+                <!--* NEXT SLIDE ARROW *-->
+                
+            <button class="glider-next">
+                    <i class="fa fa-chevron-right"></i>
+                </button>  
+            </div>
+
+            <div id="dots" class="glider-dots"></div> 
+
             </div>
             </div>     
         </div>             
         </div>
     </section>
 
+
+<!--***** About Section ******-->
+
+<section id="aboutSection">
+
+</section>
+
+<!--***** JavaScript ******-->
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
-
+    <script src="js/glider.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
