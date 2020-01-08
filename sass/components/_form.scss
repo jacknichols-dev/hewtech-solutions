@@ -3,10 +3,10 @@
     margin-bottom: 2rem;
   }
 
-  &__group{
+  &__group {
     &--service {
-    padding-bottom: 2rem;
-  }
+      padding-bottom: 2rem;
+    }
   }
 
   &__input {
@@ -16,7 +16,7 @@
     padding: 1rem 2rem;
     border-radius: 0.2rem;
     border: none;
-    background-color: $white;
+    background-color: $grey-light;
     border-bottom: 0.32rem solid transparent;
     width: 90%;
     color: $blue-2;
@@ -38,7 +38,6 @@
       border-bottom: 0.32rem solid $blue-2;
     }
 
-
     &::-webkit-input-placeholder {
       color: rgba($blue-light, 0.7);
       font-size: 1.3rem;
@@ -46,26 +45,37 @@
   }
 
   &__label {
+    display: block;
     font-size: 1.2rem;
     font-weight: 600;
     margin-left: 2.2rem;
+    transition: all 0.2s ease;
+    animation: form 0.2s;
   }
 
   &__submit {
+    outline: none;
     padding: 1rem 2rem;
     border: none;
-    background-color: $green;
+    background-color: rgba($green, 0.85);
     color: white;
     font-size: 1.6rem;
     float: right;
     margin-right: 10%;
+    border-radius: 0.1rem;
+
+    &:hover,
+    &:focus {
+      background-color: $green;
+      box-shadow: $shadow;
+    }
   }
 
   &__input:placeholder-shown + &__label {
     opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem);
   }
-
-
 }
 
 input[type="sumit"],
@@ -93,4 +103,10 @@ textarea {
     box-shadow: $shadow;
     border-bottom: 0.32rem solid $blue-light;
   }
+}
+
+#map {
+  height: 30rem;
+  width: 30rem;
+  margin: 4rem 4rem 0 0;
 }

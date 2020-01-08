@@ -19,6 +19,9 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="/js/form.js"></script>
   </head>
   <body>
     <!-- MAIN TOP NAV -->
@@ -85,6 +88,7 @@
             <p class="cont__par">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias doloribus excepturi earum aperiam temporibus! Omnis necessitatibus at iste quidem!
             </p>
+            <div id="map"></div>
           </div>
           <div class="col-2-of-3">
             <div class="cont__form">
@@ -112,19 +116,20 @@
                   </div>
 
                   <div class="form__group">
-                    <textarea id="message" type="text" class="form__input" name="subject" placeholder="Write something.."></textarea>
+                    <textarea id="message" type="text" class="form__input" name="subject" placeholder="Write something.." required></textarea>
                     <label for="message" class="form__label">Message</label>
                   </div>
 
                   <div class="form__group">
                     <button type="submit" class="form__submit">Submit</button>
                   </div>
-
                 </form>
             </div>
           </div>
         </div>
       </container>
-    </section>
+      <script src="/js/key.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyD-MRvTmWtrq9yPo9qVngsFF8oyO_m9grg&callback=initMap"
+  type="text/javascript"></script>
   </body>
 </html>

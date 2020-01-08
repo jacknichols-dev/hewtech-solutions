@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #e9f5f5; }
+  background-color: linear #e9f5f5; }
 
 body {
   font-size: 1.6rem;
@@ -342,7 +342,7 @@ body {
   padding: 1rem 2rem;
   border-radius: 0.2rem;
   border: none;
-  background-color: #e9f5f5;
+  background-color: #d5e9e5;
   border-bottom: 0.32rem solid transparent;
   width: 90%;
   color: #05487f; }
@@ -362,21 +362,31 @@ body {
     font-size: 1.3rem; }
 
 .form__label {
+  display: block;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-left: 2.2rem; }
+  margin-left: 2.2rem;
+  transition: all 0.2s ease;
+  animation: form 0.2s; }
 
 .form__submit {
+  outline: none;
   padding: 1rem 2rem;
   border: none;
-  background-color: #66c61a;
+  background-color: rgba(102, 198, 26, 0.85);
   color: white;
   font-size: 1.6rem;
   float: right;
-  margin-right: 10%; }
+  margin-right: 10%;
+  border-radius: 0.1rem; }
+  .form__submit:hover, .form__submit:focus {
+    background-color: #66c61a;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form__input:placeholder-shown + .form__label {
-  opacity: 0; }
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem); }
 
 input[type="sumit"],
 textarea {
@@ -401,6 +411,11 @@ textarea {
     outline: none;
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
     border-bottom: 0.32rem solid #0d88cc; }
+
+#map {
+  height: 30rem;
+  width: 30rem;
+  margin: 4rem 4rem 0 0; }
 
 /******* NAV *******/
 .header {
@@ -864,7 +879,7 @@ textarea {
 #servicesSection {
   height: 250vh;
   z-index: -1000;
-  background-color: white; }
+  background-color: #e9f5f5; }
 
 .products {
   position: relative; }
