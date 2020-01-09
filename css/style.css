@@ -90,7 +90,7 @@ body {
   margin-top: 10rem;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
   transition: all .3s ease; }
   .card:hover {
@@ -184,7 +184,7 @@ body {
         transform: translate(-50%, 0) scale(1.05); }
 
 .service-cards {
-  margin-top: 4rem;
+  margin: 4rem 3rem;
   position: relative;
   perspective: 190rem;
   -moz-perspective: 190rem;
@@ -299,7 +299,7 @@ body {
 .btn:hover {
   background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
   transform: scale(1.009);
-  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
   .btn:hover:active {
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
     transform: scale(0.99); }
@@ -309,7 +309,7 @@ body {
 .btn--hero {
   position: absolute;
   top: 55%;
-  left: 15%;
+  left: 11%;
   padding: 1.5rem 2.5rem;
   border-radius: 1rem;
   background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%);
@@ -324,7 +324,7 @@ body {
   .btn--hero:hover {
     background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
     transform: scale(1.009);
-    box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
     .btn--hero:hover:active {
       box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
       transform: scale(0.99); }
@@ -515,7 +515,6 @@ textarea {
   bottom: 5rem;
   right: 7rem;
   color: #66c61a;
-  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
   font-size: 4rem; }
 
 /*************** SCROLLED ****************/
@@ -565,7 +564,7 @@ textarea {
     position: absolute;
     color: #0d88cc;
     top: 37%;
-    left: 15%;
+    left: 11%;
     width: 50rem; }
   .hero__bg {
     position: absolute;
@@ -576,13 +575,13 @@ textarea {
   .hero__illustration {
     position: absolute;
     top: 15rem;
-    right: 14rem;
+    right: 17rem;
     width: 60rem; }
 
 .rotating-text {
   position: absolute;
   top: 12%;
-  left: 15%;
+  left: 11%;
   line-height: 5;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -665,7 +664,7 @@ textarea {
   border-color: white;
   border-style: solid;
   border-width: thick;
-  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
   .products__header--title {
     position: absolute;
     top: 8rem;
@@ -745,12 +744,12 @@ textarea {
 .services__header--box {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -5%);
   margin-top: 50rem;
-  width: 128rem;
+  width: 120rem;
   background-color: white;
-  height: 75rem;
-  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
+  height: 80rem;
+  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
   border-radius: 0.7rem; }
   .services__header--box h4 {
     font-size: 2.6rem;
@@ -765,8 +764,9 @@ textarea {
   width: 100%;
   height: 60rem;
   background-color: #0d88cc;
-  box-shadow: 0.7rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
-  border-radius: 0.7rem; }
+  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.7rem;
+  transform: translateY(-8rem); }
 
 .services__reviews-green {
   margin: 0 auto;
@@ -821,7 +821,7 @@ textarea {
   color: #e9f5f5;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 2rem; }
+  margin-top: 7rem; }
 
 .services__reviews-prg {
   height: 20rem;
@@ -854,16 +854,14 @@ textarea {
   margin: 2rem 3rem; }
 
 .glider-next {
-  margin: 6rem;
+  margin-top: 8.5rem;
+  margin-right: 5rem;
   color: #e9f5f5 !important; }
-  .glider-next:active {
-    color: #287a5b; }
 
 .glider-prev {
-  margin: 6rem;
+  margin-top: 8.5rem;
+  margin-left: 5rem;
   color: #e9f5f5 !important; }
-  .glider-prev:active {
-    color: #287a5b; }
 
 .glider-dots {
   transform: translateY(-11rem); }
@@ -889,6 +887,43 @@ textarea {
     padding: 3rem 0;
     color: #66c61a; }
 
+.about {
+  display: block; }
+
+.about-header {
+  width: 100vw;
+  height: 55rem;
+  background-color: #0d88cc;
+  margin: 0 auto;
+  font-size: 2rem; }
+  .about-header h1,
+  .about-header h4 {
+    color: white;
+    line-height: 1.4;
+    margin-top: 12rem; }
+    .about-header h1 span,
+    .about-header h1 a,
+    .about-header h4 span,
+    .about-header h4 a {
+      color: #66c61a;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s ease; }
+
+.about-img {
+  background-image: url(/img/hero.jpg);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  background-size: cover;
+  height: 55rem;
+  width: 100%; }
+
+.about-link {
+  padding: 1rem 2rem;
+  background-color: #0d88cc; }
+  .about-link:hover {
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg) scale(1.05); }
+
 #navBar {
   display: block; }
 
@@ -909,16 +944,19 @@ textarea {
   z-index: 1000; }
 
 #servicesSection {
-  height: 250vh;
+  height: 210rem;
   z-index: -1000;
   background-color: #e9f5f5; }
 
 #aboutSection {
-  height: 100vh;
-  background-color: #94d661; }
+  height: 100rem;
+  position: relative;
+  background-color: #e9f5f5; }
 
 .products {
-  position: relative; }
+  position: relative;
+  width: 120rem;
+  margin: 0 auto; }
   .products__bg {
     background-image: url(/img/product-bg.png);
     background-size: cover; }

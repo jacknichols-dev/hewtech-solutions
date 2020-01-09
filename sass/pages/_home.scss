@@ -1,33 +1,34 @@
 #navBar {
-    display: block;
+  display: block;
 }
 #navBarScrolled {
-    background-color: $blue-2;
+  background-color: $blue-2;
 }
 
 #main {
-    height: 95vh;
+  height: 95vh;
 }
 
 #productSection {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 16rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 16rem;
 }
 
 #btnTop {
-    position: relative;
-    z-index: 1000;
+  position: relative;
+  z-index: 1000;
 }
 
 #servicesSection {
-    height: 250vh;
-    z-index: -1000;
-    background-color:$white;
+  height: 210rem;
+  z-index: -1000;
+  background-color: $white;
 }
 
 #aboutSection {
-    height: 100vh;
-    background-color: $green-light;
+  height: 100rem;
+  position: relative;
+  background-color: $white;
 }

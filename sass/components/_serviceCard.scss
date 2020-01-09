@@ -1,9 +1,10 @@
 .service-cards {
-    margin-top: 4rem;
+  margin: 4rem 3rem;
   position: relative;
   perspective: 190rem;
   -moz-perspective: 190rem;
   height: 54rem;
+
 
   &__side {
     position: absolute;

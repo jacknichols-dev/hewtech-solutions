@@ -1,0 +1,44 @@
+.about {
+  display: block;
+}
+
+.about-header {
+  width: 100vw;
+  height: 55rem;
+  background-color: $blue-light;
+  margin: 0 auto;
+  font-size: 2rem;
+
+  & h1,
+  h4 {
+    color: white;
+    line-height: 1.4;
+    margin-top: 12rem;
+
+    & span,
+    a {
+      color: $green;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.about-img {
+  background-image: url(/img/hero.jpg);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100% );
+  background-size: cover;
+  height: 55rem;
+  width: 100%;
+}
+
+.about-link {
+  padding: 1rem 2rem;
+  background-color: $blue-light;
+
+  &:hover {
+    box-shadow: $shadow;
+    transform: rotate(-2deg) scale(1.05);
+  }
+}

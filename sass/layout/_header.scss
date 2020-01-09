@@ -146,7 +146,6 @@
   bottom: 5rem;
   right: 7rem;
   color: $green;
-  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
   font-size: 4rem;
 }
 
@@ -212,7 +211,7 @@
     position: absolute;
     color: $blue-light;
     top: 37%;
-    left: 15%;
+    left: 11%;
     width: 50rem;
   }
 
@@ -229,7 +228,7 @@
   &__illustration {
     position: absolute;
     top: 15rem;
-    right: 14rem;
+    right: 17rem;
     width: 60rem;
   }
 }
@@ -239,7 +238,7 @@
 .rotating-text {
   position: absolute;
   top: 12%;
-  left: 15%;
+  left: 11%;
   line-height: 5;
   font-family: $font-2;
   font-weight: 600;

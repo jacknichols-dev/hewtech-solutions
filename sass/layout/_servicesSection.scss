@@ -66,11 +66,11 @@
     &--box {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -5%);
       margin-top: 50rem;
-      width: 128rem;
+      width: 120rem;
       background-color: white;
-      height: 75rem;
+      height: 80rem;
       box-shadow: $shadow-2;
       border-radius: 0.7rem;
 
@@ -96,6 +96,7 @@
     background-color: $blue-light;
     box-shadow: $shadow-2;
     border-radius: 0.7rem;
+    transform: translateY(-8rem)
   }
 
   &__reviews-green {
@@ -162,7 +163,7 @@
     color: $white;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
 
   &__reviews-prg {
@@ -203,20 +204,14 @@
 }
 
 .glider-next {
-  margin: 6rem;
+  margin-top: 8.5rem;
+  margin-right: 5rem;
   color: $white !important;
-
-  &:active {
-    color: $green-dark;
-  }
 }
 .glider-prev {
-  margin: 6rem;
+  margin-top: 8.5rem;
+  margin-left: 5rem;
   color: $white !important;
-
-  &:active {
-    color: $green-dark;
-  }
 }
 
 .glider-dots {
