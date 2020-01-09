@@ -144,9 +144,14 @@
 .btn-top {
   position: fixed;
   bottom: 5rem;
-  right: 7rem;
+  right: 5rem;
   color: $green;
   font-size: 4rem;
+  transition: all .15s;
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 /*************** SCROLLED ****************/
@@ -211,7 +216,7 @@
     position: absolute;
     color: $blue-light;
     top: 37%;
-    left: 11%;
+    left: 19%;
     width: 50rem;
   }
 
@@ -223,13 +228,15 @@
     right: 0;
     width: 70rem;
     z-index: -100;
+    animation: bgReveal .6s ease;
   }
 
   &__illustration {
     position: absolute;
-    top: 15rem;
-    right: 17rem;
-    width: 60rem;
+    top: 22rem;
+    right: 29rem;
+    width: 53rem;
+    animation: illReveal 1.6s ease;
   }
 }
 
@@ -238,7 +245,7 @@
 .rotating-text {
   position: absolute;
   top: 12%;
-  left: 11%;
+  left: 19%;
   line-height: 5;
   font-family: $font-2;
   font-weight: 600;

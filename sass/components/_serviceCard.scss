@@ -3,8 +3,7 @@
   position: relative;
   perspective: 190rem;
   -moz-perspective: 190rem;
-  height: 54rem;
-
+  height: 45rem;
 
   &__side {
     position: absolute;
@@ -12,7 +11,7 @@
     left: 0;
     border-radius: 0.8rem;
     box-shadow: $shadow;
-    height: 54rem;
+    height: 45rem;
     padding: 1rem;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -29,24 +28,24 @@
 
       &-1 {
         background: linear-gradient(
-            to right bottom,
-            rgba($blue-light, 0.85),
-            rgba($blue-2, 0.85)
-          );
+          to right bottom,
+          rgba($blue-light, 0.85),
+          rgba($blue-2, 0.85)
+        );
       }
       &-2 {
         background: linear-gradient(
-            to right bottom,
-            rgba($blue-2, 0.85),
-            rgba($blue, 0.85)
-          );
+          to right bottom,
+          rgba($blue-2, 0.85),
+          rgba($blue, 0.85)
+        );
       }
       &-3 {
         background: linear-gradient(
-            to right bottom,
-            rgba($green, 0.85),
-            rgba($green-dark, 0.85)
-          );
+          to right bottom,
+          rgba($green, 0.85),
+          rgba($green-dark, 0.85)
+        );
       }
     }
   }
@@ -65,7 +64,7 @@
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-radius: 0.7rem 0.7rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
 
     &--1 {
       background-image: linear-gradient(
@@ -114,14 +113,13 @@
   }
 
   &__heading {
-    top: 38%;
     font-size: 2rem;
     color: $white;
     line-height: 1.5;
   }
 
   &__heading-span {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     box-decoration-break: clone;
 
     &--1 {
@@ -148,7 +146,7 @@
   }
 
   &__details {
-    margin-top: 3rem;
+    margin-top: 2rem;
     color: $blue;
   }
 
@@ -167,7 +165,7 @@
     }
     &--2 {
       color: $green-light !important;
-    } 
+    }
     &--3 {
       color: $green-dark !important;
     }
@@ -175,16 +173,12 @@
 
   &__prg {
     color: white !important;
-  }
-
-  &__price-from {
-    color: white !important;
-    font-size: 1.7rem;
+    line-height: 1.05;
   }
 
   &__price {
     color: white !important;
-    font-size: 2rem;
-    margin: 0.5rem !important;
+    font-size: 2rem !important;
+    margin: 0 0 3rem 0;
   }
 }

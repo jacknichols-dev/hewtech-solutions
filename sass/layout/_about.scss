@@ -1,5 +1,54 @@
-.about {
-  display: block;
+.about-main {
+  text-align: center;
+  width: 120rem;
+  margin: 0 auto;
+
+  &__icon {
+    font-size: 5rem;
+    margin: 5rem 0 2rem 0;
+    color: $green;
+  }
+
+  &__title {
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+
+  &__prg {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /******* CEO Desc ********/
+
+  &__ceo {
+    margin-top: 8rem;
+
+    &--photo {
+      width: 100%;
+    }
+  }
+
+  &__ceo-desc {
+      transform: translateY(50%);
+
+    &--name {
+      font-weight: bold;
+      font-size: 2.2rem;
+    }
+    &--title {
+      color: $green;
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin: 2rem
+    }
+    &--prg {
+      padding: 3rem;
+      text-align: left;
+      color: $grey-dark;
+    }
+  }
 }
 
 .about-header {
@@ -27,7 +76,7 @@
 
 .about-img {
   background-image: url(/img/hero.jpg);
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100% );
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
   background-size: cover;
   height: 55rem;
   width: 100%;
