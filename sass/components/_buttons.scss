@@ -2,8 +2,8 @@
   &,
   &:link,
   &:visited {
-    padding: 1.5rem 2.5rem;
-    border-radius: 1rem;
+    padding: 1.2rem 2.1rem;
+    border-radius: .3rem;
     background: $gradient;
     display: inline-block;
     cursor: pointer;
@@ -13,6 +13,7 @@
     color: $white;
     transition: all 0.2s;
     letter-spacing: 0.07rem;
+    font-size: 1.2rem;
   }
 
   &:hover {
@@ -34,8 +35,8 @@
   position: absolute;
   top: 55%;
   left: 19%;
-  padding: 1.5rem 2.5rem;
-  border-radius: 1rem;
+  padding: 1.2rem 2.1rem;
+  border-radius: .3rem;
   background: $gradient;
   display: inline-block;
   cursor: pointer;

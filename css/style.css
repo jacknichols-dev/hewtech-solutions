@@ -304,9 +304,9 @@ body {
     margin: 0 0 3rem 0; }
 
 .btn, .btn:link, .btn:visited {
-  padding: 1.5rem 2.5rem;
-  border-radius: 1rem;
-  background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%);
+  padding: 1.2rem 2.1rem;
+  border-radius: .3rem;
+  background: linear-gradient(to left bottom, #66c61a 20%, #287a5b 110%);
   display: inline-block;
   cursor: pointer;
   font-weight: 600;
@@ -314,10 +314,11 @@ body {
   text-transform: uppercase;
   color: #eef0f1;
   transition: all 0.2s;
-  letter-spacing: 0.07rem; }
+  letter-spacing: 0.07rem;
+  font-size: 1.2rem; }
 
 .btn:hover {
-  background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
+  background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
   transform: scale(1.009);
   box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
   .btn:hover:active {
@@ -330,9 +331,9 @@ body {
   position: absolute;
   top: 55%;
   left: 19%;
-  padding: 1.5rem 2.5rem;
-  border-radius: 1rem;
-  background: linear-gradient(to left bottom, #0460ba 0%, #048bba 80%);
+  padding: 1.2rem 2.1rem;
+  border-radius: .3rem;
+  background: linear-gradient(to left bottom, #66c61a 20%, #287a5b 110%);
   display: inline-block;
   cursor: pointer;
   font-weight: 600;
@@ -343,7 +344,7 @@ body {
   letter-spacing: 0.07rem;
   animation: btnReveal 1s ease; }
   .btn--hero:hover {
-    background: linear-gradient(to right top, #66c61a 0%, #116096 100%);
+    background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
     transform: scale(1.009);
     box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
     .btn--hero:hover:active {
@@ -389,20 +390,6 @@ body {
   margin-left: 2.2rem;
   transition: all 0.2s ease;
   animation: form 0.2s; }
-
-.form__submit {
-  outline: none;
-  padding: 1rem 2rem;
-  border: none;
-  background-color: rgba(102, 198, 26, 0.85);
-  color: white;
-  font-size: 1.6rem;
-  float: right;
-  margin-right: 10%;
-  border-radius: 0.1rem; }
-  .form__submit:hover, .form__submit:focus {
-    background-color: #66c61a;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -907,7 +894,8 @@ textarea {
   height: 80%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
   .cont__heading {
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    animation: logo 1s ease; }
   .cont__par {
     color: #0d88cc;
     line-height: 1.3; }
