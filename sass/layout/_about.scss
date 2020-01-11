@@ -1,12 +1,12 @@
 .about-main {
   text-align: center;
   width: 120rem;
-  margin: 0 auto;
+  margin: 12rem auto;
 
   &__icon {
     font-size: 5rem;
     margin: 5rem 0 2rem 0;
-    color: $green;
+    color: $blue-2;
   }
 
   &__title {
@@ -15,7 +15,7 @@
   }
 
   &__prg {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.5;
   }
@@ -25,13 +25,24 @@
   &__ceo {
     margin-top: 8rem;
 
+    &--box {
+      position: absolute;
+      transform: translate(-50%, 41rem);
+      left: 50%;
+      width: 130rem;
+      height: 20.8rem;
+      background-color: $blue-light;
+      z-index: -1;
+    }
+
+
     &--photo {
       width: 100%;
     }
   }
 
   &__ceo-desc {
-      transform: translateY(50%);
+      transform: translateY(21.5%);
 
     &--name {
       font-weight: bold;
@@ -46,8 +57,14 @@
     &--prg {
       padding: 3rem;
       text-align: left;
-      color: $grey-dark;
+      color: $blue-2;
     }
+    &--prg2 {
+      padding: 3rem;
+      text-align: left;
+      color: $white;
+    }
+
   }
 }
 

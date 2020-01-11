@@ -14,7 +14,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #0460ba;
@@ -351,6 +351,9 @@ body {
       box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
       transform: scale(0.99); }
 
+.btn-about {
+  margin-bottom: 2.5rem; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -450,7 +453,8 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
-    font-weight: 600; }
+    font-weight: 500;
+    font-size: 1.4rem; }
   .header__item {
     margin-right: 2rem;
     display: inline-block; }
@@ -514,8 +518,8 @@ textarea {
     margin-right: 0.5rem; }
   .contact__number {
     letter-spacing: 0.2rem;
-    font-size: large;
-    font-weight: 300; }
+    font-size: 1.6rem;
+    font-weight: 500; }
 
 /******* BACK TO TOP BTN ********/
 .btn-top {
@@ -523,8 +527,11 @@ textarea {
   bottom: 5rem;
   right: 5rem;
   color: #66c61a;
-  font-size: 4rem;
-  transition: all .15s; }
+  font-size: 3rem;
+  transition: all 0.15s; }
+  .btn-top__p {
+    color: white;
+    font-size: 1.2rem; }
   .btn-top:hover {
     color: #0460ba; }
 
@@ -583,7 +590,7 @@ textarea {
     right: 0;
     width: 70rem;
     z-index: -100;
-    animation: bgReveal .6s ease; }
+    animation: bgReveal 0.6s ease; }
   .hero__illustration {
     position: absolute;
     top: 22rem;
@@ -906,25 +913,33 @@ textarea {
 .about-main {
   text-align: center;
   width: 120rem;
-  margin: 0 auto;
+  margin: 12rem auto;
   /******* CEO Desc ********/ }
   .about-main__icon {
     font-size: 5rem;
     margin: 5rem 0 2rem 0;
-    color: #66c61a; }
+    color: #05487f; }
   .about-main__title {
     padding: 2rem;
     font-size: 2.5rem; }
   .about-main__prg {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.5; }
   .about-main__ceo {
     margin-top: 8rem; }
+    .about-main__ceo--box {
+      position: absolute;
+      transform: translate(-50%, 41rem);
+      left: 50%;
+      width: 130rem;
+      height: 20.8rem;
+      background-color: #0d88cc;
+      z-index: -1; }
     .about-main__ceo--photo {
       width: 100%; }
   .about-main__ceo-desc {
-    transform: translateY(50%); }
+    transform: translateY(21.5%); }
     .about-main__ceo-desc--name {
       font-weight: bold;
       font-size: 2.2rem; }
@@ -936,7 +951,11 @@ textarea {
     .about-main__ceo-desc--prg {
       padding: 3rem;
       text-align: left;
-      color: #5b5b5b; }
+      color: #05487f; }
+    .about-main__ceo-desc--prg2 {
+      padding: 3rem;
+      text-align: left;
+      color: #eef0f1; }
 
 .about-header {
   width: 100vw;
@@ -994,8 +1013,12 @@ textarea {
   z-index: -1000; }
 
 #aboutSection {
-  height: 100rem;
   position: relative; }
+
+#footer {
+  position: relative;
+  height: 100vh;
+  background-color: #05487f; }
 
 .products {
   position: relative;

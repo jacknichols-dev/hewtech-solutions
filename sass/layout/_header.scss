@@ -29,7 +29,8 @@
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
 
   &__item {
@@ -134,8 +135,8 @@
 
   &__number {
     letter-spacing: 0.2rem;
-    font-size: large;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }
 
@@ -146,8 +147,13 @@
   bottom: 5rem;
   right: 5rem;
   color: $green;
-  font-size: 4rem;
-  transition: all .15s;
+  font-size: 3rem;
+  transition: all 0.15s;
+
+  &__p {
+    color: white;
+    font-size: 1.2rem;
+  }
 
   &:hover {
     color: $blue;
@@ -228,7 +234,7 @@
     right: 0;
     width: 70rem;
     z-index: -100;
-    animation: bgReveal .6s ease;
+    animation: bgReveal 0.6s ease;
   }
 
   &__illustration {
