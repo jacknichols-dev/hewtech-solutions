@@ -16,9 +16,8 @@ body {
 body {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   color: #0460ba;
-  line-height: 1.8rem;
   font-stretch: semi-condensed; }
 
 ::selection {
@@ -560,8 +559,7 @@ textarea {
     left: 50%;
     font-size: 1.4rem;
     transform: translateX(-50%);
-    list-style: none;
-    font-weight: 600; }
+    list-style: none; }
   .header-scrolled__item {
     padding: 1rem 2.5rem;
     display: inline-block;
@@ -990,6 +988,43 @@ textarea {
   .about-link:hover {
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
     transform: rotate(-2deg) scale(1.05); }
+
+.footer__title {
+  padding-top: 27rem;
+  text-align: center;
+  color: #eef0f1;
+  text-transform: capitalize;
+  font-size: 2.5rem; }
+  .footer__title--span {
+    display: block;
+    content: '';
+    height: .2rem;
+    width: 6rem;
+    background-color: #66c61a;
+    margin: 2.5rem auto; }
+
+.footer__temp--icon {
+  font-size: 4rem;
+  color: #66c61a; }
+
+.footer__temp--title {
+  color: #eef0f1; }
+
+.footer__temp--prg {
+  color: #eef0f1;
+  font-size: 1.2rem;
+  padding: 2rem 0; }
+
+.footer__temp--link {
+  display: block;
+  padding: 2rem 0;
+  color: #66c61a;
+  width: 10rem;
+  text-align: center; }
+  .footer__temp--link:link {
+    text-decoration: none; }
+  .footer__temp--link:hover {
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
 
 #navBar {
   display: block; }
