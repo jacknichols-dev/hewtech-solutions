@@ -33,6 +33,15 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes productAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%); }
+  40% {
+    transform: translateY(0); }
+  100% {
+    opacity: 1; } }
+
 @-webkit-keyframes logo {
   0% {
     -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
@@ -692,12 +701,23 @@ textarea {
   .products__header--desc {
     position: absolute;
     width: 25%;
-    top: 12rem;
+    top: 14rem;
     margin-left: 10rem;
     color: #0d88cc;
     font-size: 1.3rem;
     padding-bottom: 5rem;
     border-bottom: 0.1rem solid #0d88cc; }
+  .products__header--list {
+    position: absolute;
+    top: 41rem;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    width: 35%;
+    margin-left: 21rem; }
+  .products__header--item {
+    list-style-type: none;
+    animation: productAppear 1s ease; }
   .products__header--img {
     background-image: url(/img/home-alarm.jpg);
     background-size: cover;
@@ -708,6 +728,11 @@ textarea {
     height: 100%;
     float: right;
     top: 0; }
+
+.products__img {
+  height: 7rem; }
+  .products__img--2 {
+    width: 10rem; }
 
 .services__header--bg {
   position: absolute;
@@ -997,34 +1022,93 @@ textarea {
   font-size: 2.5rem; }
   .footer__title--span {
     display: block;
-    content: '';
-    height: .2rem;
+    content: "";
+    height: 0.2rem;
     width: 6rem;
     background-color: #66c61a;
     margin: 2.5rem auto; }
 
 .footer__temp--icon {
   font-size: 4rem;
-  color: #66c61a; }
+  color: #66c61a;
+  padding: 2rem 0; }
 
 .footer__temp--title {
   color: #eef0f1; }
 
 .footer__temp--prg {
   color: #eef0f1;
+  height: 14rem;
   font-size: 1.2rem;
-  padding: 2rem 0; }
+  margin: 4rem 0; }
 
 .footer__temp--link {
   display: block;
-  padding: 2rem 0;
+  transform: translate(-3.5rem, 4rem);
   color: #66c61a;
-  width: 10rem;
-  text-align: center; }
+  width: 15rem;
+  padding: 0.8rem 1.3rem;
+  text-align: center;
+  transition: all 0.2s ease; }
   .footer__temp--link:link {
     text-decoration: none; }
   .footer__temp--link:hover {
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem); }
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  color: #eef0f1;
+  width: 120rem;
+  margin: 0 auto; }
+  .footer__contact--icon {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #66c61a; }
+  .footer__contact--number {
+    letter-spacing: 0.15rem;
+    width: 30rem; }
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 120rem; }
+  .footer__social--title {
+    text-transform: uppercase;
+    margin-right: 2rem; }
+  .footer__social--list {
+    display: flex;
+    justify-items: center;
+    list-style-type: none;
+    color: #eef0f1; }
+  .footer__social--item {
+    color: #eef0f1;
+    padding: 0 1rem;
+    font-size: 2rem; }
+  .footer__social--icon {
+    color: white; }
+    .footer__social--icon:hover {
+      color: #0d88cc;
+      text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      animation: pulse 1s ease; }
+
+.footer__copyright {
+  width: 120rem;
+  margin: 0 auto; }
+  .footer__copyright--span {
+    display: block;
+    content: "";
+    width: 120rem;
+    height: 0.1rem;
+    margin: 4rem 0;
+    background-color: #eef0f1; }
+  .footer__copyright--prg {
+    text-align: center;
+    color: #eef0f1;
+    font-size: 1.1rem; }
 
 #navBar {
   display: block; }
@@ -1048,6 +1132,7 @@ textarea {
   z-index: -1000; }
 
 #aboutSection {
+  padding-top: 7rem;
   position: relative; }
 
 #footer {

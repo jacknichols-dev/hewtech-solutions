@@ -1,51 +1,127 @@
 .footer {
+  &__title {
+    padding-top: 27rem;
+    text-align: center;
+    color: $white;
+    text-transform: capitalize;
+    font-size: 2.5rem;
 
-    &__title {
-        padding-top: 27rem;
+    &--span {
+      display: block;
+      content: "";
+      height: 0.2rem;
+      width: 6rem;
+      background-color: $green;
+      margin: 2.5rem auto;
+    }
+  }
+
+  &__temp {
+    &--icon {
+      font-size: 4rem;
+      color: $green;
+      padding: 2rem 0;
+    }
+    &--title {
+      color: $white;
+    }
+    &--prg {
+      color: $white;
+      height: 14rem;
+      font-size: 1.2rem;
+      margin: 4rem 0;
+    }
+    &--link {
+      display: block;
+      transform: translate(-3.5rem, 4rem);
+      color: $green;
+      width: 15rem;
+      padding: 0.8rem 1.3rem;
+      text-align: center;
+      transition: all 0.2s ease;
+
+      &:link {
+        text-decoration: none;
+      }
+
+      &:hover {
+        box-shadow: $shadow;
+        transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem);
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    color: $white;
+    width: 120rem;
+    margin: 0 auto;
+
+    &--icon {
+      font-size: 1.7rem;
+      margin-right: 1rem;
+      color: $green;
+    }
+    &--number {
+      letter-spacing: 0.15rem;
+      width: 30rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 120rem;
+
+    &--title {
+      text-transform: uppercase;
+      margin-right: 2rem;
+    }
+
+    &--list {
+      display: flex;
+      justify-items: center;
+      list-style-type: none;
+      color: $white;
+    }
+
+    &--item {
+      color: $white;
+      padding: 0 1rem;
+      font-size: 2rem;
+    }
+
+    &--icon {
+      color: white;
+
+      &:hover {
+        color: $blue-light;
+        text-shadow: $shadow;
+        animation: pulse 1s ease;
+      }
+    }
+  }
+
+  &__copyright {
+      width: 120rem;
+      margin: 0 auto;
+
+    &--span {
+      display: block;
+      content: "";
+      width: 120rem;
+      height: 0.1rem;
+      margin: 4rem 0;
+      background-color: $white;
+    }
+
+    &--prg {
         text-align: center;
         color: $white;
-        text-transform: capitalize;
-        font-size: 2.5rem;
-
-        &--span {
-            display: block;
-            content: '';
-            height: .2rem;
-            width: 6rem;
-            background-color: $green;
-            margin: 2.5rem auto;
-        }
+        font-size: 1.1rem;
     }
-
-    &__temp {
-
-        &--icon {
-            font-size: 4rem;
-            color: $green;
-        }
-        &--title {
-            color: $white;
-        }
-        &--prg {
-            color: $white;
-            font-size: 1.2rem;
-            padding: 2rem 0;
-        }
-        &--link {
-            display: block;
-            padding: 2rem 0;
-            color: $green;
-            width: 10rem;
-            text-align: center;
-
-
-            &:link {
-                text-decoration: none;
-            }
-
-            &:hover {
-                box-shadow: $shadow;
-            }
-        }
-    }
+  }
 }

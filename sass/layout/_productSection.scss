@@ -20,12 +20,26 @@
     &--desc {
       position: absolute;
       width: 25%;
-      top: 12rem;
+      top: 14rem;
       margin-left: 10rem;
       color: $blue-light;
       font-size: 1.3rem;
       padding-bottom: 5rem;
       border-bottom: 0.1rem solid $blue-light;
+    }
+
+    &--list {
+      position: absolute;
+      top: 41rem;
+      display: flex;
+      align-content: flex-start;
+      align-items: center;
+      width: 35%;
+      margin-left: 21rem;
+    }
+    &--item {
+      list-style-type: none;
+      animation: productAppear 1s ease;
     }
 
     &--img {
@@ -38,6 +52,23 @@
       height: 100%;
       float: right;
       top: 0;
+    }
+  }
+  &__img {
+    height: 7rem;
+
+    &--1 {
+    }
+    &--2 {
+      width: 10rem;
+    }
+    &--3 {
+    }
+    &--4 {
+    }
+    &--5 {
+    }
+    &--6 {
     }
   }
 }
