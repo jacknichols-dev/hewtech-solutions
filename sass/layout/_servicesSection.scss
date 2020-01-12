@@ -10,7 +10,7 @@
           rgba(17, 2, 100, 0.6),
           rgba($green, 0.3)
         ),
-        url(/img/hewtechservicephoto.jpg);
+        url(../img/hewtechservicephoto.jpg);
       background-size: cover;
     }
 
@@ -127,22 +127,22 @@
 
 
     &--1 {
-      background-image: url(/img/user1.jpg);
+      background-image: url(../img/user1.jpg);
       background-size: cover;
       background-position: center;
     }
     &--2 {
-      background-image: url(/img/user2.jpg);
+      background-image: url(../img/user2.jpg);
       background-size: cover;
       background-position: center;
     }
     &--3 {
-      background-image: url(/img/user3.jpg);
+      background-image: url(../img/user3.jpg);
       background-size: cover;
       background-position: center;
     }
     &--4 {
-      background-image: url(/img/user4.jpg);
+      background-image: url(../img/user4.jpg);
       background-size: cover;
       background-position: center;
     }
@@ -178,18 +178,20 @@
     &::before {
       content: "\201C";
       position: absolute;
-      top: 2rem;
+      top: -10rem;
       left: -10rem;
       font-family: sans-serif;
       font-size: 20rem;
+      font-weight: 600;
       color: rgba($black, 0.4);
     }
     &::after {
       content: "\201E";
       position: absolute;
-      top: 2rem;
+      top: -10rem;
       right: -10rem;
       font-family: sans-serif;
+      font-weight: 600;
       font-size: 20rem;
       color: rgba($black, 0.4);
     }

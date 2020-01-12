@@ -1,142 +1,147 @@
 .card {
-    position: relative;
-    margin-top: 10rem;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  margin-top: 10rem;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: $shadow-1;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2rem) scale(1.02);
     box-shadow: $shadow-1;
-    border-radius: 2rem;
-    transition: all .3s ease;
+  }
 
-    &:hover {
-        transform: translateY(-2rem) scale(1.02);
-        box-shadow: $shadow-1;
+  &:hover .card__details-hidden {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__side {
+    width: 100%;
+    height: 60rem;
+
+    &--front {
+      background: white;
+    }
+  }
+
+  &__pic {
+    height: 39%;
+    border-radius: 2rem 2rem 0 0;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+
+    &--1 {
+      background-image: linear-gradient(
+          to left,
+          rgba($blue-2, 0.5),
+          rgba($green, 0.1)
+        ),
+        url(../img/personal-alarm2.jpg);
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to left,
+          rgba($green-light, 0.5),
+          rgba($blue, 0.1)
+        ),
+        url(../img/home-alarm2.jpg);
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to left,
+          rgba($blue, 0.5),
+          rgba($green-light, 0.5)
+        ),
+        url(../img/workplace-alarm.jpg);
+    }
+  }
+
+  &__heading {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__details ul {
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    list-style-type: none;
+  }
+  &__details li {
+    margin: 0 auto;
+    text-align: center;
+    color: $blue-2;
+    padding: 1.5rem 2.5rem;
+
+    &:not(:last-child) {
+      border-bottom: solid 0.1rem rgba($blue, 0.4);
+      width: 70%;
+    }
+  }
+
+  &__details-hidden {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    border-radius: 0 0 2rem 2rem;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+
+    &--1 {
+      background-color: $blue;
+      color: $white;
+    }
+    &--2 {
+      background-color: $green;
+      color: $white;
+    }
+    &--3 {
+      background-color: $blue-2;
+      color: $white;
     }
 
-    &:hover .card__details-hidden {
-        opacity: 1;
-        transform: translateY(0);
+    &--heading {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      text-align: center;
+      color: $white;
     }
 
-    &__side {
-        width: 100%;
-        height: 60rem;
-
-
-        &--front {
-            background: white;
-        }
-
+    &--desc {
+      @include center;
+      width: 80%;
+      color: $white;
+      font-size: 1.4rem;
+      text-align: center;
+      padding-bottom: 3rem;
     }
 
-    &__pic {
-        height: 39%;
-        border-radius: 2rem 2rem 0 0 ;
-        background-size: cover;
-        background-position: top;
-        clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    &--btn,
+    &:link {
+      position: absolute;
+      left: 50%;
+      bottom: 11%;
+      transform: translate(-50%, 0) scale(1);
+      color: $blue;
+      text-decoration: none;
+      background-color: $white;
+      padding: 1rem 2.5rem;
+      box-shadow: $shadow;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      transition: all 0.1s ease;
 
-
-
-        &--1 {
-            background-image: linear-gradient(to left, rgba($blue-2,.5), rgba($green, .1)), url(/img/personal-alarm2.jpg);
-        }
-        &--2 {
-            background-image: linear-gradient(to left, rgba($green-light,.5), rgba($blue, .1)), url(/img/home-alarm2.jpg);
-        }
-        &--3 {
-            background-image: linear-gradient(to left, rgba($blue,.5), rgba($green-light, .5)), url(/img/workplace-alarm.jpg);
-        }
+      &:hover,
+      &:focus {
+        color: $green;
+        transform: translate(-50%, 0) scale(1.05);
+      }
     }
-
-    &__heading {
-        margin-top: 2rem;
-        font-size: 2.2rem;
-        font-weight: bold;
-        text-align: center;
-        
-    }
-
-    &__details ul{
-        margin: 4rem 0;
-        font-size: 1.5rem;
-        list-style-type: none;
-        
-
-     }
-     &__details li {
-        margin: 0 auto;
-        text-align: center;
-        color: $blue-2;
-        padding: 1.5rem 2.5rem;
-
-        &:not(:last-child) {
-            border-bottom: solid .1rem rgba($blue, .4);
-            width: 70%;
-        }
-    }
-
-    &__details-hidden {
-        opacity: 1;
-        position: absolute;
-        width: 100%;
-        height: 50%;
-        bottom: 0;
-        border-radius: 0 0 2rem 2rem;
-        transform: translateY(100%);
-        transition: all .3s ease;
-
-        &--1 {
-            background-color: $blue;
-            color: $white;
-        }
-        &--2 {
-            background-color: $green;
-            color: $white;
-        }
-        &--3 {
-            background-color: $blue-2;
-            color: $white;
-        }
-
-        &--heading {
-            font-size: 1.8rem;
-            margin-top: 3rem;
-            text-align: center;
-            color: $white;
-        }
-
-
-        &--desc {
-            @include center;
-            width: 80%;
-            color: $white;
-            font-size: 1.4rem;
-            text-align: center;
-            padding-bottom: 3rem;
-        }
-
-        &--btn,
-        &:link {
-            position: absolute;
-            left: 50%;
-            bottom: 11%;
-            transform: translate(-50%, 0) scale(1);
-            color: $blue;
-            text-decoration: none;
-            background-color: $white;
-            padding: 1rem 2.5rem;
-            box-shadow: $shadow;
-            border-radius: .5rem;
-            font-weight: bold;
-            transition: all .1s ease;
-
-            &:hover,
-            &:focus {
-                color: $green;
-                transform:translate(-50%, 0) scale(1.05);
-            }
-        }
-
-      
-    }
+  }
 }

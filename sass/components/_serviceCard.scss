@@ -72,7 +72,7 @@
           rgba($blue, 0.2),
           rgba($green, 0.2)
         ),
-        url(/img/help.jpg);
+        url(../img/help.jpg);
     }
     &--2 {
       background-image: linear-gradient(
@@ -80,7 +80,7 @@
           rgba($blue-2, 0.9),
           rgba($green-light, 0.4)
         ),
-        url(/img/solution.jpg);
+        url(../img/solution.jpg);
     }
     &--3 {
       background-image: linear-gradient(
@@ -88,7 +88,7 @@
           rgba($black, 0.6),
           rgba($white, 0.2)
         ),
-        url(/img/benefit.jpg);
+        url(../img/benefit.jpg);
     }
 
     &--icon {
