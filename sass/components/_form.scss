@@ -1,4 +1,5 @@
 .form {
+  padding: 8rem 0 0 4rem;
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -89,7 +90,7 @@ textarea {
 
 #map {
   position: relative;
-  height: 30rem;
-  width: 30rem;
+  height: 40rem;
+  width: 40rem;
   margin: 4rem 4rem 0 0;
 }

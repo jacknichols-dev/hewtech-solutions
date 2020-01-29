@@ -1,4 +1,7 @@
 .footer {
+  display: block;
+  position: relative;
+
   &__title {
     padding-top: 27rem;
     text-align: center;
@@ -100,7 +103,7 @@
       &:hover {
         color: $blue-light;
         text-shadow: $shadow;
-        animation: pulse 1s ease;
+        animation: pulse 1s ease infinite;
       }
     }
   }

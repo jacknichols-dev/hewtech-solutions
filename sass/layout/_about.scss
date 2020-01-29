@@ -1,7 +1,7 @@
 .about-main {
   text-align: center;
   width: 120rem;
-  margin: 12rem auto;
+  margin: 10rem auto;
 
   &__icon {
     font-size: 5rem;
@@ -37,7 +37,7 @@
 
 
     &--photo {
-      width: 100%;
+      width: 105%;
     }
   }
 
@@ -69,8 +69,7 @@
 }
 
 .about-header {
-  width: 100vw;
-  height: 55rem;
+  height: 62rem;
   background-color: $blue-light;
   margin: 0 auto;
   font-size: 2rem;
@@ -79,7 +78,7 @@
   h4 {
     color: white;
     line-height: 1.4;
-    margin-top: 12rem;
+    margin-top: 14.5rem;
 
     & span,
     a {
@@ -93,9 +92,10 @@
 
 .about-img {
   background-image: url(../img/hero.jpg);
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
   background-size: cover;
-  height: 55rem;
+  background-position: center;
+  height: 62rem;
   width: 100%;
 }
 

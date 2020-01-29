@@ -30,6 +30,11 @@
       margin-top: 10rem;
     }
   }
+
+  &--form {
+    font-family: $font-2;
+    border: none;
+  }
 }
 .btn--hero {
   position: absolute;

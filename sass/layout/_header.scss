@@ -10,6 +10,8 @@
     background-color: white;
     position: fixed;
     top: 0;
+    box-shadow: $shadow;
+    z-index: 1000;
   }
 
   &__logo {
