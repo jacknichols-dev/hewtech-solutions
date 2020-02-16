@@ -53,6 +53,11 @@
   letter-spacing: 0.07rem;
   animation: btnReveal 1s ease;
 
+  @include respond (desktop) {
+    left: 14%;
+    top: 53%;
+  }
+
   &:hover {
     background: $gradient-2;
     transform: scale(1.009);

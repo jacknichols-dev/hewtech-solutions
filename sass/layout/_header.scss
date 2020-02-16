@@ -61,20 +61,33 @@
 .social {
   position: fixed;
   top: 2.5rem !important;
-  right: 27rem;
+  right: 26rem;
   z-index: 100;
   font-size: 2rem;
 
+  @include respond (desktop) {
+    right: 22rem;
+  }
+
+  @include respond(tab-land) {
+    display: none;
+  }
+  
+
   &__fb,
   &:link {
-    color: $white;
     margin-right: 2rem;
     transition: all 0.2s ease;
+    color: $white;
 
+    @include respond(desktop) {
+      color: $blue-light;
+    }
+
+    
     &:hover {
       animation: pulse 1s infinite;
       text-shadow: $shadow;
-      color: white;
     }
   }
 
@@ -91,6 +104,10 @@
   &:link {
     color: $white;
     transition: all 0.2s ease;
+
+    @include respond(desktop) {
+      color: $blue-light;
+    }
 
     &:hover {
       animation: pulse 1s infinite;
@@ -115,18 +132,17 @@
   position: fixed;
   top: 1rem;
   right: 5rem;
-  color: $white;
   line-height: 1.7;
   text-align: center;
   z-index: 70;
 
-  &--contact {
-    color: $blue-light;
-  }
-
   &__link {
     color: white;
     text-decoration: none;
+      
+  @include respond(desktop) {
+    color: $blue-light;
+  }
   }
 
   &__title {
@@ -199,6 +215,15 @@
     padding: 1rem 2.5rem;
     display: inline-block;
     margin-right: 3.5rem;
+
+
+    @include respond(desktop) {
+      margin-right: 2.3rem;
+    }
+
+    @include respond(tab-land) {
+      margin-right: 1.8rem;
+    }
   }
 
   &__link {
@@ -211,6 +236,77 @@
     }
   }
 }
+
+/******* Social Scrolled *******/
+
+.social-scrolled {
+  display: none;
+  position: fixed;
+  top: 2.5rem !important;
+  right: 26rem;
+  z-index: 100;
+  font-size: 2rem;
+
+  @include respond (desktop) {
+    right: 22rem;
+  }
+
+  @include respond (tab-land) {
+    display: none;
+  }
+
+
+
+  &__fb,
+  &:link {
+    margin-right: 2rem;
+    transition: all 0.2s ease;
+    color: $white;
+  }
+
+  &__twitter,
+  &:link {
+    color: $white;
+    transition: all 0.2s ease;
+
+    &:hover {
+      animation: pulse 1s infinite;
+      text-shadow: $shadow;
+      color: white;
+    }
+  }
+}
+
+/******* Contact Scrolled *******/
+
+.contact-scrolled {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 5rem;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 70;
+  color: white;
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+
+  &__number {
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
 
 /********* HERO SECTION ***********/
 
@@ -225,6 +321,10 @@
     top: 37%;
     left: 19%;
     width: 50rem;
+
+    @include respond (desktop) {
+      left: 14%;
+    }
   }
 
   /******** ILLUSTRATION **********/
@@ -236,6 +336,10 @@
     width: 70rem;
     z-index: -100;
     animation: bgReveal 0.6s ease;
+  
+    @include respond(desktop) {
+      display: none;
+    }
   }
 
   &__illustration {
@@ -244,6 +348,16 @@
     right: 29rem;
     width: 53rem;
     animation: illReveal 1.6s ease;
+
+    @include respond (desktop) {
+      right: 21rem;
+      width: 50rem;
+    }
+
+    @include respond(tab-land) {
+      right: 5rem;
+      width: 45rem;
+    }
   }
 }
 
@@ -262,31 +376,42 @@
   width: 50rem;
   margin-left: 8rem;
 
+  @include respond (desktop) {
+    left: 14%;
+  }
+
+
   &--title {
     color: $blue-light;
     font-size: 5rem;
   }
 }
+
 .rotating-text p {
   position: absolute;
   margin: 0;
-  top: 20%;
+  top: 18%;
 }
+
 .rotating-text p .word {
   position: absolute;
   display: flex;
   opacity: 0;
 }
+
 .rotating-text p .word .letter {
   transform-origin: center center 2.5rem;
 }
+
 .rotating-text p .word .letter.out {
   transform: rotateX(90deg);
   transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
+
 .rotating-text p .word .letter.in {
   transition: 0.38s ease;
 }
+
 .rotating-text p .word .letter.behind {
   transform: rotateX(-90deg);
 }
@@ -304,9 +429,9 @@
 }
 
 .safeguard {
-  color: $green;
+  color: $blue-2;
 }
 
 .keep {
-  color: $blue-2;
+  color: $green;
 }
