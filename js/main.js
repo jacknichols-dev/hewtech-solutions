@@ -6,21 +6,18 @@
 
 // NAV BAR SCROLL
 let nav = document.getElementById("navBar");
-<<<<<<< HEAD
 // let logo = document.querySelector(".header__logo");
 // let logoScrolled = document.querySelector(".header-scrolled__logo");
 // let list = document.querySelector(".header__list");
 // let listScrolled = document.querySelector(".header-scrolled__list");
 // let socialScrolled = document.querySelector(".social-scrolled");
 // let contactScrolled = document.querySelector(".contact-scrolled");
-=======
 let logo = document.querySelector(".header__logo");
 let logoScrolled = document.querySelector(".header-scrolled__logo");
 let list = document.querySelector(".header__list");
 let listScrolled = document.querySelector(".header-scrolled__list");
 let socialScrolled = document.querySelector(".social-scrolled");
 let contactScrolled = document.querySelector(".contact-scrolled");
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
 let topBtn = document.querySelector(".btn-top");
 
 const navChange = window.addEventListener("scroll", function() {
@@ -30,40 +27,34 @@ const navChange = window.addEventListener("scroll", function() {
   ) {
     nav.classList.add("header-scrolled");
     nav.classList.remove("header");
-<<<<<<< HEAD
     // logo.style.display = "none";
     // logoScrolled.style.display = "block";
     // list.style.display = "none";
     // listScrolled.style.display = "block";
     // socialScrolled.style.display = "block";
     // contactScrolled.style.display = "block";
-=======
     logo.style.display = "none";
     logoScrolled.style.display = "block";
     list.style.display = "none";
     listScrolled.style.display = "block";
     socialScrolled.style.display = "block";
     contactScrolled.style.display = "block";
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
     topBtn.style.display = "block";
   } else {
     nav.classList.add("header");
     nav.classList.remove("header-scrolled");
-<<<<<<< HEAD
     // logo.style.display = "block";
     // logoScrolled.style.display = "none";
     // list.style.display = "block";
     // listScrolled.style.display = "none";
     // socialScrolled.style.display = "none";
     // contactScrolled.style.display = "none";
-=======
     logo.style.display = "block";
     logoScrolled.style.display = "none";
     list.style.display = "block";
     listScrolled.style.display = "none";
     socialScrolled.style.display = "none";
     contactScrolled.style.display = "none";
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
     topBtn.style.display = "none";
   }
 });
