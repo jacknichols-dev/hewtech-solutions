@@ -1,6 +1,6 @@
 .about-main {
   text-align: center;
-  width: 120rem;
+  max-width: 100%;
   margin: 10rem auto;
 
   &__icon {
@@ -29,7 +29,7 @@
       position: absolute;
       transform: translate(-50%, 41rem);
       left: 50%;
-      width: 130rem;
+      max-width: 100%;
       height: 20.8rem;
       background-color: $blue-light;
       z-index: -1;

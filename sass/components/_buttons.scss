@@ -37,9 +37,7 @@
   }
 }
 .btn--hero {
-  position: absolute;
-  top: 55%;
-  left: 19%;
+  margin-top: 5rem;
   padding: 1.2rem 2.1rem;
   border-radius: .3rem;
   background: $gradient;
@@ -52,6 +50,9 @@
   transition: all 0.2s;
   letter-spacing: 0.07rem;
   animation: btnReveal 1s ease;
+
+  @include respond (desktop) {
+  }
 
   &:hover {
     background: $gradient-2;

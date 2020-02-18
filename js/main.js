@@ -1,33 +1,42 @@
-// NAV BAR SCROLL
-var nav = document.getElementById("navBar");
-var logo = document.querySelector(".header__logo");
-var logoScrolled = document.querySelector(".header-scrolled__logo");
-var list = document.querySelector(".header__list");
-var listScrolled = document.querySelector(".header-scrolled__list");
-var social = document.querySelector(".social");
-var topBtn = document.querySelector(".btn-top");
+// NAV BAR width
 
-window.addEventListener("scroll", function(e) {
+
+
+
+
+// NAV BAR SCROLL
+let nav = document.getElementById("navBar");
+// let logo = document.querySelector(".header__logo");
+// let logoScrolled = document.querySelector(".header-scrolled__logo");
+// let list = document.querySelector(".header__list");
+// let listScrolled = document.querySelector(".header-scrolled__list");
+// let socialScrolled = document.querySelector(".social-scrolled");
+// let contactScrolled = document.querySelector(".contact-scrolled");
+let topBtn = document.querySelector(".btn-top");
+
+const navChange = window.addEventListener("scroll", function() {
   if (
     document.documentElement.scrollTop ||
     document.body.scrollTop > window.innerHeight
   ) {
     nav.classList.add("header-scrolled");
     nav.classList.remove("header");
-    logo.style.display = "none";
-    logoScrolled.style.display = "block";
-    list.style.display = "none";
-    listScrolled.style.display = "block";
-    social.style.top = "22px";
+    // logo.style.display = "none";
+    // logoScrolled.style.display = "block";
+    // list.style.display = "none";
+    // listScrolled.style.display = "block";
+    // socialScrolled.style.display = "block";
+    // contactScrolled.style.display = "block";
     topBtn.style.display = "block";
   } else {
     nav.classList.add("header");
     nav.classList.remove("header-scrolled");
-    logo.style.display = "block";
-    logoScrolled.style.display = "none";
-    list.style.display = "block";
-    listScrolled.style.display = "none";
-    social.style.top = "30px";
+    // logo.style.display = "block";
+    // logoScrolled.style.display = "none";
+    // list.style.display = "block";
+    // listScrolled.style.display = "none";
+    // socialScrolled.style.display = "none";
+    // contactScrolled.style.display = "none";
     topBtn.style.display = "none";
   }
 });
@@ -64,14 +73,14 @@ $("#btnTop").click(function() {
  ********** Services header Parallax ***********
  ***/
 
-var velocity = 0.2;
+const velocity = 0.25;
 
 function update() {
-  var pos = $(window).scrollTop();
+  const pos = $(window).scrollTop();
   $(".services__header--bg").each(function() {
-    var $element = $(this);
+    const $element = $(this);
     // subtract some from the height b/c of the padding
-    var height = $element.height() - 30;
+    const height = $element.height() - 30;
     $(this).css(
       "backgroundPosition",
       "90% " + Math.round((height - pos) * velocity) + "px"
@@ -85,23 +94,23 @@ $(window).bind("scroll", update);
  ********** HERO ROTATING TEXT ***********
  ***/
 
-var words = document.querySelectorAll(".word");
+let words = document.querySelectorAll(".word");
 words.forEach(function(word) {
-  var letters = word.textContent.split("");
+  let letters = word.textContent.split("");
   word.textContent = "";
   letters.forEach(function(letter) {
-    var span = document.createElement("span");
+    let span = document.createElement("span");
     span.textContent = letter;
     span.className = "letter";
     word.append(span);
   });
 });
-var currentWordIndex = 0;
-var maxWordIndex = words.length - 1;
+let currentWordIndex = 0;
+let maxWordIndex = words.length - 1;
 words[currentWordIndex].style.opacity = "1";
-var rotateText = function() {
-  var currentWord = words[currentWordIndex];
-  var nextWord =
+let rotateText = function() {
+  let currentWord = words[currentWordIndex];
+  let nextWord =
     currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
   // rotate out letters of current word
   Array.from(currentWord.children).forEach(function(letter, i) {

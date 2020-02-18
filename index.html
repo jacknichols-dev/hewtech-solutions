@@ -15,30 +15,37 @@
 </head>
 <body>
  
-    <!-- MAIN TOP NAV -->
+    <!-- LARGE NAV -->
 
-    <section id="navBar">
+    <nav id="navBar">
         <div class="header">
             <a href="#main"><img src="img/logo.png" alt="logo" class="header__logo"></a>
+            <a href="#main"><img src="img/logo-icon.png" alt="logo" class="header__logo-icon"></a>
             <a href="#main"><img src="img/hewtech-logo-scrolled.png" alt="logo" class="header-scrolled__logo"></a>
 
         <ul class="header__list">
-            <li class="header__item"><a href="#main" class="header__link"><i class="header__icon fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
-            <li class="header__item"><a href="#productSection" class="header__link"><i class="header__icon fab fa-product-hunt"></i>&nbsp;&nbsp;Products</a></li>
-            <li class="header__item"><a href="#servicesSection" class="header__link"><i class="header__icon fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
-            <li class="header__item"><a href="#aboutSection" class="header__link "><i class="header__icon fas fa-info"></i>&nbsp;&nbsp;About</a></li>
+            <li class="header__item"><a href="#main" class="header__link"><i class="header__icon fas fa-home"></i>Home</a></li>
+            <li class="header__item"><a href="#productSection" class="header__link"><i class="header__icon fab fa-product-hunt"></i>Products</a></li>
+            <li class="header__item"><a href="#servicesSection" class="header__link"><i class="header__icon fas fa-wrench"></i>Services</a></li>
+            <li class="header__item"><a href="#aboutSection" class="header__link "><i class="header__icon fas fa-info"></i>About</a></li>
         </ul>
             <!--SCROLLED-->
         <ul class="header-scrolled__list">
-            <li class="header-scrolled__item"><a href="#main" class="header-scrolled__link"><i class="header__icon fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
-            <li class="header-scrolled__item"><a href="#productSection" class="header-scrolled__link"><i class="header__icon fab fa-product-hunt"></i>&nbsp;&nbsp;Products</a></li>
-            <li class="header-scrolled__item"><a href="#servicesSection" class="header-scrolled__link"><i class="header__icon fas fa-wrench"></i>&nbsp;&nbsp;Services</a></li>
-            <li class="header-scrolled__item"><a href="#aboutSection" class="header-scrolled__link "><i class="header__icon fas fa-info"></i>&nbsp;&nbsp;About</a></li>
+            <li class="header-scrolled__item"><a href="#main" class="header-scrolled__link"><i class="header__icon fas fa-home"></i>Home</a></li>
+            <li class="header-scrolled__item"><a href="#productSection" class="header-scrolled__link"><i class="header__icon fab fa-product-hunt"></i>Products</a></li>
+            <li class="header-scrolled__item"><a href="#servicesSection" class="header-scrolled__link"><i class="header__icon fas fa-wrench"></i>Services</a></li>
+            <li class="header-scrolled__item"><a href="#aboutSection" class="header-scrolled__link "><i class="header__icon fas fa-info"></i>About</a></li>
         </ul>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/" target="_blank"><i class="social__fb fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="social__fb fab fa-facebook"></i></a> 
             <a href="https://twitter.com/" target="_blank"><i class="social__twitter fab fa-twitter"></i></a>
+        </div>
+
+        <!--SCROLLED-->
+        <div class="social-scrolled">
+            <a href="https://www.facebook.com/" target="_blank"><i class="social-scrolled__fb fab fa-facebook"></i></a> 
+            <a href="https://twitter.com/" target="_blank"><i class="social-scrolled__twitter fab fa-twitter"></i></a>
         </div>
 
         <div class="contact">
@@ -47,13 +54,42 @@
             <h4 class="contact__number">07771 119910</h4>
         </a>
         </div>
+        
+        <!--SCROLLED-->
+        <div class="contact-scrolled">
+            <a href="contact.html" class="contact-scrolled__link">
+            <p class="contact-scrolled__title"><i class="fas fa-phone"></i>&nbsp;Contact us</p>
+            <h4 class="contact-scrolled__number">07771 119910</h4>
+        </a>
+        </div>
 
-    </section>
+          <!-- SMALL HAMBURGER NAV -->
+          <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            
+            <div class="navigation__background">&nbsp;</div>
+    
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benifits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>products</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+
+    </nav>
 
     
-    <div id="btnTop">
+    <button id="btnTop">
         <a href="#main"><i class="btn-top fas fa-chevron-circle-up"></i></a>
-    </div>
+    </button>
 
     <!-- HERO -->
 
@@ -470,75 +506,9 @@
 
 <!--***** About Section ******-->
 
-<section id="aboutSection">
-    <div class="about">
-        <div class="about-header">
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h1>Our goal is to help keep you protected.
-                            <br>
-                            <span>home, business and individuals</span></h1>
-                        <h4>Have any questions? <br> Call us on 07771119910 &nbsp; or <span><a href="contact.html" class="about-link">Message us</a></span></h4>
-                    </div>
-                    <div class="col-1-of-2">  
-                        <div class="about-img"></div>
-                    </div>
-                </div>
-        </div>
-        <div class="about-main">
-            <i class="fas fa-users about-main__icon"></i>
-            <h1 class="about-main__title">About us</h1>
-            <h4 class="about-main__prg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Maxime perferendis repellendus fugit quibusdam tempore nihil error architecto omnis recusandae id maiores aliquid quia in, 
-                doloremque numquam ratione! Rem, accusamus nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum hic natus dolores expedita 
-                labore dolore ducimus veniam nostrum in a quae ut ab animi error accusamus, magnam deserunt, doloribus eaque!
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum sapiente animi modi quam molestiae, 
-                in eveniet sit ipsum omnis fugit numquam tenetur non ut, tempora labore harum? Fugit, aliquam!
-            </h4>    
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="about-main__ceo--box"></div>
-                    <div class="about-main__ceo">
-                        <img class="about-main__ceo--photo" src="img/mark.jpg" alt="CEO photo">
-                    </div>
-                </div>
-                <div class="col-1-of-2">
-                   <div class="about-main__ceo-desc">
-                        <div class="about-main__ceo-desc--name">Mark Hewson</div>
-                        <div class="about-main__ceo-desc--title">CEO | FOUNDER</div>
-                        <a href="contact.html" class="btn btn-about">Contact us</a>
-                        <hr>
-                        <div class="about-main__ceo-desc--prg">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi ut dolores aliquid cum dolorum accusamus at consequuntur 
-                                corrupti placeat voluptate sunt esse eum blanditiis fuga voluptatem, distinctio reprehenderit sed rem impedit recusandae magni 
-                                quia quibusdam? Officiis, alias excepturi corrupti quae vero omnis ullam modi, assumenda temporibus autem, delectus veniam!
-                            </p>
-                        </div>
-                        <div class="about-main__ceo-desc--prg2">
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Quas minus illum similique assumenda veritatis libero earum 
-                                praesentium obcaecati voluptatem quae, dolore sit magnam 
-                                facere non debitis? Culpa nam quis tenetur!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Accusamus et nulla provident dicta iusto blanditiis fugit 
-                                fuga perspiciatis sed. Doloribus ratione facilis aliquid assumenda 
-                                ducimus quas? Dolores voluptatibus minus ipsa.
-                            </p>
-                        </div>
-                   </div>
-                </div>
-            </div>
-    </div>
-</section>
-
 <!--***** Footer Section ******-->
 
-<section id="footer">
+<footer id="footer">
     <div class="footer">
         <h1 class="footer__title">We serve to keep you safe</h1>
         <span class="footer__title--span"></span>
@@ -616,7 +586,7 @@
                 </div>
             </div>
     </div>
-</section>
+</footer>
 
 <!--***** JavaScript ******-->
     <script

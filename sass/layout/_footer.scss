@@ -1,6 +1,7 @@
 .footer {
   display: block;
   position: relative;
+  max-width: 100%;
 
   &__title {
     padding-top: 27rem;
@@ -59,7 +60,7 @@
     align-items: center;
     align-content: space-between;
     color: $white;
-    width: 120rem;
+    max-width: 100%;
     margin: 0 auto;
 
     &--icon {
@@ -77,7 +78,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 120rem;
+    max-width: 100%;
 
     &--title {
       text-transform: uppercase;
@@ -109,13 +110,14 @@
   }
 
   &__copyright {
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
+      align-items: center;
 
     &--span {
       display: block;
       content: "";
-      width: 120rem;
+      max-width: 80%;
       height: 0.1rem;
       margin: 4rem 0;
       background-color: $white;

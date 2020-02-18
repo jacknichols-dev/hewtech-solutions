@@ -2,8 +2,8 @@
   &__header {
     &--bg {
       position: absolute;
-      width: 100%;
-      height: 85%;
+      min-width: 100%;
+      min-height: 200%;
       background-image: linear-gradient(
           to left,
           rgba($blue-2, 1),
@@ -12,6 +12,7 @@
         ),
         url(../img/hewtechservicephoto.jpg);
       background-size: cover;
+      background-repeat: no-repeat;
     }
 
     &--title {
@@ -68,7 +69,7 @@
       left: 50%;
       transform: translate(-50%, -5%);
       margin-top: 50rem;
-      width: 120rem;
+      max-width: 80%;
       background-color: $white;
       height: 61.2rem;
       box-shadow: $shadow-2;
