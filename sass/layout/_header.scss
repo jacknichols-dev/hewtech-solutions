@@ -164,10 +164,13 @@
   text-align: center;
   z-index: 70;
 
+<<<<<<< HEAD
   @include respond(tab-port-small) {
     display: none;
   }
 
+=======
+>>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
   &__link {
     color: white;
     text-decoration: none;
@@ -325,6 +328,7 @@
   }
 }
 
+<<<<<<< HEAD
 /*********------------------- HAMBURGER MENU --------------------***********/
 
 .navigation {
@@ -511,6 +515,10 @@
 }
 
 /*********------------------- HERO SECTION --------------------***********/
+=======
+
+/********* HERO SECTION ***********/
+>>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
 
 .hero {
   height: 70vh;
@@ -523,6 +531,10 @@
     width: 50rem;
 
     @include respond (desktop) {
+<<<<<<< HEAD
+=======
+      left: 14%;
+>>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
     }
   }
 
@@ -554,7 +566,11 @@
     }
 
     @include respond(tab-land) {
+<<<<<<< HEAD
       right: 15rem;
+=======
+      right: 5rem;
+>>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
       width: 45rem;
     }
   }
@@ -574,6 +590,11 @@
   }
 
 
+  @include respond (desktop) {
+    left: 14%;
+  }
+
+
   &--title {
     color: $blue-light;
     font-size: 5rem;
@@ -583,7 +604,7 @@
 .rotating-text p {
   position: absolute;
   margin: 0;
-  top: 20%;
+  top: 18%;
 }
 
 .rotating-text p .word {

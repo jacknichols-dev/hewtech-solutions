@@ -52,6 +52,11 @@
   animation: btnReveal 1s ease;
 
   @include respond (desktop) {
+<<<<<<< HEAD
+=======
+    left: 14%;
+    top: 53%;
+>>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
   }
 
   &:hover {
