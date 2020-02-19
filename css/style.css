@@ -364,10 +364,6 @@ body {
   transition: all 0.2s;
   letter-spacing: 0.07rem;
   animation: btnReveal 1s ease; }
-  @media only screen and (max-width: 90.6em) {
-    .btn--hero {
-      left: 14%;
-      top: 53%; } }
   .btn--hero:hover {
     background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
     transform: scale(1.009);
@@ -565,12 +561,9 @@ textarea {
   line-height: 1.7;
   text-align: center;
   z-index: 70; }
-<<<<<<< HEAD
   @media only screen and (max-width: 51.25em) {
     .contact {
       display: none; } }
-=======
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
   .contact__link {
     color: white;
     text-decoration: none; }
@@ -680,7 +673,6 @@ textarea {
     font-size: 1.6rem;
     font-weight: 500; }
 
-<<<<<<< HEAD
 /*********------------------- HAMBURGER MENU --------------------***********/
 .navigation {
   display: none; }
@@ -796,9 +788,7 @@ textarea {
     transform: rotate(-135deg); }
 
 /*********------------------- HERO SECTION --------------------***********/
-=======
 /********* HERO SECTION ***********/
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
 .hero {
   height: 70vh;
   max-width: 70%;
@@ -833,11 +823,8 @@ textarea {
         width: 50rem; } }
     @media only screen and (max-width: 75em) {
       .hero__illustration {
-<<<<<<< HEAD
         right: 15rem;
-=======
         right: 5rem;
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
         width: 45rem; } }
 
 .rotating-text {
@@ -846,17 +833,10 @@ textarea {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 5rem;
-<<<<<<< HEAD
   color: white; }
-=======
-  color: white;
-  transform: translateX(-80px);
-  width: 50rem;
-  margin-left: 8rem; }
   @media only screen and (max-width: 90.6em) {
     .rotating-text {
       left: 14%; } }
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
   .rotating-text--title {
     color: #0d88cc;
     font-size: 5rem; }
@@ -898,7 +878,6 @@ textarea {
 
 .keep {
   color: #66c61a; }
-<<<<<<< HEAD
 
 /******* BACK TO TOP BTN ********/
 .btn-top {
@@ -913,8 +892,6 @@ textarea {
     font-size: 1.2rem; }
   .btn-top:hover {
     color: #0460ba; }
-=======
->>>>>>> 794be180ee69de8b6b7f089de0468fd68f4b3e0c
 
 .row {
   max-width: 120rem;
