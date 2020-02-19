@@ -615,12 +615,15 @@ textarea {
   @media only screen and (max-width: 75em) {
     .social-scrolled {
       display: none; } }
+  @media only screen and (max-width: 67.2em) {
+    .social-scrolled {
+      display: none !important; } }
   .social-scrolled__fb, .social-scrolled:link {
     margin-right: 2rem;
     transition: all 0.2s ease;
-    color: #eef0f1; }
+    color: #0d88cc; }
   .social-scrolled__twitter, .social-scrolled:link {
-    color: #eef0f1;
+    color: #0d88cc;
     transition: all 0.2s ease; }
     .social-scrolled__twitter:hover, .social-scrolled:link:hover {
       animation: pulse 1s infinite;
@@ -635,10 +638,12 @@ textarea {
   right: 5rem;
   line-height: 1.7;
   text-align: center;
-  z-index: 70;
-  color: white; }
+  z-index: 70; }
+  @media only screen and (max-width: 51.25em) {
+    .contact-scrolled {
+      display: none !important; } }
   .contact-scrolled__link {
-    color: white;
+    color: #0d88cc;
     text-decoration: none; }
   .contact-scrolled__title {
     font-size: 1.4rem;

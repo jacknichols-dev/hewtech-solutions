@@ -236,18 +236,22 @@
     display: none;
   }
 
+  @include respond(tab-port-large) {
+    display: none !important;
+  }
+
 
 
   &__fb,
   &:link {
     margin-right: 2rem;
     transition: all 0.2s ease;
-    color: $white;
+    color: $blue-light;
   }
 
   &__twitter,
   &:link {
-    color: $white;
+    color: $blue-light;
     transition: all 0.2s ease;
 
     &:hover {
@@ -268,10 +272,13 @@
   line-height: 1.7;
   text-align: center;
   z-index: 70;
-  color: white;
+
+  @include respond(tab-port-small) {
+    display: none !important;
+  }
 
   &__link {
-    color: white;
+    color: $blue-light;
     text-decoration: none;
   }
 
