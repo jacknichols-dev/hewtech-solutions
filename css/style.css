@@ -589,8 +589,7 @@ textarea {
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 10;
   height: 7rem;
-  animation: navAppear 0.5s;
-  /****** Scrolled Nav *******/ }
+  animation: navAppear 0.5s; }
   .header-scrolled__logo {
     display: none;
     position: fixed;
@@ -601,29 +600,6 @@ textarea {
       .header-scrolled__logo {
         display: none;
         opacity: 0; } }
-  .header-scrolled__list {
-    display: none;
-    position: fixed;
-    top: 1.6rem;
-    left: 50%;
-    font-size: 1.4rem;
-    transform: translateX(-50%);
-    list-style: none; }
-  .header-scrolled__item {
-    padding: 1rem 2.5rem;
-    display: inline-block;
-    margin-right: 3.5rem; }
-    @media only screen and (max-width: 90.6em) {
-      .header-scrolled__item {
-        margin-right: 2.3rem; } }
-    @media only screen and (max-width: 75em) {
-      .header-scrolled__item {
-        margin-right: 1.8rem; } }
-  .header-scrolled__link {
-    text-decoration: none;
-    color: #eef0f1; }
-    .header-scrolled__link:hover, .header-scrolled__link:focus {
-      color: #66c61a; }
 
 /******* Social Scrolled *******/
 .social-scrolled {

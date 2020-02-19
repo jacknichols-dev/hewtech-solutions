@@ -216,43 +216,6 @@
     }
 
   }
-
-  /****** Scrolled Nav *******/
-
-  &__list {
-    display: none;
-    position: fixed;
-    top: 1.6rem;
-    left: 50%;
-    font-size: 1.4rem;
-    transform: translateX(-50%);
-    list-style: none;
-  }
-
-  &__item {
-    padding: 1rem 2.5rem;
-    display: inline-block;
-    margin-right: 3.5rem;
-
-
-    @include respond(desktop) {
-      margin-right: 2.3rem;
-    }
-
-    @include respond(tab-land) {
-      margin-right: 1.8rem;
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-    color: $white;
-
-    &:hover,
-    &:focus {
-      color: $green;
-    }
-  }
 }
 
 /******* Social Scrolled *******/
