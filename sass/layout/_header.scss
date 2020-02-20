@@ -327,10 +327,10 @@
       border-radius: 50%;
       position: fixed;
       top: 1.5rem;
-      right: 4.5rem;
+      right: 4.7rem;
       background-color: $blue-2;
       z-index: 1000;
-      transition: transform .8s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 
   &__nav {
@@ -342,7 +342,7 @@
       transform: translate(-100%);
       opacity: 0;
       width: 0;
-      transition: all 1.2s cubic-bezier(0.68, -0.40, 0.130, 1.20);
+      transition: all .8s cubic-bezier(0.68, -0.40, 0.130, 1.20);
       
   }
 
@@ -471,12 +471,22 @@
   align-items: center;
   justify-content: space-between;
 
+  @include respond(phone-large) {
+    display: block;
+    position: relative;
+  }
+
   &__para {
     color: $blue-light;
     width: 50rem;
 
     @include respond (tab-port) {
       width: 35rem;
+    }
+
+    @include respond(phone-large) {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -514,6 +524,11 @@
       position: absolute;
       top: 39rem;
       right: 10rem;
+    }
+
+    @include respond(phone-large) {
+      width: 100%;
+      text-align: center;
     }
   }
 }

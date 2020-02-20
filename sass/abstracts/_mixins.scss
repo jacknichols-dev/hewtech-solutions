@@ -24,6 +24,9 @@
     @if $breakpoint == phone {
         @media only screen and  (max-width: 37.5em) { @content };      // 600px
     }
+    @if $breakpoint == phone-large {
+        @media only screen and  (max-width: 46.25em) { @content };      // 740px
+    }
     @if $breakpoint == tab-port-small {
         @media only screen and  (max-width: 51.25em) { @content };      // 820px 
     }
