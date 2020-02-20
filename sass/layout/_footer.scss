@@ -55,12 +55,15 @@
     }
   }
 
+  &__contact-box {
+    display: flex;
+  }
+
   &__contact {
     display: flex;
     align-items: center;
     align-content: space-between;
     color: $white;
-    max-width: 100%;
     margin: 0 auto;
 
     &--icon {
@@ -117,7 +120,7 @@
     &--span {
       display: block;
       content: "";
-      max-width: 80%;
+      max-width: 100%;
       height: 0.1rem;
       margin: 4rem 0;
       background-color: $white;

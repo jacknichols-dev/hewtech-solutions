@@ -768,7 +768,7 @@ textarea {
 .hero {
   display: flex;
   height: 70vh;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -875,7 +875,7 @@ textarea {
     color: #0460ba; }
 
 .row {
-  max-width: 120rem;
+  max-width: 80%;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
@@ -900,7 +900,7 @@ textarea {
 
 .products {
   position: relative;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto; }
   .products__bg {
     background-image: url(../img/product-bg.png);
@@ -1275,12 +1275,13 @@ textarea {
     .footer__temp--link:hover {
       box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
       transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem); }
+  .footer__contact-box {
+    display: flex; }
   .footer__contact {
     display: flex;
     align-items: center;
     align-content: space-between;
     color: #eef0f1;
-    max-width: 100%;
     margin: 0 auto; }
     .footer__contact--icon {
       font-size: 1.7rem;
@@ -1319,7 +1320,7 @@ textarea {
     .footer__copyright--span {
       display: block;
       content: "";
-      max-width: 80%;
+      max-width: 100%;
       height: 0.1rem;
       margin: 4rem 0;
       background-color: #eef0f1; }
@@ -1339,7 +1340,8 @@ textarea {
 
 #productSection {
   height: 100%;
-  padding: 20rem 0; }
+  margin: 17rem 0;
+  padding: 4rem 0; }
 
 #btnTop {
   position: relative;
