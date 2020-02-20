@@ -776,9 +776,9 @@ textarea {
   .hero__para {
     color: #0d88cc;
     width: 50rem; }
-    @media only screen and (max-width: 90.6em) {
+    @media only screen and (max-width: 56.25em) {
       .hero__para {
-        left: 14%; } }
+        width: 35rem; } }
   .hero__bg {
     position: absolute;
     top: 0;
@@ -806,9 +806,6 @@ textarea {
         position: absolute;
         top: 39rem;
         right: 10rem; } }
-    @media only screen and (max-width: 60.6em) {
-      .hero__illustration {
-        right: 3rem; } }
 
 /****** Rotating text *******/
 .rotating-text {
@@ -887,6 +884,9 @@ textarea {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {

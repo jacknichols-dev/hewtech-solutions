@@ -475,8 +475,8 @@
     color: $blue-light;
     width: 50rem;
 
-    @include respond (desktop) {
-      left: 14%;
+    @include respond (tab-port) {
+      width: 35rem;
     }
   }
 
@@ -515,11 +515,6 @@
       top: 39rem;
       right: 10rem;
     }
-
-    @include respond(tab-port-med) {
-      right: 3rem;
-    }
-
   }
 }
 

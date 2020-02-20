@@ -2,17 +2,21 @@
   max-width: $grid-width;
   margin: 0 auto;
 
-  &:not(:last-child) {
-    margin-bottom: $gutter-height;
-  }
+    &:not(:last-child) {
+      margin-bottom: $gutter-height;
+    }
 
   @include clearfix;
 
   [class^="col-"] {
     float: left;
 
-    &:not(:last-child) {
-      margin-right: $gutter-width;
+      &:not(:last-child) {
+        margin-right: $gutter-width;
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
     }
   }
 
