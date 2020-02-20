@@ -67,11 +67,10 @@
     
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benifits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>products</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                    <li class="navigation__item"><a href="products.html" class="navigation__link"><span>01</span>Products</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>About</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link"><span>04</span>Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -88,29 +87,32 @@
 
     <section id="main">
         <div class="hero">
-            <div class="rotating-text">
-                <h3 class="rotating-text--title">We serve to</h3>
-                <p> 
-                    <span class="word protect">protect.</span>
-                    <span class="word secure">secure.</span>
-                    <span class="word cover">cover.</span>
-                    <span class="word keep">keep&nbsp;you&nbsp;safe.</span>
-                </p>
+            <container class="hero__info-box">
+                <div class="rotating-text">
+                    <h3 class="rotating-text--title">We serve to</h3>
+                    <p> 
+                        <span class="word protect">protect.</span>
+                        <span class="word secure">secure.</span>
+                        <span class="word cover">cover.</span>
+                        <span class="word keep">keep&nbsp;you&nbsp;safe.</span>
+                    </p>
+                </div>
+                <div class="hero__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus 
+                    repudiandae voluptatibus laudantium fugit consectetur vel saepe aliquam corporis 
+                    illo nemo officia itaque, provident est eum molestias delectus. Repellendus 
+                    quia harum dignissimos in nisi saepe nostrum adipisci dicta magnam? Illum, fugit 
+                    quos tenetur quaerat inventore nemo cumque soluta eum laboriosam.            
+                </div>
+                <a href="contact.html" class="btn btn--hero">Contact us</a>    
+            </container>
+        
+            <div class="hero__bg">
+                <img src="img/SVG/bg.svg" alt="&nbsp;">
             </div>
-            <div class="hero__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus 
-                repudiandae voluptatibus laudantium fugit consectetur vel saepe aliquam corporis 
-                illo nemo officia itaque, provident est eum molestias delectus. Repellendus 
-                quia harum dignissimos in nisi saepe nostrum adipisci dicta magnam? Illum, fugit 
-                quos tenetur quaerat inventore nemo cumque soluta eum laboriosam.            
+            <div class="hero__illustration">
+                <img src="img/hewtech-illustration.svg" alt="&nbsp;">
             </div>
-            <a href="contact.html" class="btn btn--hero">Contact us</a>
-        </div>
-        <div class="hero__bg">
-            <img src="img/SVG/bg.svg" alt="&nbsp;">
-        </div>
-        <div class="hero__illustration">
-            <img src="img/hewtech-illustration.svg" alt="&nbsp;">
         </div>
     </section>
 
@@ -269,9 +271,6 @@
                              voluptatum harum maiores voluptates quibusdam exercitationem, magni iusto similique amet officiis,
                               quia eius consequuntur.
                         </div>
-                        <button>
-                            <a href="#" class="btn btn--services">Contact us</a>
-                        </button>
 
                          <!--****** BOX *******-->
                     
@@ -496,8 +495,74 @@
         </div>
     </section>
 
-
 <!--***** About Section ******-->
+
+<section id="aboutSection">
+    <div class="about">
+        <div class="about-header">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h1>Our goal is to help keep you protected.
+                            <br>
+                            <span>home, business and individuals</span></h1>
+                        <h4>Have any questions? <br> Call us on 07771119910 &nbsp; or <span><a href="contact.html" class="about-link">Message us</a></span></h4>
+                    </div>
+                    <div class="col-1-of-2">  
+                        <div class="about-img"></div>
+                    </div>
+                </div>
+        </div>
+        <div class="about-main">
+            <i class="fas fa-users about-main__icon"></i>
+            <h1 class="about-main__title">About us</h1>
+            <h4 class="about-main__prg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime perferendis repellendus fugit quibusdam tempore nihil error architecto omnis recusandae id maiores aliquid quia in, 
+                doloremque numquam ratione! Rem, accusamus nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum hic natus dolores expedita 
+                labore dolore ducimus veniam nostrum in a quae ut ab animi error accusamus, magnam deserunt, doloribus eaque!
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatum sapiente animi modi quam molestiae, 
+                in eveniet sit ipsum omnis fugit numquam tenetur non ut, tempora labore harum? Fugit, aliquam!
+            </h4>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="about-main__ceo--box"></div>
+                    <div class="about-main__ceo">
+                        <img class="about-main__ceo--photo" src="img/mark.jpg" alt="CEO photo">
+                    </div>
+                </div>
+            <div class="col-1-of-2">
+                <div class="about-main__ceo-desc">
+                    <div class="about-main__ceo-desc--name">Mark Hewson</div>
+                    <div class="about-main__ceo-desc--title">CEO | FOUNDER</div>
+                    <a href="contact.html" class="btn btn-about">Contact us</a>
+                    <hr>
+                    <div class="about-main__ceo-desc--prg">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi ut dolores aliquid cum dolorum accusamus at consequuntur 
+                            corrupti placeat voluptate sunt esse eum blanditiis fuga voluptatem, distinctio reprehenderit sed rem impedit recusandae magni 
+                            quia quibusdam? Officiis, alias excepturi corrupti quae vero omnis ullam modi, assumenda temporibus autem, delectus veniam!
+                        </p>
+                    </div>
+                    <div class="about-main__ceo-desc--prg2">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas minus illum similique assumenda veritatis libero earum 
+                            praesentium obcaecati voluptatem quae, dolore sit magnam 
+                            facere non debitis? Culpa nam quis tenetur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus et nulla provident dicta iusto blanditiis fugit 
+                            fuga perspiciatis sed. Doloribus ratione facilis aliquid assumenda 
+                            ducimus quas? Dolores voluptatibus minus ipsa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--***** Footer Section ******-->
 

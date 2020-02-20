@@ -765,12 +765,13 @@ textarea {
     transform: rotate(-135deg); }
 
 /*********------------------- HERO SECTION --------------------***********/
-/********* HERO SECTION ***********/
 .hero {
+  display: flex;
   height: 70vh;
   max-width: 70%;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
   /******** ILLUSTRATION **********/ }
   .hero__para {
     color: #0d88cc;
@@ -789,9 +790,7 @@ textarea {
       .hero__bg {
         display: none; } }
   .hero__illustration {
-    position: absolute;
-    top: 22rem;
-    right: 29rem;
+    align-items: center;
     width: 53rem;
     animation: illReveal 1.6s ease; }
     @media only screen and (max-width: 90.6em) {
@@ -800,10 +799,18 @@ textarea {
         width: 50rem; } }
     @media only screen and (max-width: 75em) {
       .hero__illustration {
-        right: 15rem;
         right: 5rem;
         width: 45rem; } }
+    @media only screen and (max-width: 69.35em) {
+      .hero__illustration {
+        position: absolute;
+        top: 39rem;
+        right: 10rem; } }
+    @media only screen and (max-width: 60.6em) {
+      .hero__illustration {
+        right: 3rem; } }
 
+/****** Rotating text *******/
 .rotating-text {
   position: relative;
   line-height: 4.5;
@@ -811,9 +818,6 @@ textarea {
   font-weight: 600;
   font-size: 5rem;
   color: white; }
-  @media only screen and (max-width: 90.6em) {
-    .rotating-text {
-      left: 14%; } }
   .rotating-text--title {
     color: #0d88cc;
     font-size: 5rem; }
@@ -1162,14 +1166,16 @@ textarea {
   .about-main__prg {
     font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.5; }
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto; }
   .about-main__ceo {
     margin-top: 8rem; }
     .about-main__ceo--box {
       position: absolute;
       transform: translate(-50%, 41rem);
       left: 50%;
-      max-width: 100%;
+      width: 100%;
       height: 20.8rem;
       background-color: #0d88cc;
       z-index: -1; }

@@ -463,13 +463,13 @@
 
 /*********------------------- HERO SECTION --------------------***********/
 
-/********* HERO SECTION ***********/
-
 .hero {
+  display: flex;
   height: 70vh;
   max-width: 70%;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
 
   &__para {
     color: $blue-light;
@@ -496,9 +496,7 @@
   }
 
   &__illustration {
-    position: absolute;
-    top: 22rem;
-    right: 29rem;
+    align-items: center;
     width: 53rem;
     animation: illReveal 1.6s ease;
 
@@ -508,14 +506,24 @@
     }
 
     @include respond(tab-land) {
-      right: 15rem;
       right: 5rem;
       width: 45rem;
     }
+
+    @include respond(tab-land-small) {
+      position: absolute;
+      top: 39rem;
+      right: 10rem;
+    }
+
+    @include respond(tab-port-med) {
+      right: 3rem;
+    }
+
   }
 }
 
-// Rotating text
+/****** Rotating text *******/
 
 .rotating-text {
   position: relative;
@@ -524,14 +532,6 @@
   font-weight: 600;
   font-size: 5rem;
   color: white;
-
-  @include respond (desktop) {
-  }
-
-
-  @include respond (desktop) {
-    left: 14%;
-  }
 
 
   &--title {
