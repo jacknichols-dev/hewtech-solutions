@@ -1,6 +1,6 @@
 .products {
   position: relative;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 
   &__bg {
@@ -29,7 +29,7 @@
 
     &--desc {
       position: absolute;
-      width: 25%;
+      width: 45rem;
       top: 14rem;
       margin-left: 10rem;
       color: $blue-light;
@@ -40,12 +40,11 @@
 
     &--list {
       position: absolute;
-      top: 41rem;
+      top: 37rem;
       display: flex;
       align-content: flex-start;
       align-items: center;
-      width: 35%;
-      margin-left: 21rem;
+      margin-left: 15rem;
     }
     &--item {
       list-style-type: none;

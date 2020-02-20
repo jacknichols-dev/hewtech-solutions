@@ -131,7 +131,6 @@ body {
   position: relative;
   margin-top: 10rem;
   overflow: hidden;
-  max-width: 100%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
   transition: all 0.3s ease; }
@@ -142,8 +141,8 @@ body {
     opacity: 1;
     transform: translateY(0); }
   .card__side {
-    width: 100%;
-    height: 60rem; }
+    height: 60rem;
+    width: 100%; }
     .card__side--front {
       background: white; }
   .card__pic {
@@ -768,7 +767,7 @@ textarea {
 .hero {
   display: flex;
   height: 70vh;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -872,7 +871,7 @@ textarea {
     color: #0460ba; }
 
 .row {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
@@ -900,7 +899,7 @@ textarea {
 
 .products {
   position: relative;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto; }
   .products__bg {
     background-image: url(../img/product-bg.png);
@@ -922,7 +921,7 @@ textarea {
       color: #0d88cc; }
     .products__header--desc {
       position: absolute;
-      width: 25%;
+      width: 45rem;
       top: 14rem;
       margin-left: 10rem;
       color: #0d88cc;
@@ -931,12 +930,11 @@ textarea {
       border-bottom: 0.1rem solid #0d88cc; }
     .products__header--list {
       position: absolute;
-      top: 41rem;
+      top: 37rem;
       display: flex;
       align-content: flex-start;
       align-items: center;
-      width: 35%;
-      margin-left: 21rem; }
+      margin-left: 15rem; }
     .products__header--item {
       list-style-type: none;
       animation: productAppear 1s ease; }
@@ -1011,7 +1009,7 @@ textarea {
   left: 50%;
   transform: translate(-50%, -5%);
   margin-top: 50rem;
-  max-width: 80%;
+  max-width: 70%;
   background-color: #eef0f1;
   height: 61.2rem;
   box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
@@ -1151,9 +1149,50 @@ textarea {
     padding: 3rem 4rem;
     color: #66c61a; }
 
+/******* about header ********/
+.header-box {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.about-header {
+  height: 62rem;
+  background-color: #0d88cc;
+  font-size: 2rem; }
+  .about-header h1,
+  .about-header h4 {
+    color: white;
+    line-height: 1.4;
+    margin-top: 14.5rem; }
+    .about-header h1 span,
+    .about-header h1 a,
+    .about-header h4 span,
+    .about-header h4 a {
+      color: #66c61a;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s ease; }
+
+.about-img {
+  background-image: url(../img/hero.jpg);
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+  background-size: cover;
+  background-position: center;
+  height: 62rem;
+  width: 100%; }
+
+.about-link {
+  padding: 1rem 2rem;
+  background-color: #0d88cc; }
+  .about-link:hover {
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg) scale(1.05); }
+
+/******* Main ********/
 .about-main {
   text-align: center;
-  max-width: 100%;
+  max-width: 70%;
   margin: 10rem auto;
   /******* CEO Desc ********/ }
   .about-main__icon {
@@ -1200,40 +1239,6 @@ textarea {
       text-align: left;
       color: #eef0f1; }
 
-.about-header {
-  height: 62rem;
-  background-color: #0d88cc;
-  margin: 0 auto;
-  font-size: 2rem; }
-  .about-header h1,
-  .about-header h4 {
-    color: white;
-    line-height: 1.4;
-    margin-top: 14.5rem; }
-    .about-header h1 span,
-    .about-header h1 a,
-    .about-header h4 span,
-    .about-header h4 a {
-      color: #66c61a;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.2s ease; }
-
-.about-img {
-  background-image: url(../img/hero.jpg);
-  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
-  background-size: cover;
-  background-position: center;
-  height: 62rem;
-  width: 100%; }
-
-.about-link {
-  padding: 1rem 2rem;
-  background-color: #0d88cc; }
-  .about-link:hover {
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-    transform: rotate(-2deg) scale(1.05); }
-
 .footer {
   display: block;
   position: relative;
@@ -1275,6 +1280,10 @@ textarea {
     .footer__temp--link:hover {
       box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
       transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem); }
+  .footer__item-box {
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto; }
   .footer__contact-box {
     display: flex; }
   .footer__contact {

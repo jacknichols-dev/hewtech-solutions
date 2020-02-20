@@ -55,6 +55,12 @@
     }
   }
 
+  &__item-box {
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
   &__contact-box {
     display: flex;
   }
