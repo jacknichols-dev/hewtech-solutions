@@ -11,6 +11,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $white;
+    letter-spacing: 0.07rem;
     transition: all 0.2s;
     letter-spacing: 0.07rem;
     font-size: 1.2rem;
@@ -39,16 +40,6 @@
 .btn--hero {
   position: relative;
   margin-top: 5rem;
-  padding: 1.2rem 2.1rem;
-  border-radius: .3rem;
-  background: $gradient;
-  cursor: pointer;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white;
-  transition: all 0.2s;
-  letter-spacing: 0.07rem;
   animation: btnReveal 1s ease;
 
   @include respond (phone-large) {
@@ -57,6 +48,11 @@
     transform: translateX(-50%);
     animation: none;
   }
+}
+
+.btn--services {
+  position: relative;
+  text-align: center;
 
   &:hover {
     background: $gradient-2;
@@ -70,6 +66,8 @@
   }
 }
 
+
 .btn-about {
   margin-bottom: 2.5rem;
 }
+

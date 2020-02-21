@@ -6,6 +6,10 @@
   border-radius: 2rem;
   transition: all 0.3s ease;
 
+  @include respond(tab-land) {
+    margin-top: 5rem;
+  }
+
   &:hover {
     transform: translateY(-2rem) scale(1.02);
     box-shadow: $shadow-1;
