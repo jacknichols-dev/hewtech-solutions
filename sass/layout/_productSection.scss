@@ -25,27 +25,60 @@
       font-size: 5rem;
       margin-left: 10rem;
       color: $blue-light;
+
+      @include respond(tab-land-small) {
+        margin-left: 6rem;
+        top: 5rem;
+        width: 35%;
+      }
+
+      @include respond(tab-port-large) {
+        font-size: 3rem;
+      }
+      @include respond(tab-port-med) {
+        margin-left: 4rem;
+        top: 3rem;
+      }
     }
 
     &--desc {
       position: absolute;
-      width: 45rem;
+      width: 30%;
       top: 14rem;
       margin-left: 10rem;
       color: $blue-light;
       font-size: 1.3rem;
       padding-bottom: 5rem;
-      border-bottom: 0.1rem solid $blue-light;
+
+      @include respond(tab-land-small) {
+        margin-left: 6rem;
+        top: 12rem;
+        width: 35%;
+      }
+      @include respond(tab-port-med) {
+        margin-left: 4rem;
+        top: 10rem;
+        width: 35%;
+      }
     }
 
     &--list {
       position: absolute;
-      top: 37rem;
+      top: 38rem;
       display: flex;
-      align-content: flex-start;
       align-items: center;
-      margin-left: 15rem;
+      margin-left: 10rem;
+
+      @include respond(desktop) {
+        top: 40rem;
+        margin-left: 20rem;
+      }
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
+
     &--item {
       list-style-type: none;
       animation: productAppear 1s ease;
@@ -63,6 +96,7 @@
       top: 0;
     }
   }
+
   &__img {
     height: 7rem;
 

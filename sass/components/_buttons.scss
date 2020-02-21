@@ -37,11 +37,11 @@
   }
 }
 .btn--hero {
+  position: relative;
   margin-top: 5rem;
   padding: 1.2rem 2.1rem;
   border-radius: .3rem;
   background: $gradient;
-  display: inline-block;
   cursor: pointer;
   font-weight: 600;
   text-decoration: none;
@@ -51,7 +51,11 @@
   letter-spacing: 0.07rem;
   animation: btnReveal 1s ease;
 
-  @include respond (desktop) {
+  @include respond (phone-large) {
+    margin-top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
   }
 
   &:hover {
