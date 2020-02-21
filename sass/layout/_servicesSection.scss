@@ -15,28 +15,22 @@
     &--bg {
       position: absolute;
       width: 100%;
-      height: 98%;
+      height: 70%;
       background-image: 
       linear-gradient(
-          to left,
+          to bottom,
           rgba($blue-2, 1),
           rgba(17, 2, 100, 0.6),
-          rgba($green, 0.3)
+          transparent
         ),
         url(../img/hewtechservicephoto.jpg);
       background-size: cover;
+      background-repeat: no-repeat;
 
-      @include respond(tab-port) {
-        min-height: 160%;
-        background-image: 
-        linear-gradient(
-            to top,
-            rgba($blue-2, 1),
-            rgba(17, 2, 100, 0.6),
-            rgba($green, 0.3)
-          ),
-          url(../img/hewtechservicephoto.jpg);
-        z-index: -1000;
+      @include respond(tab-port-large) {
+        background-repeat: no-repeat;
+      }
+      @include respond(tab-port-small) {
       }
     }
 

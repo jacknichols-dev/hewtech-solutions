@@ -57,17 +57,17 @@ $("#btnTop").click(function() {
  ********** Services header Parallax ***********
  ***/
 
-const velocity = 0.13;
+const velocity = 0.15;
 
 function update() {
   const pos = $(window).scrollTop();
   $(".services__header--bg").each(function() {
     const $element = $(this);
     // subtract some from the height b/c of the padding
-    const height = $element.height() - 100;
+    const height = $element.height() - 200;
     $(this).css(
       "backgroundPosition",
-      "100% " + Math.round((height - pos) * velocity) + "px"
+      "90% " + Math.round((height - pos) * velocity) + "px"
     );
   });
 }

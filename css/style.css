@@ -1036,14 +1036,13 @@ textarea {
 .services__header--bg {
   position: absolute;
   width: 100%;
-  height: 98%;
-  background-image: linear-gradient(to left, #05487f, rgba(17, 2, 100, 0.6), rgba(102, 198, 26, 0.3)), url(../img/hewtechservicephoto.jpg);
-  background-size: cover; }
-  @media only screen and (max-width: 56.25em) {
+  height: 70%;
+  background-image: linear-gradient(to bottom, #05487f, rgba(17, 2, 100, 0.6), transparent), url(../img/hewtechservicephoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 67.2em) {
     .services__header--bg {
-      min-height: 160%;
-      background-image: linear-gradient(to top, #05487f, rgba(17, 2, 100, 0.6), rgba(102, 198, 26, 0.3)), url(../img/hewtechservicephoto.jpg);
-      z-index: -1000; } }
+      background-repeat: no-repeat; } }
 
 .services__header--title {
   padding-top: 17rem;
