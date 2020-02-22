@@ -1,15 +1,12 @@
 .services {
 
   &__header {
-    
 
     &--header-box {
       position: absolute;
-      width: 100%;
       text-align: center;
-      z-index: 1000;
       margin-left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -20%);
     }
 
     &--bg {
@@ -19,8 +16,8 @@
       background-image: 
       linear-gradient(
           to bottom,
-          rgba($blue-2, 1),
-          rgba(17, 2, 100, 0.6),
+          rgba($blue-2, .9),
+          // rgba($blue-light, .3)80%,
           transparent
         ),
         url(../img/hewtechservicephoto.jpg);
@@ -28,7 +25,6 @@
       background-repeat: no-repeat;
 
       @include respond(tab-port-large) {
-        background-repeat: no-repeat;
       }
       @include respond(tab-port-small) {
       }
@@ -37,7 +33,7 @@
     &--title {
       padding-top: 17rem;
       text-transform: capitalize;
-      color: white;
+      color: $green !important;
       font-size: 6rem;
       font-weight: 600;
       font-family: $font-2;
@@ -57,6 +53,7 @@
       margin: 0 auto;
       line-height: 1.2;
       padding: 2rem 0;
+      text-shadow: .2rem .2rem 1rem rgba(0,0,0,.7);
 
       @include respond(tab-port) {
         text-align: center;
@@ -68,11 +65,11 @@
       left: 50%;
       transform: translate(-50%, -5%);
       margin-top: 50rem;
-      max-width: 70%;
+      width: 70%;
       background-color: $white;
-      height: 61.2rem;
+      height: 65rem;
       box-shadow: $shadow-2;
-      border-radius: 0.7rem;
+      padding: 1rem 2rem;
 
       & h4 {
         font-size: 2.6rem;
@@ -88,16 +85,21 @@
     }
   }
 
-  //********* REVIEWS *********
+  //*********-------------------- REVIEWS --------------------*********
+
+  &__rev-box {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
   &__reviews-box {
-    margin: 15rem auto 0 auto;
-    width: 100%;
-    height: 60rem;
+    margin: 10rem auto;
+    padding: 0 5rem;
     background-color: $blue-light;
     box-shadow: $shadow-2;
-    border-radius: 0.7rem;
-    transform: translateY(-8rem)
+    transform: translateY(-8rem);
+    width: 100%;
   }
 
   &__reviews-green {
@@ -172,27 +174,28 @@
     height: 20rem;
     color: $white !important;
     transform: translateY(137%);
-    width: 60rem;
+    width: 60%;
     text-align: center;
+    margin: 0 auto;
 
     &::before {
       content: "\201C";
       position: absolute;
-      top: -10rem;
+      top: -8rem;
       left: -10rem;
       font-family: sans-serif;
-      font-size: 20rem;
+      font-size: 14rem;
       font-weight: 600;
       color: rgba($black, 0.4);
     }
     &::after {
       content: "\201E";
       position: absolute;
-      top: -10rem;
+      top: 5rem;
       right: -10rem;
       font-family: sans-serif;
       font-weight: 600;
-      font-size: 20rem;
+      font-size: 14rem;
       color: rgba($black, 0.4);
     }
   }
@@ -209,15 +212,15 @@
 
 .glider-next {
   margin-top: 8.5rem;
-  margin-right: 5rem;
+
   color: $white !important;
 }
 .glider-prev {
   margin-top: 8.5rem;
-  margin-left: 5rem;
+
   color: $white !important;
 }
 
 .glider-dots {
-  transform: translateY(-11rem);
+  transform: translateY(-8rem);
 }

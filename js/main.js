@@ -57,7 +57,7 @@ $("#btnTop").click(function() {
  ********** Services header Parallax ***********
  ***/
 
-const velocity = 0.15;
+const velocity = 0.09;
 
 function update() {
   const pos = $(window).scrollTop();

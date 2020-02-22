@@ -3,7 +3,6 @@
   margin-top: 10rem;
   overflow: hidden;
   box-shadow: $shadow-1;
-  border-radius: 2rem;
   transition: all 0.3s ease;
 
   @include respond(tab-land) {
@@ -151,7 +150,6 @@
       background-color: $white;
       padding: 1rem 2.5rem;
       box-shadow: $shadow;
-      border-radius: 0.5rem;
       font-weight: bold;
       transition: all 0.1s ease;
 

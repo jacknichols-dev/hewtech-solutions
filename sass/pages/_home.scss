@@ -19,7 +19,7 @@
   }
 
   @include respond(desktop) {
-    padding: 0;
+    padding: 0 0 8rem 0;
     margin: 3rem 0;
   }
 
@@ -40,6 +40,7 @@
 
 #servicesSection {
   min-height: 193rem;
+
 }
 
 #aboutSection {
