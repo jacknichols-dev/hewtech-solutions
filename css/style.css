@@ -168,7 +168,7 @@ body {
       .card__heading {
         font-size: 1.8rem; } }
   .card__details ul {
-    margin: 4rem 0;
+    margin: 4rem 1rem;
     font-size: 1.5rem;
     list-style-type: none; }
   .card__details li {
@@ -308,7 +308,8 @@ body {
       background: linear-gradient(to left bottom, rgba(4, 96, 186, 0.8) 10%, #66c61a); }
   .service-cards__details {
     margin-top: 2rem;
-    color: #0460ba; }
+    color: #0460ba;
+    padding: 0 5rem; }
   .service-cards__cta {
     position: absolute;
     top: 50%;
@@ -337,13 +338,13 @@ body {
   text-transform: uppercase;
   color: #eef0f1;
   letter-spacing: 0.07rem;
-  transition: all 0.2s;
+  transition: all 0.15s ease;
   letter-spacing: 0.07rem;
   font-size: 1.2rem; }
 
 .btn:hover {
   background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
-  transform: scale(1.009);
+  transform: scale(1.1);
   box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
   .btn:hover:active {
     transform: scale(0.99);
@@ -1074,7 +1075,7 @@ textarea {
   height: 57rem; }
 
 .services__reviews-box {
-  margin: 10rem auto;
+  margin: 8rem auto;
   padding: 0 5rem;
   transform: translateY(-8rem);
   width: 70%; }
@@ -1120,12 +1121,11 @@ textarea {
 
 .services__name {
   font-size: 1.5rem !important;
-  transform: translateY(-1rem);
-  color: #287a5b !important; }
+  color: #287a5b !important;
+  padding-top: 1rem; }
 
 .services__address {
   font-size: 1.3rem !important;
-  transform: translateY(-4rem);
   color: #287a5b !important; }
 
 .services__reviews-title {
@@ -1177,7 +1177,7 @@ textarea {
   color: #eef0f1 !important; }
 
 .glider-dots {
-  transform: translateY(-8rem); }
+  transform: translateY(-6rem); }
 
 .cont {
   position: relative;

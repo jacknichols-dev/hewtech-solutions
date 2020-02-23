@@ -11,14 +11,14 @@
     text-transform: uppercase;
     color: $white;
     letter-spacing: 0.07rem;
-    transition: all 0.2s;
+    transition: all 0.15s ease;
     letter-spacing: 0.07rem;
     font-size: 1.2rem;
   }
 
   &:hover {
     background: $gradient-2;
-    transform: scale(1.009);
+    transform: scale(1.1);
     box-shadow: $shadow;
 
     &:active {

@@ -98,7 +98,7 @@
   }
 
   &__reviews-box {
-    margin: 10rem auto;
+    margin: 8rem auto;
     padding: 0 5rem;
     transform: translateY(-8rem);
     width: 70%;
@@ -154,13 +154,12 @@
 
   &__name {
     font-size: 1.5rem !important;
-    transform: translateY(-1rem);
     color: $green-dark !important;
+    padding-top: 1rem;
   }
 
   &__address {
     font-size: 1.3rem !important;
-    transform: translateY(-4rem);
     color: $green-dark !important;
   }
 
@@ -214,15 +213,13 @@
 
 .glider-next {
   margin-top: 8.5rem;
-
   color: $white !important;
 }
 .glider-prev {
   margin-top: 8.5rem;
-
   color: $white !important;
 }
 
 .glider-dots {
-  transform: translateY(-8rem);
+  transform: translateY(-6rem);
 }
