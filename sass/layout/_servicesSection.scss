@@ -1,6 +1,6 @@
 .services {
-
   &__header {
+    
 
     &--header-box {
       position: absolute;
@@ -88,18 +88,20 @@
   //*********-------------------- REVIEWS --------------------*********
 
   &__rev-box {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
+    position: absolute;
+    margin: 115rem 0 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $blue-light;
+    width: 70%;
+    height: 57rem;
   }
 
   &__reviews-box {
     margin: 10rem auto;
     padding: 0 5rem;
-    background-color: $blue-light;
-    box-shadow: $shadow-2;
     transform: translateY(-8rem);
-    width: 100%;
+    width: 70%;
   }
 
   &__reviews-green {
@@ -191,7 +193,7 @@
     &::after {
       content: "\201E";
       position: absolute;
-      top: 5rem;
+      top: -2rem;
       right: -10rem;
       font-family: sans-serif;
       font-weight: 600;

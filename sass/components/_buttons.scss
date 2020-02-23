@@ -19,11 +19,11 @@
   &:hover {
     background: $gradient-2;
     transform: scale(1.009);
-    box-shadow: $shadow-2;
+    box-shadow: $shadow;
 
     &:active {
-      box-shadow: $shadow;
       transform: scale(0.99);
+      box-shadow: $shadow-light;
     }
 
     &--card {
@@ -36,6 +36,7 @@
     border: none;
   }
 }
+
 .btn--hero {
   position: relative;
   margin-top: 5rem;
@@ -52,17 +53,6 @@
 .btn--services {
   position: relative;
   text-align: center;
-
-  &:hover {
-    background: $gradient-2;
-    transform: scale(1.009);
-    box-shadow: $shadow-2;
-
-    &:active {
-      box-shadow: $shadow;
-      transform: scale(0.99);
-    }
-  }
 }
 
 

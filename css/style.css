@@ -131,14 +131,14 @@ body {
   position: relative;
   margin-top: 10rem;
   overflow: hidden;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19);
   transition: all 0.3s ease; }
   @media only screen and (max-width: 75em) {
     .card {
       margin-top: 5rem; } }
   .card:hover {
     transform: translateY(-2rem) scale(1.02);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19); }
   .card:hover .card__details-hidden {
     opacity: 1;
     transform: translateY(0); }
@@ -194,7 +194,6 @@ body {
     width: 100%;
     height: 50%;
     bottom: 0;
-    border-radius: 0 0 2rem 2rem;
     transform: translateY(100%);
     transition: all 0.3s ease; }
     .card__details-hidden--1 {
@@ -230,7 +229,7 @@ body {
       text-decoration: none;
       background-color: #eef0f1;
       padding: 1rem 2.5rem;
-      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       font-weight: bold;
       transition: all 0.1s ease; }
       .card__details-hidden--btn:hover, .card__details-hidden--btn:focus, .card__details-hidden:link:hover, .card__details-hidden:link:focus {
@@ -248,7 +247,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 0.8rem;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
     height: 45rem;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -345,10 +344,10 @@ body {
 .btn:hover {
   background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
   transform: scale(1.009);
-  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
   .btn:hover:active {
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-    transform: scale(0.99); }
+    transform: scale(0.99);
+    box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.4); }
   .btn:hover--card {
     margin-top: 10rem; }
 
@@ -370,13 +369,6 @@ body {
 .btn--services {
   position: relative;
   text-align: center; }
-  .btn--services:hover {
-    background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
-    transform: scale(1.009);
-    box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
-    .btn--services:hover:active {
-      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-      transform: scale(0.99); }
 
 .btn-about {
   margin-bottom: 2.5rem; }
@@ -405,7 +397,7 @@ body {
       border-top: 0.32rem solid transparent; }
     .form__input:focus {
       outline: none;
-      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       border-bottom: 0.32rem solid #66c61a; }
     .form__input:focus:invalid {
       border-bottom: 0.32rem solid #05487f; }
@@ -445,7 +437,7 @@ textarea {
   input[type="sumit"]:focus,
   textarea:focus {
     outline: none;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
     border-bottom: 0.32rem solid #0d88cc; }
 
 #map {
@@ -514,7 +506,7 @@ textarea {
     @media only screen and (max-width: 60.6em) {
       .header__link {
         padding: 1rem 2.2rem; } }
-    .header__link:hover, .header__link:focus {
+    .header__link:hover {
       color: #66c61a; }
 
 /******** SOCIAL LINKS *********/
@@ -539,7 +531,7 @@ textarea {
         color: #0d88cc; } }
     .social__fb:hover, .social:link:hover {
       animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
+      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
   .social__fb--contact, .social:link {
     color: #0d88cc; }
     .social__fb--contact:hover, .social:link:hover {
@@ -552,7 +544,7 @@ textarea {
         color: #0d88cc; } }
     .social__twitter:hover, .social:link:hover {
       animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       color: white; }
   .social__twitter--contact, .social:link {
     color: #0d88cc; }
@@ -592,7 +584,7 @@ textarea {
   top: 0;
   width: 100%;
   background-color: white;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
   z-index: 10;
   height: 7rem;
   animation: navAppear 0.5s; }
@@ -633,7 +625,7 @@ textarea {
     transition: all 0.2s ease; }
     .social-scrolled__twitter:hover, .social-scrolled:link:hover {
       animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       color: white; }
 
 /******* Contact Scrolled *******/
@@ -1004,8 +996,6 @@ textarea {
       background-image: url(../img/home-alarm.jpg);
       background-size: cover;
       background-position: center;
-      border-left: 0.2rem solid #0d88cc;
-      border-radius: 0 1rem 1rem 0;
       width: 50%;
       height: 100%;
       float: right;
@@ -1075,17 +1065,19 @@ textarea {
     margin-top: 3rem; }
 
 .services__rev-box {
-  display: flex;
-  max-width: 100%;
-  margin: 0 auto; }
+  position: absolute;
+  margin: 115rem 0 0 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0d88cc;
+  width: 70%;
+  height: 57rem; }
 
 .services__reviews-box {
   margin: 10rem auto;
   padding: 0 5rem;
-  background-color: #0d88cc;
-  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
   transform: translateY(-8rem);
-  width: 100%; }
+  width: 70%; }
 
 .services__reviews-green {
   margin: 0 auto;
@@ -1162,7 +1154,7 @@ textarea {
   .services__reviews-prg::after {
     content: "\201E";
     position: absolute;
-    top: 5rem;
+    top: -2rem;
     right: -10rem;
     font-family: sans-serif;
     font-weight: 600;
@@ -1192,7 +1184,7 @@ textarea {
   width: 85%;
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19); }
   .cont__heading {
     padding: 3rem 0;
     animation: logo 1s ease; }
@@ -1240,7 +1232,7 @@ textarea {
   padding: 1rem 2rem;
   background-color: #0d88cc; }
   .about-link:hover {
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
     transform: rotate(-2deg) scale(1.05); }
 
 /******* Main ********/
@@ -1332,7 +1324,7 @@ textarea {
     .footer__temp--link:link {
       text-decoration: none; }
     .footer__temp--link:hover {
-      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem); }
   .footer__item-box {
     display: flex;
@@ -1374,7 +1366,7 @@ textarea {
       color: white; }
       .footer__social--icon:hover {
         color: #0d88cc;
-        text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+        text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
         animation: pulse 1s ease infinite; }
   .footer__copyright {
     width: 80%;
