@@ -1,10 +1,11 @@
 .footer {
   display: block;
   position: relative;
-  max-width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  height: 80vh;
 
   &__title {
-    padding-top: 27rem;
     text-align: center;
     color: $white;
     text-transform: capitalize;
@@ -16,7 +17,7 @@
       height: 0.2rem;
       width: 6rem;
       background-color: $green;
-      margin: 2.5rem auto;
+      margin: 1rem auto 13rem auto;
     }
   }
 
@@ -24,22 +25,23 @@
     &--icon {
       font-size: 4rem;
       color: $green;
-      padding: 2rem 0;
+      padding: 2rem;
     }
+
     &--title {
       color: $white;
     }
+
     &--prg {
       color: $white;
-      height: 14rem;
       font-size: 1.2rem;
-      margin: 4rem 0;
+      margin: 4rem 0 1.5rem 0;
     }
+
     &--link {
-      display: block;
-      transform: translate(-3.5rem, 4rem);
       color: $green;
       width: 15rem;
+      margin-bottom: 10rem;
       padding: 0.8rem 1.3rem;
       text-align: center;
       transition: all 0.2s ease;
@@ -50,19 +52,19 @@
 
       &:hover {
         box-shadow: $shadow;
-        transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem);
       }
     }
   }
 
   &__item-box {
-    display: flex;
     max-width: 70%;
-    margin: 0 auto;
+    margin: 2rem auto;
+    text-align: center;
   }
 
   &__contact-box {
     display: flex;
+    margin: 5rem auto;
   }
 
   &__contact {

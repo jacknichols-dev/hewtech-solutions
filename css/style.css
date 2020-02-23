@@ -149,7 +149,7 @@ body {
       background: white; }
   .card__pic {
     height: 39%;
-    border-radius: 2rem 2rem 0 0;
+    border-radius: .5rem .5rem 0 0;
     background-size: cover;
     background-position: top;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
@@ -246,7 +246,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
     height: 45rem;
     backface-visibility: hidden;
@@ -1055,7 +1055,8 @@ textarea {
   background-color: #eef0f1;
   height: 65rem;
   box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  z-index: 1; }
   .services__header--box h4 {
     font-size: 2.6rem;
     text-align: center;
@@ -1067,35 +1068,32 @@ textarea {
 
 .services__rev-box {
   position: absolute;
-  margin: 115rem 0 0 0;
+  margin: 110rem 0 0 0;
   left: 50%;
   transform: translateX(-50%);
   background-color: #0d88cc;
   width: 70%;
-  height: 57rem; }
+  height: 66rem; }
 
 .services__reviews-box {
-  margin: 8rem auto;
-  padding: 0 5rem;
-  transform: translateY(-8rem);
-  width: 70%; }
+  margin: 2rem auto; }
 
 .services__reviews-green {
-  margin: 0 auto;
+  margin: 0 0 0 9rem;
   transform: translateY(50%);
   height: 32rem;
-  width: 17rem;
+  width: 20rem;
   background-color: #66c61a;
-  border-radius: 1rem; }
+  border-radius: .5rem; }
 
 .services__user {
   position: relative;
-  margin: 0 auto;
+  margin: 0 0 0 7rem;
   transform: translateY(-50%);
-  width: 23rem;
+  width: 24rem;
   height: 27rem;
   background-color: #eef0f1;
-  padding: 2rem;
+  padding: 1.6rem;
   border-radius: 0.2rem; }
 
 .services__photo {
@@ -1136,7 +1134,7 @@ textarea {
   margin-top: 7rem; }
 
 .services__reviews-prg {
-  height: 20rem;
+  height: 18rem;
   color: #eef0f1 !important;
   transform: translateY(137%);
   width: 60%;
@@ -1146,7 +1144,7 @@ textarea {
     content: "\201C";
     position: absolute;
     top: -8rem;
-    left: -10rem;
+    left: -7rem;
     font-family: sans-serif;
     font-size: 14rem;
     font-weight: 600;
@@ -1154,8 +1152,8 @@ textarea {
   .services__reviews-prg::after {
     content: "\201E";
     position: absolute;
-    top: -2rem;
-    right: -10rem;
+    top: -5rem;
+    right: -7rem;
     font-family: sans-serif;
     font-weight: 600;
     font-size: 14rem;
@@ -1169,11 +1167,11 @@ textarea {
   margin: 2rem 3rem; }
 
 .glider-next {
-  margin-top: 8.5rem;
+  margin: 8.5rem 3.5rem 0 0;
   color: #eef0f1 !important; }
 
 .glider-prev {
-  margin-top: 8.5rem;
+  margin: 8.5rem 0 0 3.5rem;
   color: #eef0f1 !important; }
 
 .glider-dots {
@@ -1288,9 +1286,10 @@ textarea {
 .footer {
   display: block;
   position: relative;
-  max-width: 100%; }
+  max-width: 70%;
+  margin: 0 auto;
+  height: 80vh; }
   .footer__title {
-    padding-top: 27rem;
     text-align: center;
     color: #eef0f1;
     text-transform: capitalize;
@@ -1301,37 +1300,35 @@ textarea {
       height: 0.2rem;
       width: 6rem;
       background-color: #66c61a;
-      margin: 2.5rem auto; }
+      margin: 1rem auto 13rem auto; }
   .footer__temp--icon {
     font-size: 4rem;
     color: #66c61a;
-    padding: 2rem 0; }
+    padding: 2rem; }
   .footer__temp--title {
     color: #eef0f1; }
   .footer__temp--prg {
     color: #eef0f1;
-    height: 14rem;
     font-size: 1.2rem;
-    margin: 4rem 0; }
+    margin: 4rem 0 1.5rem 0; }
   .footer__temp--link {
-    display: block;
-    transform: translate(-3.5rem, 4rem);
     color: #66c61a;
     width: 15rem;
+    margin-bottom: 10rem;
     padding: 0.8rem 1.3rem;
     text-align: center;
     transition: all 0.2s ease; }
     .footer__temp--link:link {
       text-decoration: none; }
     .footer__temp--link:hover {
-      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
-      transform: rotate(-2deg) scale(1.05) translate(-3.5rem, 4rem); }
+      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
   .footer__item-box {
-    display: flex;
     max-width: 70%;
-    margin: 0 auto; }
+    margin: 2rem auto;
+    text-align: center; }
   .footer__contact-box {
-    display: flex; }
+    display: flex;
+    margin: 5rem auto; }
   .footer__contact {
     display: flex;
     align-items: center;
@@ -1394,7 +1391,7 @@ textarea {
   height: 95vh; }
 
 #productSection {
-  height: 100%;
+  min-height: 100%;
   margin: 7rem 0;
   padding: 2rem 0; }
   @media only screen and (min-width: 112.5em) {
@@ -1425,7 +1422,7 @@ textarea {
 #footer {
   position: relative;
   background-color: #05487f;
-  padding-bottom: 5rem; }
+  padding: 5rem 0; }
 
 #contactSection {
   position: relative;

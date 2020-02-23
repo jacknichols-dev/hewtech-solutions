@@ -70,6 +70,7 @@
       height: 65rem;
       box-shadow: $shadow-2;
       padding: 1rem 2rem;
+      z-index: 1;
 
       & h4 {
         font-size: 2.6rem;
@@ -89,38 +90,35 @@
 
   &__rev-box {
     position: absolute;
-    margin: 115rem 0 0 0;
+    margin: 110rem 0 0 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: $blue-light;
     width: 70%;
-    height: 57rem;
+    height: 66rem;
   }
 
   &__reviews-box {
-    margin: 8rem auto;
-    padding: 0 5rem;
-    transform: translateY(-8rem);
-    width: 70%;
+    margin: 2rem auto;
   }
 
   &__reviews-green {
-    margin: 0 auto;
+    margin: 0 0 0 9rem;
     transform: translateY(50%);
     height: 32rem;
-    width: 17rem;
+    width: 20rem;
     background-color: $green;
-    border-radius: 1rem;
+    border-radius: .5rem;
   }
 
   &__user {
     position: relative;
-    margin: 0 auto;
+    margin: 0 0 0 7rem;
     transform: translateY(-50%);
-    width: 23rem;
+    width: 24rem;
     height: 27rem;
     background-color: $white;
-    padding: 2rem;
+    padding: 1.6rem;
     border-radius: 0.2rem;
   }
 
@@ -172,7 +170,7 @@
   }
 
   &__reviews-prg {
-    height: 20rem;
+    height: 18rem;
     color: $white !important;
     transform: translateY(137%);
     width: 60%;
@@ -183,7 +181,7 @@
       content: "\201C";
       position: absolute;
       top: -8rem;
-      left: -10rem;
+      left: -7rem;
       font-family: sans-serif;
       font-size: 14rem;
       font-weight: 600;
@@ -192,8 +190,8 @@
     &::after {
       content: "\201E";
       position: absolute;
-      top: -2rem;
-      right: -10rem;
+      top: -5rem;
+      right: -7rem;
       font-family: sans-serif;
       font-weight: 600;
       font-size: 14rem;
@@ -212,12 +210,20 @@
 }
 
 .glider-next {
-  margin-top: 8.5rem;
+  margin: 8.5rem 3.5rem 0 0;
   color: $white !important;
+
+  @include respond(desktop) {
+    
+  }
 }
 .glider-prev {
-  margin-top: 8.5rem;
+  margin: 8.5rem 0 0 3.5rem;
   color: $white !important;
+
+  @include respond(desktop) {
+    
+  }
 }
 
 .glider-dots {

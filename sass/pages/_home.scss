@@ -10,7 +10,7 @@
 }
 
 #productSection {
-  height: 100%;
+  min-height: 100%;
   margin: 7rem 0;
   padding: 2rem 0;
 
@@ -49,5 +49,5 @@
 #footer {
   position: relative;
   background-color: $blue-2;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
