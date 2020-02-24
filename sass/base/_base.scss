@@ -28,5 +28,17 @@ html {
 
 body {
   box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    background-color: $blue-light;
+    width: .9rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, $green, $green-dark);
+    border-radius: 2rem;
+  }
 }
+
+
 

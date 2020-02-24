@@ -76,12 +76,17 @@
         font-size: 2.6rem;
         text-align: center;
         margin-top: 2.5rem;
+
+        
+    @include respond(desktop-small) {
+      font-size: 1.5rem;
+    }
       }
 
       & p {
         font-size: 1.4rem;
         text-align: center;
-        margin-top: 3rem;
+        margin: .5rem 0 1.5rem 0;
       }
     }
   }
@@ -103,23 +108,23 @@
   }
 
   &__reviews-green {
-    margin: 0 0 0 9rem;
-    transform: translateY(50%);
+    transform: translate(-2rem, 50%);
     height: 32rem;
     width: 20rem;
     background-color: $green;
     border-radius: .5rem;
+    float: right;
   }
 
   &__user {
     position: relative;
-    margin: 0 0 0 7rem;
     transform: translateY(-50%);
     width: 24rem;
     height: 27rem;
     background-color: $white;
     padding: 1.6rem;
-    border-radius: 0.2rem;
+    box-shadow: $shadow;
+    float: right;
   }
 
   &__photo {
@@ -172,10 +177,11 @@
   &__reviews-prg {
     height: 18rem;
     color: $white !important;
-    transform: translateY(137%);
-    width: 60%;
+    transform: translate(7rem, 160%);
+    width: 65%;
     text-align: center;
     margin: 0 auto;
+    float: left;
 
     &::before {
       content: "\201C";

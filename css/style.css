@@ -24,6 +24,12 @@ html {
 
 body {
   box-sizing: border-box; }
+  body::-webkit-scrollbar {
+    background-color: #0d88cc;
+    width: .9rem; }
+  body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #66c61a, #287a5b);
+    border-radius: 2rem; }
 
 body {
   font-size: 1.4rem;
@@ -145,6 +151,9 @@ body {
   .card__side {
     height: 60rem;
     width: 100%; }
+    @media only screen and (max-width: 67.2em) {
+      .card__side {
+        height: 48rem; } }
     .card__side--front {
       background: white; }
   .card__pic {
@@ -167,6 +176,10 @@ body {
     @media only screen and (max-width: 80.65em) {
       .card__heading {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 67.2em) {
+      .card__heading {
+        width: 80%;
+        margin: 1rem auto 0 auto; } }
   .card__details ul {
     margin: 4rem 1rem;
     font-size: 1.5rem;
@@ -179,9 +192,14 @@ body {
     @media only screen and (max-width: 75em) {
       .card__details li {
         padding: 1rem 0; } }
+    @media only screen and (max-width: 67.2em) {
+      .card__details li {
+        width: 100%;
+        font-size: 1.3rem; } }
     @media only screen and (max-width: 56.25em) {
       .card__details li {
-        width: 100%; } }
+        width: 100%;
+        font-size: 1.5rem; } }
     .card__details li:not(:last-child) {
       border-bottom: solid 0.1rem rgba(4, 96, 186, 0.4);
       width: 70%; }
@@ -310,6 +328,9 @@ body {
     margin-top: 2rem;
     color: #0460ba;
     padding: 0 5rem; }
+    @media only screen and (max-width: 84.35em) {
+      .service-cards__details {
+        padding: 0 2rem; } }
   .service-cards__cta {
     position: absolute;
     top: 50%;
@@ -802,6 +823,13 @@ textarea {
     animation: bgReveal 0.6s ease; }
     @media only screen and (max-width: 90.6em) {
       .hero__bg {
+        top: 7rem; } }
+    @media only screen and (max-width: 69.35em) {
+      .hero__bg {
+        top: 7rem;
+        width: 50%; } }
+    @media only screen and (max-width: 67.2em) {
+      .hero__bg {
         display: none; } }
   .hero__illustration {
     align-items: center;
@@ -821,8 +849,8 @@ textarea {
       .hero__illustration {
         text-align: center;
         margin: 4rem auto;
-        width: 30rem; } }
-    @media only screen and (max-width: 37.5em) {
+        width: 42rem; } }
+    @media only screen and (max-width: 23.45em) {
       .hero__illustration {
         display: none; } }
 
@@ -930,6 +958,12 @@ textarea {
   position: relative;
   max-width: 70%;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .products {
+      max-width: 85%; } }
+  @media only screen and (max-width: 23.45em) {
+    .products {
+      max-width: 90%; } }
   .products__bg {
     background-image: url(../img/product-bg.png);
     background-size: cover; }
@@ -959,6 +993,10 @@ textarea {
         .products__header--title {
           margin-left: 4rem;
           top: 3rem; } }
+      @media only screen and (max-width: 23.45em) {
+        .products__header--title {
+          position: relative;
+          margin: 0 auto; } }
     .products__header--desc {
       position: absolute;
       width: 30%;
@@ -977,6 +1015,15 @@ textarea {
           margin-left: 4rem;
           top: 10rem;
           width: 35%; } }
+      @media only screen and (max-width: 30em) {
+        .products__header--desc {
+          width: 50%; } }
+      @media only screen and (max-width: 23.45em) {
+        .products__header--desc {
+          position: relative;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto; } }
     .products__header--list {
       position: absolute;
       top: 38rem;
@@ -1001,6 +1048,13 @@ textarea {
       height: 100%;
       float: right;
       top: 0; }
+      @media only screen and (max-width: 30em) {
+        .products__header--img {
+          width: 30%;
+          background-position: 65%; } }
+      @media only screen and (max-width: 23.45em) {
+        .products__header--img {
+          display: none; } }
   .products__img {
     height: 7rem; }
     .products__img--2 {
@@ -1061,10 +1115,13 @@ textarea {
     font-size: 2.6rem;
     text-align: center;
     margin-top: 2.5rem; }
+    @media only screen and (max-width: 84.35em) {
+      .services__header--box h4 {
+        font-size: 1.5rem; } }
   .services__header--box p {
     font-size: 1.4rem;
     text-align: center;
-    margin-top: 3rem; }
+    margin: .5rem 0 1.5rem 0; }
 
 .services__rev-box {
   position: absolute;
@@ -1079,22 +1136,22 @@ textarea {
   margin: 2rem auto; }
 
 .services__reviews-green {
-  margin: 0 0 0 9rem;
-  transform: translateY(50%);
+  transform: translate(-2rem, 50%);
   height: 32rem;
   width: 20rem;
   background-color: #66c61a;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+  float: right; }
 
 .services__user {
   position: relative;
-  margin: 0 0 0 7rem;
   transform: translateY(-50%);
   width: 24rem;
   height: 27rem;
   background-color: #eef0f1;
   padding: 1.6rem;
-  border-radius: 0.2rem; }
+  box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
+  float: right; }
 
 .services__photo {
   width: 100%;
@@ -1136,10 +1193,11 @@ textarea {
 .services__reviews-prg {
   height: 18rem;
   color: #eef0f1 !important;
-  transform: translateY(137%);
-  width: 60%;
+  transform: translate(7rem, 160%);
+  width: 65%;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  float: left; }
   .services__reviews-prg::before {
     content: "\201C";
     position: absolute;
@@ -1237,7 +1295,7 @@ textarea {
 .about-main {
   text-align: center;
   max-width: 70%;
-  margin: 10rem auto;
+  margin: 0 auto;
   /******* CEO Desc ********/ }
   .about-main__icon {
     font-size: 5rem;
@@ -1287,51 +1345,49 @@ textarea {
   display: block;
   position: relative;
   max-width: 70%;
-  margin: 0 auto;
-  height: 80vh; }
+  margin: 0 auto; }
   .footer__title {
     text-align: center;
     color: #eef0f1;
     text-transform: capitalize;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    transform: translateY(12rem); }
     .footer__title--span {
       display: block;
       content: "";
       height: 0.2rem;
       width: 6rem;
       background-color: #66c61a;
-      margin: 1rem auto 13rem auto; }
-  .footer__temp--icon {
-    font-size: 4rem;
-    color: #66c61a;
-    padding: 2rem; }
-  .footer__temp--title {
-    color: #eef0f1; }
-  .footer__temp--prg {
-    color: #eef0f1;
-    font-size: 1.2rem;
-    margin: 4rem 0 1.5rem 0; }
-  .footer__temp--link {
-    color: #66c61a;
-    width: 15rem;
-    margin-bottom: 10rem;
-    padding: 0.8rem 1.3rem;
-    text-align: center;
-    transition: all 0.2s ease; }
-    .footer__temp--link:link {
-      text-decoration: none; }
-    .footer__temp--link:hover {
-      box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
-  .footer__item-box {
-    max-width: 70%;
-    margin: 2rem auto;
-    text-align: center; }
+      margin: 1rem auto 6rem auto;
+      transform: translateY(12rem); }
+  .footer__temp {
+    margin: 20rem 0; }
+    .footer__temp--icon {
+      font-size: 4rem;
+      color: #66c61a;
+      padding: 2rem 0; }
+    .footer__temp--title {
+      color: #eef0f1; }
+    .footer__temp--prg {
+      color: #eef0f1;
+      font-size: 1.2rem;
+      margin: 4rem 0 1.5rem 0; }
+    .footer__temp--link {
+      color: #66c61a;
+      width: 15rem;
+      margin-bottom: 10rem;
+      padding: 0.8rem 1.3rem;
+      text-align: center;
+      transition: all 0.2s ease; }
+      .footer__temp--link:link {
+        text-decoration: none; }
+      .footer__temp--link:hover {
+        box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
   .footer__contact-box {
     display: flex;
     margin: 5rem auto; }
   .footer__contact {
     display: flex;
-    align-items: center;
     align-content: space-between;
     color: #eef0f1;
     margin: 0 auto; }
@@ -1379,7 +1435,8 @@ textarea {
     .footer__copyright--prg {
       text-align: center;
       color: #eef0f1;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      padding-bottom: 4rem; }
 
 #navBar {
   display: block; }
@@ -1421,8 +1478,7 @@ textarea {
 
 #footer {
   position: relative;
-  background-color: #05487f;
-  padding: 5rem 0; }
+  background-color: #05487f; }
 
 #contactSection {
   position: relative;

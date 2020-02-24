@@ -3,13 +3,13 @@
   position: relative;
   max-width: 70%;
   margin: 0 auto;
-  height: 80vh;
 
   &__title {
     text-align: center;
     color: $white;
     text-transform: capitalize;
     font-size: 2.5rem;
+    transform: translateY(12rem);
 
     &--span {
       display: block;
@@ -17,15 +17,18 @@
       height: 0.2rem;
       width: 6rem;
       background-color: $green;
-      margin: 1rem auto 13rem auto;
+      margin: 1rem auto 6rem auto;
+      transform: translateY(12rem);
     }
   }
 
   &__temp {
+    margin: 20rem 0;
+
     &--icon {
       font-size: 4rem;
       color: $green;
-      padding: 2rem;
+      padding: 2rem 0;
     }
 
     &--title {
@@ -57,9 +60,7 @@
   }
 
   &__item-box {
-    max-width: 70%;
-    margin: 2rem auto;
-    text-align: center;
+
   }
 
   &__contact-box {
@@ -69,7 +70,6 @@
 
   &__contact {
     display: flex;
-    align-items: center;
     align-content: space-between;
     color: $white;
     margin: 0 auto;
@@ -138,6 +138,7 @@
         text-align: center;
         color: $white;
         font-size: 1.1rem;
+        padding-bottom: 4rem;
     }
   }
 }

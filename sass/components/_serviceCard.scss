@@ -73,6 +73,7 @@
         ),
         url(../img/help.jpg);
     }
+    
     &--2 {
       background-image: linear-gradient(
           to right bottom,
@@ -81,6 +82,7 @@
         ),
         url(../img/solution.jpg);
     }
+
     &--3 {
       background-image: linear-gradient(
           to right bottom,
@@ -147,7 +149,11 @@
   &__details {
     margin-top: 2rem;
     color: $blue;
-    padding: 0 5rem
+    padding: 0 5rem;
+
+    @include respond(desktop-small) {
+      padding: 0 2rem
+    }
   }
 
   // Back of card

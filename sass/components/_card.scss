@@ -23,6 +23,10 @@
     height: 60rem;
     width: 100%;
 
+    @include respond(tab-port-large) {
+      height: 48rem;
+    }
+
     &--front {
       background: white;
     }
@@ -70,6 +74,10 @@
     @include respond(tab-land-large) {
       font-size: 1.8rem;
     }
+    @include respond(tab-port-large) {
+      width: 80%;
+      margin: 1rem auto 0 auto;
+    }
   }
 
   &__details ul {
@@ -86,9 +94,16 @@
     @include respond(tab-land) {
       padding: 1rem 0;
     }
+
+    @include respond(tab-port-large) {
+      width: 100%;
+      font-size: 1.3rem;
+    }
+
     @include respond(tab-port) {
       width: 100%;
-     }
+      font-size: 1.5rem;
+    }
 
     &:not(:last-child) {
       border-bottom: solid 0.1rem rgba($blue, 0.4);

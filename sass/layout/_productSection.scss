@@ -3,6 +3,13 @@
   max-width: 70%;
   margin: 0 auto;
 
+  @include respond(phone) {
+    max-width: 85%;
+  }
+  @include respond(phone-small) {
+    max-width: 90%;
+  }
+
   &__bg {
     background-image: url(../img/product-bg.png);
     background-size: cover;
@@ -38,6 +45,10 @@
         margin-left: 4rem;
         top: 3rem;
       }
+      @include respond(phone-small) {
+        position: relative;
+        margin: 0 auto;
+      }
     }
 
     &--desc {
@@ -58,6 +69,15 @@
         margin-left: 4rem;
         top: 10rem;
         width: 35%;
+      }
+      @include respond(phone-med) {
+        width: 50%;
+      }
+      @include respond(phone-small) {
+        position: relative;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
       }
     }
 
@@ -91,6 +111,14 @@
       height: 100%;
       float: right;
       top: 0;
+
+      @include respond(phone-med) {
+        width: 30%;
+        background-position: 65%;
+      }
+      @include respond(phone-small) {
+        display: none;
+      }
     }
   }
 
