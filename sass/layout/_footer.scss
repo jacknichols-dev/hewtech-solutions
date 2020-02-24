@@ -3,6 +3,10 @@
   position: relative;
   max-width: 70%;
   margin: 0 auto;
+    
+  @include respond(tab-port-large) {
+    max-width: 80%;
+  }
 
   &__title {
     text-align: center;
@@ -10,6 +14,10 @@
     text-transform: capitalize;
     font-size: 2.5rem;
     transform: translateY(12rem);
+
+    @include respond(phone) {
+    transform: translateY(5rem);
+    }
 
     &--span {
       display: block;
@@ -19,11 +27,23 @@
       background-color: $green;
       margin: 1rem auto 6rem auto;
       transform: translateY(12rem);
+
+      @include respond(phone) {
+        transform: translateY(5rem);
+        }
     }
   }
 
   &__temp {
     margin: 20rem 0;
+
+    @include respond(tab-port) {
+      margin: 6rem 0;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+    }
 
     &--icon {
       font-size: 4rem;
@@ -59,13 +79,13 @@
     }
   }
 
-  &__item-box {
-
-  }
-
   &__contact-box {
     display: flex;
     margin: 5rem auto;
+
+    @include respond(phone) {
+      display: inline;
+    }
   }
 
   &__contact {
@@ -94,6 +114,10 @@
     &--title {
       text-transform: uppercase;
       margin-right: 2rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &--list {

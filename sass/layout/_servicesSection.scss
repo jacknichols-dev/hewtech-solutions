@@ -7,6 +7,10 @@
       text-align: center;
       margin-left: 50%;
       transform: translate(-50%, -20%);
+
+      @include respond(phone) {
+        transform: translate(-50%, -34%);
+      }
     }
 
     &--bg {
@@ -58,6 +62,10 @@
       @include respond(tab-port) {
         text-align: center;
       }
+
+      @include respond(phone) {
+        width: 40rem;
+      }
     }
 
     &--box {
@@ -71,6 +79,15 @@
       box-shadow: $shadow-2;
       padding: 1rem 2rem;
       z-index: 1;
+
+      @include respond(tab-port-large) {
+        width: 80%;
+      }
+      
+    @include respond(tab-port) {
+      height: 154rem;
+      margin-top: 41rem;
+    }
 
       & h4 {
         font-size: 2.6rem;
@@ -95,12 +112,20 @@
 
   &__rev-box {
     position: absolute;
-    margin: 110rem 0 0 0;
+    margin-top: 110rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: $blue-light;
     width: 70%;
     height: 66rem;
+
+    @include respond(tab-port-large) {
+      width: 80%;
+    }
+    
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__reviews-box {
@@ -219,16 +244,16 @@
   margin: 8.5rem 3.5rem 0 0;
   color: $white !important;
 
-  @include respond(desktop) {
-    
+  @include respond(tab-land ) {
+    display: none;
   }
 }
 .glider-prev {
   margin: 8.5rem 0 0 3.5rem;
   color: $white !important;
 
-  @include respond(desktop) {
-    
+  @include respond(tab-land ) {
+    display: none;
   }
 }
 

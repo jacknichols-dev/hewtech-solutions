@@ -40,6 +40,10 @@
 
 #servicesSection {
   min-height: 193rem;
+  
+  @include respond(tab-port) {
+    min-height: 196rem;
+  }
 }
 
 #aboutSection {

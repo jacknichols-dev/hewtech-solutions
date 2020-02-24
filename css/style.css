@@ -154,6 +154,11 @@ body {
     @media only screen and (max-width: 67.2em) {
       .card__side {
         height: 48rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .card__side {
+        height: 70rem;
+        width: 90%;
+        margin: 0 auto; } }
     .card__side--front {
       background: white; }
   .card__pic {
@@ -162,6 +167,10 @@ body {
     background-size: cover;
     background-position: top;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); }
+    @media only screen and (max-width: 56.25em) {
+      .card__pic {
+        background-position: bottom;
+        height: 50%; } }
     .card__pic--1 {
       background-image: linear-gradient(to left, rgba(5, 72, 127, 0.5), rgba(102, 198, 26, 0.1)), url(../img/personal-alarm2.jpg); }
     .card__pic--2 {
@@ -173,13 +182,15 @@ body {
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center; }
-    @media only screen and (max-width: 80.65em) {
-      .card__heading {
-        font-size: 1.8rem; } }
     @media only screen and (max-width: 67.2em) {
       .card__heading {
         width: 80%;
-        margin: 1rem auto 0 auto; } }
+        margin: 1rem auto 0 auto;
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .card__heading {
+        font-size: 2.1rem;
+        margin-top: 4rem; } }
   .card__details ul {
     margin: 4rem 1rem;
     font-size: 1.5rem;
@@ -260,6 +271,9 @@ body {
   perspective: 190rem;
   -moz-perspective: 190rem;
   height: 45rem; }
+  @media only screen and (max-width: 56.25em) {
+    .service-cards {
+      margin: 1.5rem auto; } }
   .service-cards__side {
     position: absolute;
     top: 0;
@@ -293,6 +307,9 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-radius: 0.5rem 0.5rem 0 0; }
+    @media only screen and (max-width: 56.25em) {
+      .service-cards__pic {
+        height: 24rem; } }
     .service-cards__pic--1 {
       background-image: linear-gradient(to right bottom, rgba(4, 96, 186, 0.2), rgba(102, 198, 26, 0.2)), url(../img/help.jpg); }
     .service-cards__pic--2 {
@@ -793,6 +810,9 @@ textarea {
   align-items: center;
   justify-content: space-between;
   /******** ILLUSTRATION **********/ }
+  @media only screen and (max-width: 67.2em) {
+    .hero {
+      max-width: 80%; } }
   @media only screen and (max-width: 46.25em) {
     .hero {
       display: block;
@@ -958,6 +978,9 @@ textarea {
   position: relative;
   max-width: 70%;
   margin: 0 auto; }
+  @media only screen and (max-width: 67.2em) {
+    .products {
+      max-width: 80%; } }
   @media only screen and (max-width: 37.5em) {
     .products {
       max-width: 85%; } }
@@ -1065,6 +1088,9 @@ textarea {
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%, -20%); }
+  @media only screen and (max-width: 37.5em) {
+    .services__header--header-box {
+      transform: translate(-50%, -34%); } }
 
 .services__header--bg {
   position: absolute;
@@ -1099,6 +1125,9 @@ textarea {
   @media only screen and (max-width: 56.25em) {
     .services__header--desc {
       text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__header--desc {
+      width: 40rem; } }
 
 .services__header--box {
   position: absolute;
@@ -1111,6 +1140,13 @@ textarea {
   box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
   padding: 1rem 2rem;
   z-index: 1; }
+  @media only screen and (max-width: 67.2em) {
+    .services__header--box {
+      width: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    .services__header--box {
+      height: 154rem;
+      margin-top: 41rem; } }
   .services__header--box h4 {
     font-size: 2.6rem;
     text-align: center;
@@ -1125,12 +1161,18 @@ textarea {
 
 .services__rev-box {
   position: absolute;
-  margin: 110rem 0 0 0;
+  margin-top: 110rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: #0d88cc;
   width: 70%;
   height: 66rem; }
+  @media only screen and (max-width: 67.2em) {
+    .services__rev-box {
+      width: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    .services__rev-box {
+      display: none; } }
 
 .services__reviews-box {
   margin: 2rem auto; }
@@ -1227,10 +1269,16 @@ textarea {
 .glider-next {
   margin: 8.5rem 3.5rem 0 0;
   color: #eef0f1 !important; }
+  @media only screen and (max-width: 75em) {
+    .glider-next {
+      display: none; } }
 
 .glider-prev {
   margin: 8.5rem 0 0 3.5rem;
   color: #eef0f1 !important; }
+  @media only screen and (max-width: 75em) {
+    .glider-prev {
+      display: none; } }
 
 .glider-dots {
   transform: translateY(-6rem); }
@@ -1257,6 +1305,9 @@ textarea {
   width: 70%;
   margin: 0 auto;
   justify-content: space-between; }
+  @media only screen and (max-width: 67.2em) {
+    .header-box {
+      width: 80%; } }
 
 .about-header {
   height: 62rem;
@@ -1297,6 +1348,9 @@ textarea {
   max-width: 70%;
   margin: 0 auto;
   /******* CEO Desc ********/ }
+  @media only screen and (max-width: 67.2em) {
+    .about-main {
+      max-width: 80%; } }
   .about-main__icon {
     font-size: 5rem;
     margin: 5rem 0 2rem 0;
@@ -1346,12 +1400,18 @@ textarea {
   position: relative;
   max-width: 70%;
   margin: 0 auto; }
+  @media only screen and (max-width: 67.2em) {
+    .footer {
+      max-width: 80%; } }
   .footer__title {
     text-align: center;
     color: #eef0f1;
     text-transform: capitalize;
     font-size: 2.5rem;
     transform: translateY(12rem); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__title {
+        transform: translateY(5rem); } }
     .footer__title--span {
       display: block;
       content: "";
@@ -1360,8 +1420,17 @@ textarea {
       background-color: #66c61a;
       margin: 1rem auto 6rem auto;
       transform: translateY(12rem); }
+      @media only screen and (max-width: 37.5em) {
+        .footer__title--span {
+          transform: translateY(5rem); } }
   .footer__temp {
     margin: 20rem 0; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__temp {
+        margin: 6rem 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__temp {
+        text-align: center; } }
     .footer__temp--icon {
       font-size: 4rem;
       color: #66c61a;
@@ -1386,6 +1455,9 @@ textarea {
   .footer__contact-box {
     display: flex;
     margin: 5rem auto; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact-box {
+        display: inline; } }
   .footer__contact {
     display: flex;
     align-content: space-between;
@@ -1406,6 +1478,9 @@ textarea {
     .footer__social--title {
       text-transform: uppercase;
       margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__social--title {
+          display: none; } }
     .footer__social--list {
       display: flex;
       justify-items: center;
@@ -1472,6 +1547,9 @@ textarea {
 
 #servicesSection {
   min-height: 193rem; }
+  @media only screen and (max-width: 56.25em) {
+    #servicesSection {
+      min-height: 196rem; } }
 
 #aboutSection {
   position: relative; }

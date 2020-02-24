@@ -27,6 +27,12 @@
       height: 48rem;
     }
 
+    @include respond(tab-port) {
+      height: 70rem;
+      width: 90%;
+      margin: 0 auto;
+    }
+
     &--front {
       background: white;
     }
@@ -39,6 +45,11 @@
     background-position: top;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 
+    @include respond(tab-port) {
+      background-position: bottom;
+      height: 50%;
+    }
+
     &--1 {
       background-image: linear-gradient(
           to left,
@@ -47,6 +58,7 @@
         ),
         url(../img/personal-alarm2.jpg);
     }
+
     &--2 {
       background-image: linear-gradient(
           to left,
@@ -55,6 +67,7 @@
         ),
         url(../img/home-alarm2.jpg);
     }
+
     &--3 {
       background-image: linear-gradient(
           to left,
@@ -71,12 +84,15 @@
     font-weight: bold;
     text-align: center;
 
-    @include respond(tab-land-large) {
-      font-size: 1.8rem;
-    }
     @include respond(tab-port-large) {
       width: 80%;
       margin: 1rem auto 0 auto;
+      font-size: 1.8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.1rem;
+      margin-top: 4rem;
     }
   }
 

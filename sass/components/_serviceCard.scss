@@ -4,6 +4,10 @@
   perspective: 190rem;
   -moz-perspective: 190rem;
   height: 45rem;
+  
+  @include respond(tab-port) {
+    margin: 1.5rem auto;
+  }
 
   &__side {
     position: absolute;
@@ -64,6 +68,10 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-radius: 0.5rem 0.5rem 0 0;
+
+    @include respond(tab-port) {
+      height: 24rem;
+    }
 
     &--1 {
       background-image: linear-gradient(

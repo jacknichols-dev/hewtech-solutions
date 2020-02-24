@@ -2,6 +2,10 @@
   position: relative;
   max-width: 70%;
   margin: 0 auto;
+  
+  @include respond(tab-port-large) {
+    max-width: 80%;
+  }
 
   @include respond(phone) {
     max-width: 85%;

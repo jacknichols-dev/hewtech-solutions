@@ -469,6 +469,10 @@
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+    
+  @include respond(tab-port-large) {
+    max-width: 80%;
+  }
 
   @include respond(phone-large) {
     display: block;
