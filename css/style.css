@@ -157,7 +157,6 @@ body {
     @media only screen and (max-width: 56.25em) {
       .card__side {
         height: 70rem;
-        width: 90%;
         margin: 0 auto; } }
     .card__side--front {
       background: white; }
@@ -378,7 +377,8 @@ body {
   letter-spacing: 0.07rem;
   transition: all 0.15s ease;
   letter-spacing: 0.07rem;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased !important; }
 
 .btn:hover {
   background: linear-gradient(to right top, #0d88cc 0%, #05487f 100%);
@@ -860,19 +860,16 @@ textarea {
         width: 55rem; } }
     @media only screen and (max-width: 75em) {
       .hero__illustration {
-        width: 49rem; } }
+        width: 49rem;
+        animation: navAppear 2s ease-in-out; } }
     @media only screen and (max-width: 69.35em) {
       .hero__illustration {
         margin-top: 20rem;
         width: 49rem; } }
     @media only screen and (max-width: 46.25em) {
       .hero__illustration {
-        text-align: center;
         margin: 4rem auto;
-        width: 42rem; } }
-    @media only screen and (max-width: 23.45em) {
-      .hero__illustration {
-        display: none; } }
+        width: 37rem; } }
 
 /****** Rotating text *******/
 .rotating-text {
@@ -1283,12 +1280,22 @@ textarea {
 .glider-dots {
   transform: translateY(-6rem); }
 
+.header-contact {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
+  z-index: 10;
+  height: 7rem; }
+
 .cont {
-  position: relative;
-  width: 85%;
+  display: flex;
+  max-width: 70%;
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19);
+  margin: 0 auto; }
   .cont__heading {
     padding: 3rem 0;
     animation: logo 1s ease; }
@@ -1298,6 +1305,15 @@ textarea {
   .cont__form--heading {
     padding: 3rem 4rem;
     color: #66c61a; }
+
+.fb-cont {
+  color: #0d88cc; }
+
+.twitter-cont {
+  color: #0d88cc; }
+
+.link-cont {
+  color: #0d88cc; }
 
 /******* about header ********/
 .header-box {
@@ -1409,7 +1425,7 @@ textarea {
     text-transform: capitalize;
     font-size: 2.5rem;
     transform: translateY(12rem); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__title {
         transform: translateY(5rem); } }
     .footer__title--span {
@@ -1420,16 +1436,14 @@ textarea {
       background-color: #66c61a;
       margin: 1rem auto 6rem auto;
       transform: translateY(12rem); }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 56.25em) {
         .footer__title--span {
           transform: translateY(5rem); } }
   .footer__temp {
     margin: 20rem 0; }
     @media only screen and (max-width: 56.25em) {
       .footer__temp {
-        margin: 6rem 0; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__temp {
+        margin: 4rem 0;
         text-align: center; } }
     .footer__temp--icon {
       font-size: 4rem;
@@ -1442,12 +1456,17 @@ textarea {
       font-size: 1.2rem;
       margin: 4rem 0 1.5rem 0; }
     .footer__temp--link {
+      position: absolute;
       color: #66c61a;
       width: 15rem;
       margin-bottom: 10rem;
       padding: 0.8rem 1.3rem;
       text-align: center;
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      transform: translateX(-2.8rem); }
+      @media only screen and (max-width: 56.25em) {
+        .footer__temp--link {
+          position: relative; } }
       .footer__temp--link:link {
         text-decoration: none; }
       .footer__temp--link:hover {
@@ -1460,8 +1479,9 @@ textarea {
         display: inline; } }
   .footer__contact {
     display: flex;
-    align-content: space-between;
     color: #eef0f1;
+    width: 70%;
+    align-items: center;
     margin: 0 auto; }
     .footer__contact--icon {
       font-size: 1.7rem;
@@ -1478,6 +1498,12 @@ textarea {
     .footer__social--title {
       text-transform: uppercase;
       margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__social--title {
+          margin-right: 0;
+          font-size: 1.3rem;
+          text-transform: lowercase;
+          text-align: right; } }
       @media only screen and (max-width: 37.5em) {
         .footer__social--title {
           display: none; } }

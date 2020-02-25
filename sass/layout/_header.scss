@@ -536,6 +536,7 @@
 
     @include respond(tab-land) {
       width: 49rem;
+      animation: navAppear 2s ease-in-out;
     }
 
     @include respond(tab-land-small) {
@@ -544,12 +545,8 @@
     }
 
     @include respond(phone-large) {
-      text-align: center;
       margin: 4rem auto;
-      width: 42rem;
-    }
-    @include respond(phone-small) {
-      display: none;
+      width: 37rem;
     }
   }
 }

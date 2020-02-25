@@ -1,9 +1,20 @@
+.header-contact {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: $shadow;
+  z-index: 10;
+  height: 7rem;
+   }
+
 .cont {
-  position: relative;
-  width: 85%;
+  display: flex;
+  max-width: 70%;
   border-radius: 1rem;
   background-color: white;
   box-shadow: $shadow-1;
+  margin: 0 auto;
 
   &__heading {
     padding: 3rem 0;
@@ -22,4 +33,16 @@
       color: $green;
     }
   }
+} 
+
+.fb-cont {
+  color: $blue-light;
+}
+
+.twitter-cont {
+  color: $blue-light;
+}
+
+.link-cont {
+  color: $blue-light;
 }

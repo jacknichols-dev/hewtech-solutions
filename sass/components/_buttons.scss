@@ -14,6 +14,7 @@
     transition: all 0.15s ease;
     letter-spacing: 0.07rem;
     font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased !important;
   }
 
   &:hover {

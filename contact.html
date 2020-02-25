@@ -26,38 +26,51 @@
   <body>
     <!-- MAIN TOP NAV -->
 
-    <section id="navBar">
-      <div class="header header__contact">
-        <a href="index.html"
-          ><img src="img/logo.png" alt="logo" class="header__logo"
-        /></a>
+       <!--------------------------- NAV SECTION --------------------------------->
 
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="index.html" class="header__link"
-              ><i class="header__icon fas fa-home"></i>&nbsp;&nbsp;Home</a
-            >
-          </li>
-        </ul>
-        
-      <div class="social social">
-        <a href="#"
-          ><i class="social__fb social__fb--contact fab fa-facebook"></i
-        ></a>
-        <a href="#"
-          ><i
-            class="social__twitter social__twitter--contact fab fa-twitter"
-          ></i
-        ></a>
+    <!--LARGE SCREEN NAV-->
+    <nav id="navBar">
+      <div class="header header-contact">
+          <a href="index.html"><img src="img/logo.png" alt="logo" class="header__logo"></a>
+          <a href="index.html"><img src="img/logo-icon.png" alt="logo" class="header__logo-icon"></a>
+
+          <ul class="header__list">
+              <li class="header__item"><a href="index.html" class="header__link"><i class="header__icon fas fa-home"></i>Home</a></li>
+          </ul>
       </div>
 
-      <div class="contact contact--contact">
-        <p class="contact__title contact__title">
-          <i class="fas fa-phone"></i>&nbsp;&nbsp;Contact us
-        </p>
-        <h4 class="contact__number">07771 119910</h4>
+      <div class="social ">
+          <a href="https://www.facebook.com/" target="_blank"><i class="social__fb fb-cont fab fa-facebook"></i></a> 
+          <a href="https://twitter.com/" target="_blank"><i class="social__twitter twitter-cont fab fa-twitter"></i></a>
       </div>
-    </section>
+
+      <div class="contact">
+          <a href="contact.html" class="contact__link link-cont">
+          <p class="contact__title"><i class="fas fa-phone"></i>&nbsp;Contact us</p>
+          <h4 class="contact__number">07771 119910</h4>
+      </a>
+      </div>
+      
+        <!-- SMALL HAMBURGER NAV -->
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+          <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+          </label>
+          
+          <div class="navigation__background">&nbsp;</div>
+  
+          <nav class="navigation__nav">
+              <ul class="navigation__list">
+                  <li class="navigation__item"><a href="products.html" class="navigation__link"><span>01.</span>Products</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link"><span>02.</span>Services</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link"><span>03.</span>About</a></li>
+                  <li class="navigation__item"><a href="contact.html" class="navigation__link"><span>04.</span>Contact us</a></li>
+              </ul>
+          </nav>
+      </div>
+  </nav>
+
 
     <!-- CONTACT FORM -->
 
@@ -112,86 +125,92 @@
       </container>
 </section>
 
-      <!--***** Footer Section ******-->
+       <!--------------------------- FOOTER SECTION --------------------------------->
 
-<section id="footer">
-  <div class="footer">
-      <h1 class="footer__title">We serve to keep you safe</h1>
-      <span class="footer__title--span"></span>
-
-      <div class="row">
-              <div class="col-1-of-4">
-                  <div class="footer__temp">
-                      <i class="fas fa-code-branch footer__temp--icon"></i>
-                      <h3 class="footer__temp--title">Our services</h3>
-                      <p class="footer__temp--prg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                          Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
-                          <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
-                      </p>
-                  </div>
-              </div>
-
-              <div class="col-1-of-4">
-                  <div class="footer__temp">
-                          <i class="fas fa-paste footer__temp--icon"></i>
-                      <h3 class="footer__temp--title">Terms & conditions</h3>
-                      <p class="footer__temp--prg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque itaque atque ipsa?Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                          <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
-                      </p>
-                  </div>
-              </div>
-
-              <div class="col-1-of-4">
-                  <div class="footer__temp">
-                          <i class="fas fa-shield-alt footer__temp--icon"></i>
-                      <h3 class="footer__temp--title">Stay secure</h3>
-                      <p class="footer__temp--prg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                          Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
-                          <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
-                      </p>
-                  </div>
-
-              </div>
-
-              <div class="col-1-of-4">
-                  <div class="footer__temp">
-                          <i class="fas fa-mobile-alt footer__temp--icon"></i>
-                      <h3 class="footer__temp--title">Contact</h3>
-                      <p class="footer__temp--prg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                          Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
-                          <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
-                      </p>
-                  </div>
-              </div>
-              </div>
-              <div class="footer__contact">
-                  <i class="fas fa-phone-alt footer__contact--icon" aria-hidden="true"></i>
-                  <p class="footer__contact--number">800-601-0230</p>
-                      <div class="footer__social">
-                          <p class="footer__social--title">follow us on social media</p>
-                          <ul class="footer__social--list">
-                              <li class="footer__social--item">
-                                  <a href="https://www.facebook.com/" target="_blank"><i class="footer__social--icon fab fa-facebook"></i></a>
-                              </li>
-                              <li class="footer__social--item">
-                                  <a href="https://twitter.com/" target="_blank"><i class="footer__social--icon fab fa-twitter"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-              </div>
-              <div class="footer__copyright">
-                  <span class="footer__copyright--span"></span>
-                  <p class="footer__copyright--prg">
-                          &#169; &#9866 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat sequi, sed blanditiis autem officiis similique iusto ullam fugit velit!
-                  </p>
-              </div>
-          </div>
-  </div>
-
+       <footer id="footer">
+        <div class="footer">
+            <h1 class="footer__title">We serve to keep you safe</h1>
+            <span class="footer__title--span"></span>
+            <container class="footer__item-box">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="footer__temp">
+                            <i class="fas fa-code-branch footer__temp--icon"></i>
+                            <h3 class="footer__temp--title">Our services</h3>
+                            <p class="footer__temp--prg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
+                            </p>
+                            <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-4">
+                        <div class="footer__temp">
+                                <i class="fas fa-paste footer__temp--icon"></i>
+                            <h3 class="footer__temp--title">Terms & conditions</h3>
+                            <p class="footer__temp--prg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
+                            </p>
+                            <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-4">
+                        <div class="footer__temp">
+                                <i class="fas fa-shield-alt footer__temp--icon"></i>
+                            <h3 class="footer__temp--title">Stay secure</h3>
+                            <p class="footer__temp--prg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
+                            </p>
+                            <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-4">
+                        <div class="footer__temp">
+                                <i class="fas fa-mobile-alt footer__temp--icon"></i>
+                            <h3 class="footer__temp--title">Contact</h3>
+                            <p class="footer__temp--prg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nisi assumenda recusandae quae, delectus sint enim autem vero dolores.
+                            </p>
+                            <a href="#servicesSection" class="footer__temp--link">Learn more&nbsp;&nbsp;<i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </container>
+                </div>
+    
+                <container class="footer__contact-box">
+                    <div class="footer__contact">
+                      <i class="fas fa-phone footer__contact--icon"></i>
+                    <p class="footer__contact--number">800-601-0230</p>
+                        <div class="footer__social">
+                            <p class="footer__social--title">follow us on social media</p>
+                            <ul class="footer__social--list">
+                                <li class="footer__social--item">
+                                    <a href="https://www.facebook.com/" target="_blank"><i class="footer__social--icon fab fa-facebook"></i></a>
+                                </li>
+                                <li class="footer__social--item">
+                                    <a href="https://twitter.com/" target="_blank"><i class="footer__social--icon fab fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </container>
+    
+                <div class="footer__copyright">
+                    <span class="footer__copyright--span"></span>
+                    <p class="footer__copyright--prg">
+                            &#169; &#9866 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat sequi, sed blanditiis autem officiis similique iusto ullam fugit velit!
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
 
       <script>
         function initMap() {
