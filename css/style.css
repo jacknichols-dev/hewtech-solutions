@@ -413,9 +413,18 @@ body {
   margin-bottom: 2.5rem; }
 
 .form {
-  padding: 8rem 0 0 4rem; }
+  padding: 8rem 0 0 8rem; }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
+  @media only screen and (max-width: 80.65em) {
+    .form {
+      padding: 9rem 0 0 8rem;
+      float: right;
+      width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .form {
+      padding: 0;
+      float: none; } }
   .form__group--service {
     padding-bottom: 2rem; }
   .form__input {
@@ -480,10 +489,13 @@ textarea {
     border-bottom: 0.32rem solid #0d88cc; }
 
 #map {
-  position: relative;
-  height: 40rem;
-  width: 40rem;
-  margin: 4rem 4rem 0 0; }
+  position: relative !important;
+  height: 34.5rem;
+  width: 35rem;
+  margin: 4rem auto; }
+  @media only screen and (max-width: 80.65em) {
+    #map {
+      margin: 2rem auto; } }
 
 /******* LARGE NAV *******/
 .header {
@@ -1285,7 +1297,7 @@ textarea {
   top: 0;
   width: 100%;
   background-color: white;
-  box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   height: 7rem; }
 
@@ -1295,16 +1307,36 @@ textarea {
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0 0.7rem 1.6rem rgba(0, 0, 0, 0.19);
+  padding: 2rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 69.35em) {
+    .cont {
+      max-width: 85%; } }
   .cont__heading {
-    padding: 3rem 0;
-    animation: logo 1s ease; }
+    animation: logo 1s ease;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 69.35em) {
+      .cont__heading {
+        text-align: center;
+        margin: 2rem auto; } }
   .cont__par {
     color: #0d88cc;
     line-height: 1.3; }
+    @media only screen and (max-width: 69.35em) {
+      .cont__par {
+        text-align: center;
+        width: 90%;
+        margin: 4rem auto; } }
   .cont__form--heading {
-    padding: 3rem 4rem;
-    color: #66c61a; }
+    padding: 2rem 8rem;
+    color: #66c61a;
+    font-size: 1.7rem; }
+    @media only screen and (max-width: 69.35em) {
+      .cont__form--heading {
+        padding: 3rem 0; } }
+  .cont__map {
+    position: relative;
+    padding: 2rem; }
 
 .fb-cont {
   color: #0d88cc; }

@@ -1,4 +1,4 @@
-console.log("it works");
+// console.log("it works");
 $(document).ready(function() {
   $(".form__submit").click(function(event) {
     console.log("clicked");

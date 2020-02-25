@@ -1,7 +1,18 @@
 .form {
-  padding: 8rem 0 0 4rem;
+  padding: 8rem 0 0 8rem;
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+  }
+
+  @include respond(tab-land-large) {
+    padding: 9rem 0 0 8rem;
+    float: right;
+    width: 100%;
+  }
+
+  @include respond(tab-land) {
+    padding: 0;
+    float: none;
   }
 
   &__group {
@@ -89,8 +100,12 @@ textarea {
 }
 
 #map {
-  position: relative;
-  height: 40rem;
-  width: 40rem;
-  margin: 4rem 4rem 0 0;
+  position: relative !important;
+  height: 34.5rem;
+  width: 35rem;
+  margin: 4rem auto;
+
+  @include respond(tab-land-large) {
+    margin: 2rem auto;
+  }
 }
