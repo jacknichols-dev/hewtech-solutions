@@ -28,6 +28,7 @@ html {
 
 body {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 
   &::-webkit-scrollbar {
     background-color: $blue-light;

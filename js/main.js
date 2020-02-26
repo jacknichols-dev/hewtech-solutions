@@ -115,5 +115,3 @@ let rotateText = function() {
 };
 rotateText();
 setInterval(rotateText, 4000);
-
-
