@@ -832,8 +832,7 @@ textarea {
       position: relative; } }
   .hero__para {
     color: #0d88cc;
-    width: 50rem;
-    line-height: 1.6; }
+    width: 50rem; }
     @media only screen and (max-width: 75em) {
       .hero__para {
         width: 45rem; } }
