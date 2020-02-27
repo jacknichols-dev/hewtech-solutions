@@ -30,7 +30,13 @@
 
   @include respond(tab-port) {
     margin-bottom: 15rem;
+    margin-top: 16rem;
+    }
+
+  @include respond(phone-small) {
+    margin-top: -20rem;
   }
+
 }
 
 #btnTop {

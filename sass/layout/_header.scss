@@ -494,6 +494,7 @@
 
     @include respond (tab-port) {
       width: 35rem;
+      margin-top: .5rem;
     }
 
     @include respond(phone-large) {
@@ -547,7 +548,10 @@
 
     @include respond(phone-large) {
       margin: 4rem auto;
-      width: 37rem;
+      width: 32rem;
+    }
+    @include respond(phone-small) {
+      display: none;
     }
   }
 }
@@ -562,14 +566,24 @@
   font-size: 6rem;
   color: white;
 
+  @include respond(phone-large) {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 4.5rem;
+    line-height: 4.5;
+  }
+
   &--title {
+    display: inline-block;
     color: $blue-light;
     font-size: 6rem;
     font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 
     @include respond(phone-large) {
-      width: 100%;
-      text-align: center;
+      font-size: 4.5rem;
     }
   }
 }

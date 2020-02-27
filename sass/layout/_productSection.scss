@@ -29,6 +29,10 @@
     border-width: thick;
     box-shadow: $shadow-2;
 
+    @include respond(phone) {
+      height: 65rem;
+    }
+
     &--title {
       position: absolute;
       top: 6.5rem;
@@ -61,7 +65,6 @@
       top: 14rem;
       margin-left: 10rem;
       color: $blue-light;
-      font-size: 1.3rem;
       padding-bottom: 5rem;
 
       @include respond(tab-land-small) {

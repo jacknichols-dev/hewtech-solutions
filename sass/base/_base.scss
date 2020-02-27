@@ -20,10 +20,6 @@ html {
     @include respond(tab-land) {
         font-size: 56.25%;         
     }
-
-    @include respond(tab-port) {
-        font-size: 50%;           
-    }
 }
 
 body {

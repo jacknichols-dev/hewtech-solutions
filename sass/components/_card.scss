@@ -9,6 +9,11 @@
     margin-top: 5rem;
   }
 
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+
+
   &:hover {
     transform: translateY(-2rem) scale(1.02);
     box-shadow: $shadow-1;
