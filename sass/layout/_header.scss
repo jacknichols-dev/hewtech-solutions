@@ -480,6 +480,7 @@
   }
 
   &__para {
+    margin-top: 2rem;
     color: $blue-light;
     width: 50rem;
 
@@ -555,15 +556,15 @@
 
 .rotating-text {
   position: relative;
-  line-height: 4.5;
+  line-height: 4;
   font-family: $font-2;
-  font-weight: 600;
-  font-size: 5rem;
+  font-weight: 800;
+  font-size: 6rem;
   color: white;
 
   &--title {
     color: $blue-light;
-    font-size: 5rem;
+    font-size: 6rem;
 
     @include respond(phone-large) {
       width: 100%;

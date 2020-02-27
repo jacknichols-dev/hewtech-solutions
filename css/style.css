@@ -834,6 +834,7 @@ textarea {
       display: block;
       position: relative; } }
   .hero__para {
+    margin-top: 2rem;
     color: #0d88cc;
     width: 50rem; }
     @media only screen and (max-width: 75em) {
@@ -890,14 +891,14 @@ textarea {
 /****** Rotating text *******/
 .rotating-text {
   position: relative;
-  line-height: 4.5;
+  line-height: 4;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 5rem;
+  font-weight: 800;
+  font-size: 6rem;
   color: white; }
   .rotating-text--title {
     color: #0d88cc;
-    font-size: 5rem; }
+    font-size: 6rem; }
     @media only screen and (max-width: 46.25em) {
       .rotating-text--title {
         width: 100%;
