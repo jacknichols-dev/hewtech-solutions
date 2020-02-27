@@ -8,6 +8,10 @@ body {
   font-weight: 300;
   color: $blue;
   line-height: 1.6;
+
+  @include respond(tab-port-large) {
+    line-height: 1.3;
+  }
 }
 
 ::selection {
