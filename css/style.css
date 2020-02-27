@@ -898,7 +898,8 @@ textarea {
   color: white; }
   .rotating-text--title {
     color: #0d88cc;
-    font-size: 6rem; }
+    font-size: 6rem;
+    font-weight: 800; }
     @media only screen and (max-width: 46.25em) {
       .rotating-text--title {
         width: 100%;
