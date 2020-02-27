@@ -36,7 +36,8 @@ body {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #0460ba; }
+  color: #0460ba;
+  line-height: 1.6; }
 
 ::selection {
   color: #66c61a;
@@ -831,7 +832,8 @@ textarea {
       position: relative; } }
   .hero__para {
     color: #0d88cc;
-    width: 50rem; }
+    width: 50rem;
+    line-height: 1.6; }
     @media only screen and (max-width: 75em) {
       .hero__para {
         width: 45rem; } }

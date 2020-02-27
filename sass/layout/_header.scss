@@ -482,6 +482,7 @@
   &__para {
     color: $blue-light;
     width: 50rem;
+    line-height: 1.6;
 
     @include respond(tab-land) {
       width: 45rem;
