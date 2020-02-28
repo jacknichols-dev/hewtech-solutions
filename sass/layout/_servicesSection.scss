@@ -29,8 +29,7 @@
       background-repeat: no-repeat;
 
       @include respond(tab-port-large) {
-      }
-      @include respond(tab-port-small) {
+        height: 85%;
       }
     }
 
@@ -50,7 +49,6 @@
 
     &--desc {
       color: white;
-      font-size: 1.5rem;
       font-weight: 100;
       letter-spacing: 0.1rem;
       width: 50rem;
@@ -75,7 +73,7 @@
       margin-top: 50rem;
       width: 70%;
       background-color: $white;
-      height: 65rem;
+      height: 76rem;
       box-shadow: $shadow-2;
       padding: 1rem 2rem;
       z-index: 1;
@@ -85,23 +83,18 @@
       }
       
     @include respond(tab-port) {
-      height: 154rem;
-      margin-top: 41rem;
+      height: 198rem;
+      margin-top: 46rem;
     }
 
       & h4 {
         font-size: 2.6rem;
         text-align: center;
-        margin-top: 2.5rem;
-
-        
-    @include respond(desktop-small) {
-      font-size: 1.5rem;
-    }
+        margin: 3rem auto;
       }
 
       & p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-align: center;
         margin: .5rem 0 1.5rem 0;
       }
@@ -112,7 +105,7 @@
 
   &__rev-box {
     position: absolute;
-    margin-top: 110rem;
+    margin-top: 117rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: $blue-light;

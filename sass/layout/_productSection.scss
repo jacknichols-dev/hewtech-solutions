@@ -51,12 +51,9 @@
         font-size: 3rem;
       }
       @include respond(tab-port-med) {
-        margin-left: 4rem;
-        top: 3rem;
-      }
-      @include respond(phone-small) {
         position: relative;
         margin: 0 auto;
+        text-align: center;
       }
     }
 
@@ -74,14 +71,6 @@
         width: 35%;
       }
       @include respond(tab-port-med) {
-        margin-left: 4rem;
-        top: 10rem;
-        width: 35%;
-      }
-      @include respond(phone-med) {
-        width: 50%;
-      }
-      @include respond(phone-small) {
         position: relative;
         width: 90%;
         text-align: center;
@@ -120,11 +109,7 @@
       float: right;
       top: 0;
 
-      @include respond(phone-med) {
-        width: 30%;
-        background-position: 65%;
-      }
-      @include respond(phone-small) {
+      @include respond(tab-port-med) {
         display: none;
       }
     }
