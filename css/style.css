@@ -162,6 +162,9 @@ body {
         margin: 0 auto; } }
     .card__side--front {
       background: white; }
+      @media only screen and (max-width: 75em) {
+        .card__side--front {
+          line-height: 1.2; } }
   .card__pic {
     height: 39%;
     border-radius: .5rem .5rem 0 0;
@@ -217,7 +220,9 @@ body {
       width: 70%; }
       @media only screen and (max-width: 56.25em) {
         .card__details li:not(:last-child) {
-          width: 30%; } }
+          width: 50%;
+          border: none;
+          padding: .5rem 0; } }
   .card__details-hidden {
     opacity: 1;
     position: absolute;
@@ -262,6 +267,14 @@ body {
       box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
       font-weight: bold;
       transition: all 0.1s ease; }
+      @media only screen and (max-width: 67.2em) {
+        .card__details-hidden--btn, .card__details-hidden:link {
+          width: 60%;
+          text-align: center; } }
+      @media only screen and (max-width: 56.25em) {
+        .card__details-hidden--btn, .card__details-hidden:link {
+          width: 30%;
+          text-align: center; } }
       .card__details-hidden--btn:hover, .card__details-hidden--btn:focus, .card__details-hidden:link:hover, .card__details-hidden:link:focus {
         color: #66c61a;
         transform: translate(-50%, 0) scale(1.05); }
@@ -829,7 +842,8 @@ textarea {
   @media only screen and (max-width: 46.25em) {
     .hero {
       display: block;
-      position: relative; } }
+      position: relative;
+      max-width: 90%; } }
   .hero__para {
     margin-top: 2rem;
     color: #0d88cc;
@@ -908,9 +922,11 @@ textarea {
     color: #0d88cc;
     font-size: 6rem;
     font-weight: 800;
-    text-align: center;
     margin: 0 auto;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .rotating-text--title {
+        text-align: center; } }
     @media only screen and (max-width: 46.25em) {
       .rotating-text--title {
         font-size: 4.5rem; } }
@@ -1018,6 +1034,7 @@ textarea {
   .products__header {
     height: 50rem;
     margin: 0 auto;
+    padding: 1rem;
     background: white;
     border-color: white;
     border-style: solid;
@@ -1025,7 +1042,7 @@ textarea {
     box-shadow: 0rem 0.7rem 2.5rem rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 37.5em) {
       .products__header {
-        height: 65rem; } }
+        height: 47rem; } }
     .products__header--title {
       position: absolute;
       top: 6.5rem;
@@ -1599,7 +1616,7 @@ textarea {
   background-color: #05487f; }
 
 #main {
-  height: 95vh; }
+  min-height: 90vh; }
 
 #productSection {
   min-height: 100%;
@@ -1620,9 +1637,6 @@ textarea {
     #productSection {
       margin-bottom: 15rem;
       margin-top: 16rem; } }
-  @media only screen and (max-width: 23.45em) {
-    #productSection {
-      margin-top: -20rem; } }
 
 #btnTop {
   position: relative;

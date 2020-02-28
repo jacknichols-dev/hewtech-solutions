@@ -23,6 +23,7 @@
   &__header {
     height: 50rem;
     margin: 0 auto;
+    padding: 1rem;
     background: white;
     border-color: white;
     border-style: solid;
@@ -30,7 +31,7 @@
     box-shadow: $shadow-2;
 
     @include respond(phone) {
-      height: 65rem;
+      height: 47rem;
     }
 
     &--title {

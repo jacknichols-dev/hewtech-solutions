@@ -477,6 +477,7 @@
   @include respond(phone-large) {
     display: block;
     position: relative;
+    max-width: 90%;
   }
 
   &__para {
@@ -578,9 +579,12 @@
     color: $blue-light;
     font-size: 6rem;
     font-weight: 800;
-    text-align: center;
     margin: 0 auto;
     width: 100%;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
 
     @include respond(phone-large) {
       font-size: 4.5rem;

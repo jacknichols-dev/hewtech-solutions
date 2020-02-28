@@ -39,6 +39,10 @@
 
     &--front {
       background: white;
+
+      @include respond(tab-land) {
+        line-height: 1.2;
+      }
     }
   }
 
@@ -123,6 +127,7 @@
     @include respond(tab-port) {
       width: 100%;
       font-size: 1.5rem;
+
     }
 
     &:not(:last-child) {
@@ -130,7 +135,9 @@
       width: 70%;
 
       @include respond(tab-port) {
-       width: 30%;
+       width: 50%;
+       border: none;
+       padding: .5rem 0;
       }
     }
   }
@@ -186,6 +193,16 @@
       box-shadow: $shadow;
       font-weight: bold;
       transition: all 0.1s ease;
+
+      @include respond(tab-port-large) {
+        width: 60%;
+        text-align: center;
+      }
+
+      @include respond(tab-port) {
+        width: 30%;
+        text-align: center;
+      }
 
       &:hover,
       &:focus {
