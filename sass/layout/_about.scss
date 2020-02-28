@@ -18,7 +18,7 @@
     & h1,
     h4 {
       color: white;
-      line-height: 1.4;
+      line-height: 1.4; 
       margin-top: 14.5rem;
   
       & span,
@@ -84,26 +84,18 @@
   /******* CEO Desc ********/
 
   &__ceo {
-    margin-top: 8rem;
-
-    &--box {
-      position: absolute;
-      transform: translate(-50%, 41rem);
-      left: 50%;
-      width: 100%;
-      height: 20.8rem;
-      background-color: $blue-light;
-      z-index: -1;
-    }
-
 
     &--photo {
-      width: 105%;
+      width: 100%;
+
+      @include respond(tab-port-med) {
+        border-radius: 50%;
+      }
     }
   }
 
   &__ceo-desc {
-      transform: translateY(21.5%);
+    margin-top: 9rem;
 
     &--name {
       font-weight: bold;
@@ -119,12 +111,29 @@
       padding: 3rem;
       text-align: left;
       color: $blue-2;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
     }
     &--prg2 {
       padding: 3rem;
       text-align: left;
-      color: $white;
+      color: $blue-light;
+
+      @include respond(tab-port) {
+        padding: 1rem 3rem 4rem 3rem;
+        text-align: center;
+      }
     }
 
+  }
+}
+.about-cont {
+  display: flex;
+  align-items: center;
+
+  @include respond(tab-port) {
+    display: block;
   }
 }

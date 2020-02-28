@@ -80,14 +80,13 @@
 
     &--list {
       position: absolute;
-      top: 38rem;
+      top: 41rem;
       display: flex;
       align-items: center;
       margin-left: 10rem;
 
       @include respond(desktop) {
-        top: 40rem;
-        margin-left: 20rem;
+        top: 42rem;
       }
 
       @include respond(tab-land) {
