@@ -544,7 +544,7 @@ textarea {
   .header__list {
     display: block;
     position: fixed;
-    top: 3rem;
+    top: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -575,7 +575,7 @@ textarea {
 /******** SOCIAL LINKS *********/
 .social {
   position: fixed;
-  top: 2.5rem !important;
+  top: 2rem !important;
   right: 26rem;
   z-index: 100;
   font-size: 2rem; }
@@ -593,12 +593,7 @@ textarea {
       .social__fb, .social:link {
         color: #0d88cc; } }
     .social__fb:hover, .social:link:hover {
-      animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26); }
-  .social__fb--contact, .social:link {
-    color: #0d88cc; }
-    .social__fb--contact:hover, .social:link:hover {
-      color: #0d88cc; }
+      animation: pulse 1s infinite; }
   .social__twitter, .social:link {
     color: #eef0f1;
     transition: all 0.2s ease; }
@@ -606,13 +601,7 @@ textarea {
       .social__twitter, .social:link {
         color: #0d88cc; } }
     .social__twitter:hover, .social:link:hover {
-      animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
-      color: white; }
-  .social__twitter--contact, .social:link {
-    color: #0d88cc; }
-    .social__twitter--contact:hover, .social:link:hover {
-      color: #0d88cc; }
+      animation: pulse 1s infinite; }
 
 /********* CONTACT **********/
 .contact {
@@ -650,7 +639,7 @@ textarea {
   box-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
   z-index: 10;
   height: 7rem;
-  animation: navAppear 0.5s; }
+  animation: navAppear 0.5s ease-in; }
   .header-scrolled__logo {
     display: none;
     position: fixed;
@@ -666,7 +655,7 @@ textarea {
 .social-scrolled {
   display: none;
   position: fixed;
-  top: 2.5rem !important;
+  top: 2rem !important;
   right: 26rem;
   z-index: 100;
   font-size: 2rem; }
@@ -683,13 +672,13 @@ textarea {
     margin-right: 2rem;
     transition: all 0.2s ease;
     color: #0d88cc; }
+    .social-scrolled__fb:hover, .social-scrolled:link:hover {
+      animation: pulse 1s infinite; }
   .social-scrolled__twitter, .social-scrolled:link {
     color: #0d88cc;
     transition: all 0.2s ease; }
     .social-scrolled__twitter:hover, .social-scrolled:link:hover {
-      animation: pulse 1s infinite;
-      text-shadow: 0 0.3rem 1.3rem rgba(0, 0, 0, 0.26);
-      color: white; }
+      animation: pulse 1s infinite; }
 
 /******* Contact Scrolled *******/
 .contact-scrolled {

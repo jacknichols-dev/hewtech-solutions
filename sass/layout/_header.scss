@@ -42,7 +42,7 @@
   &__list {
     display: block;
     position: fixed;
-    top: 3rem;
+    top: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -87,7 +87,7 @@
 
 .social {
   position: fixed;
-  top: 2.5rem !important;
+  top: 2rem !important;
   right: 26rem;
   z-index: 100;
   font-size: 2rem;
@@ -99,7 +99,6 @@
   @include respond(tab-land) {
     display: none;
   }
-  
 
   &__fb,
   &:link {
@@ -114,16 +113,6 @@
     
     &:hover {
       animation: pulse 1s infinite;
-      text-shadow: $shadow;
-    }
-  }
-
-  &__fb--contact,
-  &:link {
-    color: $blue-light;
-
-    &:hover {
-      color: $blue-light;
     }
   }
 
@@ -138,17 +127,6 @@
 
     &:hover {
       animation: pulse 1s infinite;
-      text-shadow: $shadow;
-      color: white;
-    }
-  }
-
-  &__twitter--contact,
-  &:link {
-    color: $blue-light;
-
-    &:hover {
-      color: $blue-light;
     }
   }
 }
@@ -200,7 +178,7 @@
   box-shadow: $shadow;
   z-index: 10;
   height: 7rem;
-  animation: navAppear 0.5s;
+  animation: navAppear 0.5s ease-in;
 
   &__logo {
     display: none;
@@ -222,7 +200,7 @@
 .social-scrolled {
   display: none;
   position: fixed;
-  top: 2.5rem !important;
+  top: 2rem !important;
   right: 26rem;
   z-index: 100;
   font-size: 2rem;
@@ -246,6 +224,10 @@
     margin-right: 2rem;
     transition: all 0.2s ease;
     color: $blue-light;
+
+    &:hover {
+      animation: pulse 1s infinite;
+    }
   }
 
   &__twitter,
@@ -255,8 +237,6 @@
 
     &:hover {
       animation: pulse 1s infinite;
-      text-shadow: $shadow;
-      color: white;
     }
   }
 }
