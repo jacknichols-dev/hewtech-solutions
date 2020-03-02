@@ -1360,16 +1360,27 @@ textarea {
   @media only screen and (max-width: 67.2em) {
     .header-box {
       width: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    .header-box {
+      display: block; } }
 
 .about-header {
   height: 62rem;
   background-color: #0d88cc;
   font-size: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about-header {
+      margin-top: 5rem;
+      text-align: center; } }
   .about-header h1,
   .about-header h4 {
     color: white;
     line-height: 1.4;
     margin-top: 14.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about-header h1,
+      .about-header h4 {
+        margin-top: 5rem; } }
     .about-header h1 span,
     .about-header h1 a,
     .about-header h4 span,
@@ -1386,6 +1397,11 @@ textarea {
   background-position: center;
   height: 62rem;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .about-img {
+      clip-path: none;
+      margin: 4rem auto;
+      height: 30rem; } }
 
 .about-link {
   padding: 1rem 2rem;
