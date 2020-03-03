@@ -280,12 +280,11 @@
   display: none;
 
   @include respond(tab-port-small) {
-    display: block;
+    display: flex;
   }
 
   &__checkbox {
-      display: none; 
-      opacity: 0;
+      display: none;
   }
 
   &__button {

@@ -709,10 +709,9 @@ textarea {
   display: none; }
   @media only screen and (max-width: 51.25em) {
     .navigation {
-      display: block; } }
+      display: flex; } }
   .navigation__checkbox {
-    display: none;
-    opacity: 0; }
+    display: none; }
   .navigation__button {
     background-color: white;
     height: 5.7rem;
