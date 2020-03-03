@@ -284,7 +284,8 @@
   }
 
   &__checkbox {
-      display: none;
+      display: none; 
+      opacity: 0;
   }
 
   &__button {

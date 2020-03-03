@@ -711,7 +711,8 @@ textarea {
     .navigation {
       display: block; } }
   .navigation__checkbox {
-    display: none; }
+    display: none;
+    opacity: 0; }
   .navigation__button {
     background-color: white;
     height: 5.7rem;
